@@ -1,6 +1,12 @@
+(add-to-list 'load-path "~/.emacs.d/opt/")
+(setq custom-file "~/.emacs.d/custom.el")
+(load custom-file)
+
 (require 'package)
 ; (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
-(setq package-archives '(("marmalade" . "http://marmalade-repo.org/packages/")))
+(setq package-archives '(("marmalade" . "http://marmalade-repo.org/packages/")
+                         ("melpa-stable" . "http://melpa-stable.milkbox.net/packages/")))
+
 (package-initialize)
 
 (defun melpa-packages-enable ()
@@ -18,11 +24,27 @@
   (melpa-packages-enable)
   (package-list-packages))
 
-(add-to-list 'load-path "/Users/jon/.emacs.d")
+;(add-hook 'after-init-hook 'global-company-mode)
+
+(setq geiser-guile-load-init-file-p t)
+;
+;(add-to-list 'load-path "/Users/jon/.emacs.d")
 (autoload 'forth-mode "gforth.el")
 (autoload 'forth-block-mode "gforth.el")
 (add-to-list 'auto-mode-alist '("\\.fs$" . forth-mode))
 
+(autoload 'antlr-v4-mode "antlr-mode.el")
+(add-to-list 'auto-mode-alist '("\\.g4$" . antlr-v4-mode))
+
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+
+(global-set-key (kbd "C-c C-w") (lambda ()
+                                  (interactive)
+                                  (whitespace-cleanup)
+                                  (if (eq 'go-mode major-mode)
+                                      (gofmt))))
 
 (setq
  backup-by-copying t
@@ -33,9 +55,10 @@
  version-control t)
 
 (setq exec-path (append (list "/Users/jon/local/bin" "/usr/local/bin") exec-path))
-(setenv "PATH" "/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/jon/local/bin")
+(setenv "PATH" "/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/jon/local/bin:/Users/jon/local/opt/node/bin")
 (setenv "SCHEMEHEAPDIRS" "/Users/jon/local/lib/csv%v/%m")
-(setenv "NODE_PATH" "/usr/local/opt/node/lib")
+(setenv "NODE_PATH" "/Users/jon/local/opt/node/lib/node_modules")
+(setenv "LD_LIBRARY_PATH" "/usr/local/Cellar/llvm/3.5.0/lib") ; Necessary to dynamically load clang/llvm in guile
 
 (load-theme 'monokai t)
 ;(setq solarized-broken-srgb nil)
@@ -74,9 +97,21 @@
 
 (require 'clojure-mode-extra-font-locking)
 
+(add-hook 'hack-local-variables-hook (lambda ()
+                                       (mapcar (lambda (x) (put-clojure-indent (car x) (cadr x)))
+                                               (if (boundp 'clojure-local-indents)
+                                                   clojure-local-indents
+                                                 nil))
+                                       (mapcar (lambda (x)
+                                                 (put (car x) 'scheme-indent-function (cadr x)))
+                                               (if (boundp 'scheme-local-indents)
+                                                   scheme-local-indents
+                                                 nil))))
+
 (eval-after-load 'clojure-mode
   '(progn
-     (add-hook 'clojure-mode-hook (lambda () (paredit-mode +1)))))
+     (add-hook 'clojure-mode-hook (lambda ()
+                                    (paredit-mode +1)))))
 
 (eval-after-load 'cider-repl
   '(progn
@@ -122,8 +157,9 @@
 
 (mapc (lambda (s) (put s 'scheme-indent-function 'defun))
       (list 'run* 'run 'fresh 'conde 'module 'if))
-;(setq scheme-program-name "petite")
-(setq scheme-program-name "csi")
+;; (setq scheme-program-name "petite")
+;; (setq scheme-program-name "csi")
+(setq scheme-program-name "guile")
 
 (defun run-local-scheme ()
   (interactive)
@@ -154,8 +190,10 @@
   '(setq css-indent-offset 2))
 
 (require 'find-file-in-project)
-(setq ffip-patterns (append (list "*.scala" "*.coffee") ffip-patterns))
-(setq ffip-limit 1024)
+(setq ffip-patterns (delete-dups
+                     (append (list "*.scala" "*.coffee" "*.c" "*.cpp" "*.cc" "*.h" "*.hh" "*.hpp")
+                             ffip-patterns)))
+(setq ffip-limit 5000)
 
 (defun find-file-in-project-with-options ()
   (interactive)
@@ -176,7 +214,8 @@
 (global-set-key (kbd "C-x M-g") 'rgrep)
 (global-set-key (kbd "C-M-g") 'magit-status)
 (global-set-key (kbd "M-k") 'kill-sexp)
-(global-set-key (kbd "M-/") 'hippie-expand)
+;; (global-set-key (kbd "M-/") 'hippie-expand)
+
 
 (global-set-key (kbd "C-x <up>") 'windmove-up)
 (global-set-key (kbd "C-x <down>") 'windmove-down)
@@ -186,22 +225,3 @@
 (global-set-key (kbd "C-x C-<down>") 'windmove-down)
 (global-set-key (kbd "C-x C-<right>") 'windmove-right)
 (global-set-key (kbd "C-x C-<left>") 'windmove-left)
-
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes (quote ("60f04e478dedc16397353fb9f33f0d895ea3dab4f581307fbf0aa2f07e658a40" "43f70787edac4d896ec8e14579e52501665e61d5dc02de3c237f82fd5d8e0a6a" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
- '(go-fontify-function-calls t)
- '(safe-local-variable-values (quote ((cider-lein-parameters . "repl") (scheme-program-name . "./lisp") (ffip-additional-patterns "*.c" "*.h") (ffip-additional-patterns ".c" ".h") (tab-indent-mode . t) (ffip-additional-patterns "*.conf" "*.dist" "routes" "*.ejs") (ffip-additional-patterns "*.conf" "*.dist" "routes" (\, "*.ejs")) (ffip-limit 2048) (ffip-exclude-dirs "target" "node_modules" ".mocha" "modules") (ffip-additional-patterns "*.conf" "*.dist" "routes") (ffip-exclude-dirs "target" "node_modules" ".mocha"))))
- '(tab-width 2))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "#000000" :foreground "#F8F8F2" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 130 :width normal :foundry "apple" :family "Monaco"))))
- '(font-lock-builtin-face ((t (:foreground "#FD971F" :weight bold))))
- '(italic ((t (:slant normal)))))
