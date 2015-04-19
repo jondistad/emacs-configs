@@ -3,9 +3,12 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        c-electric-paren
+        c-electric-star
         coffee-dedent-line-backspace
         company-ignore
         dabbrev-expand
+        haskell-indentation-delete-backward-char
         kill-region
         orgtbl-hijacker-command-102
         paredit-backward-kill-word

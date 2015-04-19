@@ -4,7 +4,7 @@
 
 (require 'package)
 ; (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
-(setq package-archives '(("marmalade" . "http://marmalade-repo.org/packages/")
+(setq package-archives '(;("marmalade" . "http://marmalade-repo.org/packages/")
                          ("melpa-stable" . "http://melpa-stable.milkbox.net/packages/")))
 
 (package-initialize)
@@ -36,6 +36,12 @@
 (autoload 'antlr-v4-mode "antlr-mode.el")
 (add-to-list 'auto-mode-alist '("\\.g4$" . antlr-v4-mode))
 
+(autoload 'glsl-mode "glsl-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.glsl\\'" . glsl-mode))
+(add-to-list 'auto-mode-alist '("\\.vert\\'" . glsl-mode))
+(add-to-list 'auto-mode-alist '("\\.frag\\'" . glsl-mode))
+(add-to-list 'auto-mode-alist '("\\.geom\\'" . glsl-mode))
+
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
@@ -46,6 +52,8 @@
                                   (if (eq 'go-mode major-mode)
                                       (gofmt))))
 
+(global-set-key (kbd "s-u") 'revert-buffer)
+
 (setq
  backup-by-copying t
  backup-directory-alist '(("." . "~/.emacs_backups"))
@@ -54,11 +62,11 @@
  kept-old-versions 2
  version-control t)
 
-(setq exec-path (append (list "/Users/jon/local/bin" "/usr/local/bin") exec-path))
-(setenv "PATH" "/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/jon/local/bin:/Users/jon/local/opt/node/bin")
-(setenv "SCHEMEHEAPDIRS" "/Users/jon/local/lib/csv%v/%m")
-(setenv "NODE_PATH" "/Users/jon/local/opt/node/lib/node_modules")
-(setenv "LD_LIBRARY_PATH" "/usr/local/Cellar/llvm/3.5.0/lib") ; Necessary to dynamically load clang/llvm in guile
+(setq exec-path (append (list "/home/jon/local/bin" "/usr/local/bin" "/home/jon/.cabal/bin" "/opt/ghc/7.8.4/bin") exec-path))
+(setenv "PATH" "/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/home/jon/local/bin:/opt/ghc/7.8.4/bin:/home/jon/.cabal/bin")
+;(setenv "SCHEMEHEAPDIRS" "/Users/jon/local/lib/csv%v/%m")
+;(setenv "NODE_PATH" "/Users/jon/local/opt/node/lib/node_modules")
+;(setenv "LD_LIBRARY_PATH" "/usr/local/Cellar/llvm/3.5.0/lib") ; Necessary to dynamically load clang/llvm in guile
 
 (load-theme 'monokai t)
 ;(setq solarized-broken-srgb nil)
@@ -75,7 +83,8 @@
 ;(setq linum-format "%d ")
 (setq-default indent-tabs-mode nil)
 (tool-bar-mode -1)
-(set-default-font "-apple-Monaco-medium-normal-normal-*-13-*-*-*-m-0-iso10646-1")
+(menu-bar-mode -1)
+(set-face-attribute 'default nil :font "Fantasque Sans Mono-13")
 ;(color-theme-molokai)
 (global-auto-revert-mode)
 
