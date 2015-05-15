@@ -11,6 +11,7 @@
         dabbrev-expand
         haskell-indentation-delete-backward-char
         kill-region
+        org-delete-char
         orgtbl-hijacker-command-102
         paredit-backward-kill-word
         paredit-forward-kill-word

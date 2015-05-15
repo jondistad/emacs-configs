@@ -53,6 +53,7 @@
                                       (gofmt))))
 
 (global-set-key (kbd "s-u") 'revert-buffer)
+(global-set-key (kbd "C-x a r") 'align-regexp)
 
 (setq
  backup-by-copying t
@@ -62,8 +63,16 @@
  kept-old-versions 2
  version-control t)
 
-(setq exec-path (append (list "/home/jon/local/bin" "/usr/local/bin" "/home/jon/.cabal/bin" "/opt/ghc/7.8.4/bin") exec-path))
-(setenv "PATH" "/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/home/jon/local/bin:/opt/ghc/7.8.4/bin:/home/jon/.cabal/bin")
+(let ((path '("/home/jon/local/bin"
+              "/home/jon/.cabal/bin"
+              "/usr/local/bin"
+              "/usr/local/sbin"
+              "/usr/bin"
+              "/bin"
+              "/usr/sbin"
+              "/sbin")))
+  (setq exec-path (delete-dups (copy-sequence (append path exec-path))))
+  (setenv "PATH" (mapconcat 'identity path '":")))
 ;(setenv "SCHEMEHEAPDIRS" "/Users/jon/local/lib/csv%v/%m")
 ;(setenv "NODE_PATH" "/Users/jon/local/opt/node/lib/node_modules")
 ;(setenv "LD_LIBRARY_PATH" "/usr/local/Cellar/llvm/3.5.0/lib") ; Necessary to dynamically load clang/llvm in guile
@@ -141,6 +150,8 @@
 (add-hook 'c-mode-hook (lambda ()
                          (setq comment-start "// "
                                comment-end "")))
+
+(add-hook 'coffee-mode-hook (lambda () (subword-mode +1)))
 
 (eval-after-load 'haskell-mode
   (add-hook 'haskell-mode-hook (lambda () (turn-on-haskell-indentation))))
