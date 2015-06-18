@@ -31,10 +31,10 @@
 ;(add-to-list 'load-path "/Users/jon/.emacs.d")
 (autoload 'forth-mode "gforth.el")
 (autoload 'forth-block-mode "gforth.el")
-(add-to-list 'auto-mode-alist '("\\.fs$" . forth-mode))
+(add-to-list 'auto-mode-alist '("\\.fs\\'" . forth-mode))
 
 (autoload 'antlr-v4-mode "antlr-mode.el")
-(add-to-list 'auto-mode-alist '("\\.g4$" . antlr-v4-mode))
+(add-to-list 'auto-mode-alist '("\\.g4\\'" . antlr-v4-mode))
 
 (autoload 'glsl-mode "glsl-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.glsl\\'" . glsl-mode))
@@ -114,6 +114,8 @@
       c-basic-offset 4)
 
 (require 'clojure-mode-extra-font-locking)
+
+(add-to-list 'auto-mode-alist '("\\.\\(?:boot\\|hl\\)\\'" . clojure-mode))
 
 (add-hook 'hack-local-variables-hook (lambda ()
                                        (mapcar (lambda (x) (put-clojure-indent (car x) (cadr x)))
