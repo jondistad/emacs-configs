@@ -4,10 +4,10 @@
 
 ;; Author: Johan Andersson <johan.rejeep@gmail.com>
 ;; Maintainer: Johan Andersson <johan.rejeep@gmail.com>
-;; Version: 0.2.6
-;; X-Original-Version: 0.2.6
+;; Version: 0.3.2
+;; Package-Version: 0.3.2
 ;; Keywords: test
-;; Package-Requires: ((s "1.7.0") (dash "2.2.0") (noflet "0.0.10") (f "0.12.1"))
+;; Package-Requires: ((s "1.7.0") (dash "2.2.0") (f "0.12.1"))
 ;; URL: http://github.com/ecukes/espuds
 
 ;; This file is NOT part of GNU Emacs.
@@ -36,7 +36,6 @@
 (require 'f)
 (require 's)
 (require 'dash)
-(require 'noflet)
 (require 'cl-lib)
 (require 'edmacro)
 
@@ -62,7 +61,7 @@
   "Dump CONTENTS to a temp file and then load it."
   (let ((file (make-temp-file "espuds-")))
     (f-write contents 'utf-8 file)
-    (load file)))
+    (load file nil t)))
 
 (defun espuds-region ()
   "Return the text selected by region, if any."
@@ -72,13 +71,60 @@
 
 (defun espuds-quit ()
   "Quit without signal."
-  (noflet ((signal (&rest args) nil))
+  (cl-letf (((symbol-function 'signal) #'ignore))
     (keyboard-quit)))
 
 (defun espuds-goto-line (line)
   "Go to LINE."
   (goto-char (point-min))
   (forward-line (1- line)))
+
+(defun espuds-faces-at-point ()
+  "Return a list of faces at the current point."
+  (let ((face (or (get-char-property (point) 'read-face-name)
+                  (get-char-property (point) 'face))))
+    (if (listp face)
+        face
+      (list face))))
+
+(defun espuds-fontify ()
+  "Make sure the buffer is completely fontified."
+  (setq font-lock-fontify-buffer-function
+        #'font-lock-default-fontify-buffer)
+  (font-lock-fontify-buffer))
+
+(defun espuds-character-fontified-p (property valid-values)
+  "Check if character at point has face PROPERTY.
+The value of the face PROPERTY must be one of VALID-VALUES."
+  (espuds-fontify)
+  (-any?
+   (lambda (face)
+     (memq (face-attribute face property nil t) valid-values))
+   (espuds-faces-at-point)))
+
+(defun espuds-character-bold-p ()
+  "Make sure the character at point is bold."
+  (espuds-character-fontified-p
+   :weight
+   '(semi-bold bold extra-bold ultra-bold)))
+
+(defun espuds-character-italic-p ()
+  "Make sure the character at point is italic."
+  (espuds-character-fontified-p
+   :slant
+   '(italic oblique)))
+
+(defun espuds-character-strike-through-p ()
+  "Make sure the character at point is in strike-through."
+  (espuds-character-fontified-p
+   :strike-through
+   '(t)))
+
+(defun espuds-character-underline-p ()
+  "Make sure the character at point is underlined."
+  (espuds-character-fontified-p
+   :underline
+   '(t)))
 
 
 ;;;; Definitions
@@ -237,6 +283,11 @@
     (execute-kbd-macro espuds-action-chain)
     (setq espuds-chain-active nil)))
 
+(When "^I call \"\\(.+\\)\"$"
+  "Call the provided COMMAND"
+  (lambda (command)
+    (call-interactively (intern command))))
+
 (When "^I press \"\\(.+\\)\"$"
   "Execute the function that KEYBINDING is bound to.
 
@@ -341,7 +392,7 @@ chain. Otherwise simulate the TYPING."
   "Asserts that the current buffer includes some text."
   (lambda (expected)
     (let ((actual (buffer-string))
-          (message "Expected '%s' to be part of '%s', but was not."))
+          (message "Expected\n%s\nto be part of:\n%s"))
       (cl-assert (s-contains? expected actual) nil message expected actual))))
 
 (Then "^I should not see\\(?: \"\\(.+\\)\"\\|:\\)$"
@@ -382,6 +433,61 @@ chain. Otherwise simulate the TYPING."
     (let ((message "Expected buffer to be empty, but had content: '%s'"))
       (cl-assert (equal (buffer-size) 0) nil message (buffer-string)))))
 
+(Then "^current point should be in bold$"
+  (lambda ()
+    (cl-assert
+     (espuds-character-bold-p)
+     nil
+     "Expected current point to be in bold")))
+
+(Then "^current point should be in italic$"
+  (lambda ()
+    (cl-assert
+     (espuds-character-italic-p)
+     nil
+     "Expected current point to be in italic")))
+
+(Then "^current point should be in strike-through$"
+  (lambda ()
+    (cl-assert
+     (espuds-character-strike-through-p)
+     nil
+     "Expected current point to be in strike-through")))
+
+(Then "^current point should be in underline$"
+  (lambda ()
+    (cl-assert
+     (espuds-character-underline-p)
+     nil
+     "Expected current point to be in underline")))
+
+(Then "^current point should have the \\([-[:alnum:]]+\\) face$"
+  (lambda (face)
+    (espuds-fontify)
+    (cl-assert
+     (-contains?
+      (espuds-faces-at-point)
+      (intern face))
+     nil
+     "Face '%s' was not found at point"
+     face)
+    nil))
+
+(Then "^current point should have no face$"
+  (lambda ()
+    (espuds-fontify)
+    (let ((faces (espuds-faces-at-point)))
+      (cl-assert
+       (null faces)
+       nil
+       "Current point was expected to have no face but does have '%S'"
+       faces))
+    nil))
+
+(When "^I delete other windows$"
+  "Deletes all windows except current one."
+  (lambda ()
+    (delete-other-windows)))
 
 (provide 'espuds)
 

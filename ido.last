@@ -1,0 +1,376 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/usr/include/" . "c++/")
+ ("/usr/share/man/" . "en_AU/")
+ ("/usr/local/man/" . "man1/")
+ ("/usr/local/" . "man/")
+ ("/usr/include/c++/" . "4.9.2/")
+ ("/usr/" . "share/")
+ ("/home/jon/Code/Vendor/clojure/src/clj/clojure/" . "core/")
+ ("/home/jon/Code/Langs/wombat-j/src/clj/" . "wombat/")
+ ("/home/jon/Code/Langs/wombat-j/src/" . "scm/")
+ ("/home/jon/Code/Langs/wombat-j/" . "src/")
+ ("/home/jon/Code/Originate/Attack2015/attack_2015/" . "javascripts/")
+ ("/home/jon/Code/Originate/Attack2015/" . "attack_2015/")
+ ("/usr/share/" . "man/")
+ ("/home/jon/Code/ChainOfCommand/gdx/coc-clj/desktop/src/coc_clj/" . "core/")
+ ("/home/jon/Code/ChainOfCommand/gdx/coc-clj/desktop/src/" . "coc_clj/")
+ ("/home/jon/Code/ChainOfCommand/gdx/coc-clj/desktop/src-common/" . "coc_clj/")
+ ("/home/jon/Code/ChainOfCommand/gdx/coc-clj/desktop/" . "src/")
+ ("/home/jon/Code/ChainOfCommand/gdx/coc-clj/" . "desktop/")
+ ("/home/jon/Code/ChainOfCommand/gdx/coc_client/core/src/net/refugesystems/coc/" . "client/")
+ ("/home/jon/Code/ChainOfCommand/gdx/coc_client/core/src/net/refugesystems/" . "coc/")
+ ("/home/jon/Code/ChainOfCommand/gdx/coc_client/core/src/net/" . "refugesystems/")
+ ("/home/jon/Code/ChainOfCommand/gdx/coc_client/core/src/" . "net/")
+ ("/home/jon/Code/ChainOfCommand/gdx/coc_client/core/" . "src/")
+ ("/home/jon/Code/ChainOfCommand/gdx/coc_client/desktop/src/net/refugesystems/coc/client/" . "desktop/")
+ ("/home/jon/Code/ChainOfCommand/gdx/coc_client/desktop/src/net/refugesystems/coc/" . "client/")
+ ("/home/jon/Code/ChainOfCommand/gdx/coc_client/desktop/src/net/refugesystems/" . "coc/")
+ ("/home/jon/Code/ChainOfCommand/gdx/coc_client/desktop/src/net/" . "refugesystems/")
+ ("/home/jon/Code/ChainOfCommand/gdx/coc_client/desktop/src/" . "net/")
+ ("/home/jon/Code/ChainOfCommand/gdx/coc_client/desktop/" . "src/")
+ ("/home/jon/Code/ChainOfCommand/gdx/coc_client/" . "core/")
+ ("/home/jon/Code/ChainOfCommand/gdx/" . "coc_client/")
+ ("/home/jon/Code/Vendor/clojure/src/clj/" . "clojure/")
+ ("/home/jon/Code/Experiments/" . "pthread/")
+ ("/home/jon/Code/Vendor/clojure/src/jvm/clojure/java/" . "api/")
+ ("/home/jon/Code/Vendor/clojure/src/jvm/clojure/" . "lang/")
+ ("/home/jon/Code/Vendor/clojure/src/jvm/" . "clojure/")
+ ("/home/jon/Code/Vendor/clojure/src/" . "jvm/")
+ ("/home/jon/Code/Vendor/clojure/" . "src/")
+ ("/home/jon/Code/Vendor/" . "clojure/")
+ ("/home/jon/Code/opengl-playground/clj/src/clj/" . "opengl/")
+ ("/home/jon/Code/opengl-playground/clj/src/" . "clj/")
+ ("/home/jon/Code/opengl-playground/clj/" . "src/")
+ ("/home/jon/Code/opengl-playground/" . "clj/")
+ ("/home/jon/Code/ChainOfCommand/grobots/src/" . "grobots/")
+ ("/home/jon/Code/ChainOfCommand/grobots/" . "src/")
+ ("/home/jon/Code/Originate/devacurl/spec/workers/" . "actions/")
+ ("/home/jon/Code/Originate/devacurl/app/assets/stylesheets/" . "bootstrap_overrides/")
+ ("/home/jon/Code/Originate/devacurl/app/views/" . "application/")
+ ("/home/jon/Code/Langs/funcy/src/" . "funcy/")
+ ("/home/jon/Code/Langs/funcy/" . "src/")
+ ("/home/jon/Code/Langs/" . "persistent_map/")
+ ("/home/jon/Code/Originate/devacurl/lib/" . "tasks/")
+ ("/home/jon/Code/podio-rb/lib/podio/" . "models/")
+ ("/home/jon/Code/podio-rb/lib/" . "podio/")
+ ("/home/jon/Code/podio-rb/" . "lib/")
+ ("/home/jon/Code/Originate/devacurl/config/" . "initializers/")
+ ("/home/jon/Code/Originate/devacurl/db/" . "migrate/")
+ ("/home/jon/Code/Originate/devacurl/app/assets/" . "javascripts/")
+ ("/home/jon/Code/Originate/devacurl/spec/" . "models/")
+ ("/home/jon/Code/Originate/devacurl/app/" . "models/")
+ ("/home/jon/Code/Originate/devacurl/" . "app/")
+ ("/home/jon/Code/Originate/" . "devacurl/")
+ ("/home/jon/Code/SimpleLighting/source/SimpleLighting/" . "data/")
+ ("/home/jon/Code/ChainOfCommand/CoC_Client/src/java/net/refugesystems/coc/client/" . "math/")
+ ("/home/jon/Code/SimpleLighting/source/SimpleLighting/data/" . "shaders/")
+ ("/home/jon/Code/SimpleLighting/source/" . "SimpleLighting/")
+ ("/home/jon/Code/SimpleLighting/" . "source/")
+ ("/home/jon/Code/ChainOfCommand/CoC_Client/resources/" . "shaders/")
+ ("/home/jon/Code/ChainOfCommand/CoC_Client/src/java/net/refugesystems/coc/" . "client/")
+ ("/home/jon/Code/ChainOfCommand/CoC_Client/src/java/net/refugesystems/" . "coc/")
+ ("/home/jon/Code/ChainOfCommand/CoC_Client/src/java/net/" . "refugesystems/")
+ ("/home/jon/Code/ChainOfCommand/CoC_Client/src/java/" . "net/")
+ ("/home/jon/Code/ChainOfCommand/CoC_Client/src/" . "java/")
+ ("/home/jon/Code/ChainOfCommand/CoC_Client/" . "src/")
+ ("/home/jon/Code/ChainOfCommand/CoC_Universe-Server/CoC_Universe-Server/src/net/refugesystems/coc/universe/server/clients/" . "communication/")
+ ("/home/jon/Code/ChainOfCommand/CoC_Universe-Server/CoC_Universe-Server/src/net/refugesystems/coc/universe/server/" . "clients/")
+ ("/home/jon/Code/ChainOfCommand/CoC_Universe-Server/CoC_Universe-Server/src/net/refugesystems/coc/universe/" . "server/")
+ ("/home/jon/Code/ChainOfCommand/CoC_Universe-Server/CoC_Universe-Server/src/net/refugesystems/coc/" . "universe/")
+ ("/home/jon/Code/ChainOfCommand/CoC_Universe-Server/CoC_Universe-Server/src/net/refugesystems/" . "coc/")
+ ("/home/jon/Code/ChainOfCommand/CoC_Universe-Server/CoC_Universe-Server/src/net/" . "refugesystems/")
+ ("/home/jon/Code/ChainOfCommand/CoC_Universe-Server/CoC_Universe-Server/src/" . "net/")
+ ("/home/jon/Code/ChainOfCommand/CoC_Universe-Server/CoC_Universe-Server/" . "src/")
+ ("/home/jon/Code/ChainOfCommand/CoC_Core/CoC_Core/src/net/refugesystems/coc/core/tests/" . "cases/")
+ ("/home/jon/Code/ChainOfCommand/CoC_Core/CoC_Core/src/net/refugesystems/coc/core/io/network/" . "packets/")
+ ("/home/jon/Code/ChainOfCommand/CoC_Core/CoC_Core/src/net/refugesystems/coc/core/io/" . "network/")
+ ("/home/jon/Code/ChainOfCommand/CoC_Core/CoC_Core/src/net/refugesystems/coc/core/admin/" . "paths/")
+ ("/home/jon/Code/ChainOfCommand/CoC_Core/CoC_Core/src/net/refugesystems/coc/core/" . "tests/")
+ ("/home/jon/Code/ChainOfCommand/CoC_Core/CoC_Core/src/net/refugesystems/coc/" . "core/")
+ ("/home/jon/Code/ChainOfCommand/CoC_Core/CoC_Core/src/net/refugesystems/" . "coc/")
+ ("/home/jon/Code/ChainOfCommand/CoC_Core/CoC_Core/src/net/" . "refugesystems/")
+ ("/home/jon/Code/ChainOfCommand/CoC_Core/CoC_Core/src/" . "net/")
+ ("/home/jon/Code/ChainOfCommand/CoC_Core/CoC_Core/" . "src/")
+ ("/home/jon/Code/ChainOfCommand/CoC_Core/" . "CoC_Core/")
+ ("/home/jon/Code/ChainOfCommand/CoC_Universe-Server/" . "CoC_Universe-Server/")
+ ("/home/jon/Code/ChainOfCommand/" . "gdx/")
+ ("/home/jon/Code/" . "Originate/")
+ ("/home/jon/" . "Code/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/jon/Code/Originate/devacurl/app/models/"
+ "/home/jon/Code/Originate/devacurl/config/"
+ "/usr/include/c++/4.9.2/"
+ "/usr/include/"
+ "/home/jon/Code/Langs/persistent_map/"
+ "/home/jon/"
+ "/home/jon/Code/Vendor/clojure/"
+ "/home/jon/Code/Vendor/clojure/src/jvm/clojure/lang/"
+ "/home/jon/Code/Vendor/clojure/src/clj/clojure/"
+ "/home/jon/Code/Langs/wombat-j/src/scm/"
+ "/home/jon/Code/Langs/wombat-j/src/clj/wombat/"
+ "/home/jon/Code/Langs/wombat-j/"
+ "/home/jon/Code/Langs/funcy/src/funcy/"
+ "/home/jon/Code/Originate/Attack2015/attack_2015/"
+ "/home/jon/Code/Originate/Attack2015/attack_2015/javascripts/"
+ "/home/jon/Code/ChainOfCommand/gdx/coc_client/core/src/net/refugesystems/coc/client/"
+ "/home/jon/Code/ChainOfCommand/gdx/coc-clj/desktop/src/coc_clj/core/"
+ "/home/jon/Code/ChainOfCommand/gdx/coc-clj/desktop/src-common/coc_clj/"
+ "/usr/share/alsa/"
+ "/home/jon/Code/ChainOfCommand/grobots/src/grobots/"
+ "/home/jon/Code/ChainOfCommand/gdx/coc-clj/desktop/"
+ "/home/jon/Code/ChainOfCommand/gdx/coc_client/desktop/src/net/refugesystems/coc/client/desktop/"
+ "/home/jon/Code/Walker/"
+ "/home/jon/Code/"
+ "/home/jon/Code/ChainOfCommand/grobots/"
+ "/home/jon/.lein/"
+ "/home/jon/Code/Experiments/pthread/"
+ "/home/jon/Code/Originate/devacurl/config/initializers/"
+ "/home/jon/.emacs.d/"
+ "/home/jon/Code/opengl-playground/clj/src/clj/opengl/"
+ "/home/jon/Code/ChainOfCommand/CoC_Client/"
+ "/home/jon/Code/Originate/devacurl/spec/models/"
+ "/home/jon/Code/Originate/devacurl/spec/"
+ "/home/jon/Code/Originate/devacurl/db/migrate/"
+ "/home/jon/Code/Originate/devacurl/db/"
+ "/home/jon/Code/Originate/devacurl/spec/fixtures/"
+ "/home/jon/Code/Originate/devacurl/spec/workers/actions/"
+ "/home/jon/Code/Originate/devacurl/app/assets/javascripts/"
+ "/home/jon/Code/Originate/devacurl/app/views/application/"
+ "/home/jon/Code/Originate/devacurl/app/views/finder/"
+ "/home/jon/Code/Originate/devacurl/"
+ "/home/jon/Code/Originate/devacurl/app/workers/"
+ "/home/jon/Code/Originate/devacurl/spec/workers/"
+ "/home/jon/Code/Originate/devacurl/app/assets/stylesheets/bootstrap_overrides/"
+ "/home/jon/Code/Originate/devacurl/app/assets/stylesheets/"
+ "/home/jon/Code/Originate/devacurl/app/controllers/"
+ "/home/jon/Code/Langs/funcy/"
+ "/home/jon/Code/Originate/devacurl/lib/tasks/"
+ "/home/jon/Code/Originate/devacurl/scripts/"
+ "/home/jon/Code/podio-rb/lib/podio/models/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "recent_search.rb"
+ "settings.local.yml"
+ "settings.yml"
+ "secrets.yml"
+ "functional"
+ "cstdint"
+ "stdint.h"
+ "cctype"
+ "mutex"
+ "unordered_map"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/jon/Code/Originate/devacurl/app/models/" (22007 515 285393 151000) "recent_search.rb" "podio_attributes.rb" "./" "stylist.rb" "review.rb" "model_for_podio_item.rb" "location_search.rb" "location.rb" "../" "podio_finders.rb")
+
+ ("/home/jon/Code/Originate/devacurl/app/" (22007 515 285393 151000) "workers/" "inputs/" "models/" "./" "helpers/" "builders/" "views/" "controllers/" "assets/" "../" "mailers/" "decorators/")
+
+ ("/home/jon/Code/Originate/devacurl/" (22007 810 759020 28000) ".rspec" "spec/" "coverage/" "tmp/" "./" ".git/" "config/" "TECHDEBT.md" "lib/" "db/" "README.md" "Procfile" "Gemfile.lock" "prod.dump" "public/" "config.ru" "../" "Rakefile" "test/" "log/" "Guardfile" "Gemfile" "circle.yml" "vendor/" "app/" ".ruby-version" ".gitignore" "bin/")
+
+ ("/home/jon/Code/Originate/devacurl/config/" (22007 620 164396 62000) "boot.rb" "database.yml" "environment.rb" "./" "secrets.yml" "database.yml.sample" "puma.rb" "routes.rb" "settings/" "newrelic.yml" "application.rb" "../" "locales/" "settings.yml" "initializers/" "environments/" "settings.local.yml")
+
+ ("/home/jon/" (22007 531 314178 939000) ".gitconfig" ".emacs_backups/" ".purple/" "Templates/" ".pulse-cookie" "sites.tgz" "Public/" "Music/" ".nave/" "Games/" ".lastpass/" ".cider-repl-history" ".rediscli_history" ".irbrc" ".cache/" ".adobe/" ".macromedia/" ".xsel.log" ".heroku/" ".gradle/" ".zshrc" ".cabal/" ".gnupg/" ".psql_history" ".xscreensaver" ".guard_history" "./" ".vim-fuf-data/" ".config/" ".zsh/" ".vim/" ".gconf/" ".rbenv/" "lein" ".sbt/" ".netrc" ".java_history" ".java/" ".mozilla/" ".ivy2/" ".sudo_as_admin_successful" ".racket_history" ".ghc/" ".bash_history" ".gnome2/" ".vimrc" ".local/" "Documents/" ".gitignore_global" ".racket/" ".gstreamer-0.10/" ".irb_history_x86_64-linux_2.2.2" ".gem/" ".PlayOnLinux/" "PlayOnLinux's virtual drives/" ".bashrc" "backup.tgz" ".pki/" ".lesshst" ".pg_service.conf" ".ICEauthority" ".steampath" ".viminfo" ".steam/" ".gnome/" "Code/" ".ghcjs/" ".profile" ".xinitrc" ".ssh/" "../" ".boot/" ".zcompdump" ".dbus/" ".scala_history" ".zsh_history" "configs/" ".m2/" ".lein/" "Desktop/" ".emacs.d/" ".bash_logout" "Pictures/" ".steampid" ".gnome2_private/" ".gphoto/" "Downloads/" "Videos/")
+
+ ("/home/jon/Code/Langs/persistent_map/" (21995 29423 632015 471000) "IPersistentMap.hpp" "Protocol.hpp" ".#Protocol.hpp" "./" "APersistentMap.cpp" ".git/" "#Protocol.hpp#" "ISeq.hpp" "Seqable.hpp" "APersistentMap.hpp" "../" "IPersistentCollection.hpp" "test" "testit.cpp")
+
+ ("/home/jon/Code/podio-rb/lib/podio/models/" (21934 51764 535651 919000) "comment.rb" "item_diff.rb" "by_line.rb" "form.rb" "friend.rb" "extension.rb" "device.rb" "recurrence.rb" "linked_account.rb" "item_field.rb" "voucher.rb" "question_option.rb" "condition_set.rb" "account_provider.rb" "contract_event.rb" "stream_activity_group.rb" "view.rb" "space_member.rb" "category.rb" "calendar_event.rb" "organization_member.rb" "embed.rb" "./" "organization.rb" "experiment.rb" "conversation_message.rb" "activation_status.rb" "space_invitation.rb" "app_store_share.rb" "tag_search.rb" "search.rb" "conversation_event.rb" "stream_mute.rb" "email_contact.rb" "tag.rb" "contact.rb" "answer.rb" "application_field.rb" "application_email.rb" "conversation_participant.rb" "integration.rb" "stream_object.rb" "condition.rb" "pin.rb" "file_attachment.rb" "promotion.rb" "widget.rb" "task_label.rb" "calendar_mute.rb" "item.rb" "filter.rb" "app_store_category.rb" "task.rb" "activity.rb" "hook.rb" "item_transaction.rb" "status.rb" "organization_membership.rb" "item_revision.rb" "organization_contact.rb" "contract_price.rb" "question_answer.rb" "subscription.rb" "application.rb" "invoice.rb" "reference.rb" "conversation.rb" "contract.rb" "voting.rb" "reminder.rb" "batch.rb" "user_mail.rb" "external_file.rb" "profile.rb" "contract_period.rb" "vote.rb" "contract_attribution.rb" "../" "user_status.rb" "o_auth.rb" "contract_user.rb" "importer.rb" "notification_group.rb" "referral.rb" "o_auth_scope.rb" "live.rb" "campaign.rb" "space_contact.rb" "promotion_group.rb" "email_subscription_setting.rb" "net_promoter_score.rb" "user.rb" "contract_accounting.rb" "promotion_group_member.rb" "grant.rb" "rating.rb" "notification.rb" "o_auth_client.rb" "organization_profile.rb" "linked_account_data.rb" "space.rb" "action.rb" "via.rb" "question.rb")
+
+ ("/home/jon/Code/Originate/devacurl/app/assets/stylesheets/bootstrap_overrides/" (21937 5654 419830 12000) "./" "jumbotron.sass" "forms.sass" "../")
+
+ ("/usr/share/man/en_AU/" (21815 36938 0 0) "./" "man1/" "../")
+
+ ("/usr/share/man/" (21954 19092 892473 13000) "ro/" "mhr/" "kk/" "ku/" "fr.ISO8859-1/" "fa/" "en_CA/" "nn/" "fr.UTF-8/" "bs/" "lv/" "he/" "ja/" "cs/" "./" "te/" "io/" "zh_HK/" "ar/" "hi/" "be/" "pt_BR/" "vi/" "hr/" "lt/" "man7/" "man3/" "zh_TW/" "ug/" "en_GB/" "az/" "ta/" "man4/" "eu/" "uk/" "bo/" "it/" "ru/" "sq/" "sl/" "en_AU/" "ml/" "pt/" "da/" "nb/" "fr/" "sr/" "et/" "pl.UTF-8/" "el/" "se/" "de.UTF-8/" "ca/" "km/" "ps/" "ms/" "man5/" "man1/" "sv/" "shn/" "sk/" "nl/" "pl/" "hu/" "../" "my/" "cy/" "de/" "fo/" "ko/" "th/" "oc/" "bn/" "man6/" "gl/" "man2/" "eo/" "si/" "bg/" "fy/" "ast/" "man8/" "fr_CA/" "gd/" "es/" "tr/" "zh_CN/" "fi/" "ca@valencia/" "pa/" "uz/" "id/")
+
+ ("/usr/local/man/man1/" (21855 63228 0 0) "node.1" "./" "../")
+
+ ("/usr/local/man/" (21855 63228 0 0) "./" "man1/" "../")
+
+ ("/usr/local/" (21966 35045 875942 326000) "heroku/" "src/" "./" "lib/" "LICENSE" "share/" "README.md" "man/" "etc/" "ChangeLog" "bin/" "include/" "sbin/" "../" "games/")
+
+ ("/home/jon/.emacs.d/" (21994 9895 518534 777000) ".mc-lists.el" "elpa/" "gforth.el" "ac-comphist.dat" "./" "abbrev_defs" ".git/" "url/" "auto-save-list/" "init.el" "opt/" "../" "custom.el" "ido.last")
+
+ ("/home/jon/.lein/" (21967 17663 991793 70000) "./" "repl-history" "../" "profiles.clj" "self-installs/")
+
+ ("/home/jon/Code/Langs/wombat-j/" (21966 39090 959288 860000) "LICENSE" "src/" "doc/" "./" ".git/" "notes/" "README.md" ".java-version" "../" "test/" "target/" "project.clj" ".gitignore")
+
+ ("/usr/share/" (21967 11750 218210 83000) "xsessions/" "desktop-base/" "indicators/" "gnome-mines/" "sgml-base/" "aisleriot/" "yelp-xsl/" "liblouis/" "telepathy/" "xfwm4/" "foo2qpdl/" "bash-completion/" "GeoIP/" "gtkhtml-4.0/" "misc/" "pulseaudio/" "vim/" "sounds/" "gtksourceview-3.0/" "pyshared/" "rlwrap/" "python-apt/" "guile/" "i18n/" "glib-2.0/" "GConf/" "update-manager/" "debhelper/" "ssl-cert/" "emacs24/" "doc-base/" "dbus-1/" "gnome-shell/" "aspell/" "fonts/" "orca/" "proj/" "mono/" "openmpi/" "dnsmasq-base/" "poppler/" "ant/" "gdal/" "mozilla/" "tracker/" "libparse-debianchangelog-perl/" "avahi/" "media-player-info/" "libquvi-scripts/" "mime-info/" "nano/" "gst-plugins-base/" "language-selector/" "usb-creator/" "xml/" "dictionaries-common/" "terminator/" "python-wxgtk2.8/" "rsyslog/" "git-core/" "mime/" "dotnet/" "file/" "xml-core/" "brasero/" "applications/" "zsh/" "mobile-broadband-provider-info/" "gstreamer-1.0/" "gstreamer-0.10/" "man-db/" "im-config/" "session-migration/" "libtool/" "netpbm/" "libc-bin/" "grub/" "gnome-tweak-tool/" "winetricks/" "gnome-session/" "libwacom/" "brltty/" "ubuntu-release-upgrader/" "orage/" "ca-certificates/" "directfb-1.2.10/" "xfce4/" "boostbook/" "totem/" "package-data-downloads/" "automake-1.14/" "mono-2.0/" "gnome-background-properties/" "binfmts/" "dconf/" "sysv-rc/" "gnome-bluetooth/" "racket/" "color/" "eog/" "itstool/" "m17n/" "accounts/" "groff/" "common-licenses/" "perl5/" "qtchooser/" "webkitgtk-3.0/" "clang/" "pam-configs/" "snmp/" "caribou/" "calendar/" "libexttextcat/" "locale/" "adduser/" "consolefonts/" "gnome-maps/" "postgresql-common/" "language-support/" "cups/" "adium/" "system-config-printer/" "backgrounds/" "app-install/" "farstream/" "polkit-1/" "gtk-engines/" "evolution-data-server/" "gdb/" "python3/" "seahorse/" "zenity/" "gcc-4.9/" "ibus/" "aclocal/" "llvm-3.5/" "gnome-mahjongg/" "fonts-droid/" "spamassassin/" "xdiagnose/" "gnome-settings-daemon-3.0/" "pygtk/" "samba/" "xscreensaver/" "mysql-common/" "aclocal-1.14/" "boost-build/" "yelp/" "pam/" "midi/" "perl/" "gnome-color-manager/" "evolution/" "dpkg/" "maven/" "libgphoto2/" "appdata/" "desktop-directories/" "python/" "sbt-launcher-packaging/" "p11-kit/" "apport/" "gettext/" "thumbnailers/" "jetty/" "intltool-debian/" "pkgconfig/" "ibus-table/" "Thunar/" "unity/" "apturl/" "gnome/" "gedit/" "org.gnome.Weather/" "yelp-tools/" "man/" "help-langpack/" "os-prober/" "plymouth/" "locale-langpack/" "dh-python/" "xul-ext/" "themes/" "vino/" "sgml/" "gnome-documents/" "application-registry/" "tcltk/" "lintian/" "et/" "libvisual-plugins-0.4/" "gnome-video-effects/" "hardening-includes/" "libgweather/" "idl/" "icons/" "file-roller/" "wine/" "gnupg/" "doc/" "insserv/" "cmake-3.0/" "autoconf/" "base-files/" "ubuntu-drivers-common/" "zoneinfo/" "purple/" "gdm/" "empathy/" "X11/" "fop/" "colord/" "update-notifier/" "lightdm/" "libreoffice/" "console-setup/" "deja-dup/" "consoletrans/" "upstart/" "ImageMagick-6/" "mimelnk/" "gnome-user-share/" "gitweb/" "libaudio2/" "ibus-pinyin/" "myspell/" "hplip/" "gconf/" "qt4/" "keyrings/" "cli-common/" "apt/" "shotwell/" "acpi-support/" "gcr-3/" "pnm2ppa/" "llvm-3.6/" "cogl/" "ghostscript/" "gnome-control-center/" "enchant/" "dict/" "locales/" "gnome-online-accounts/" "pixmaps/" "base-passwd/" "javascript/" "maven-repo/" "ca-certificates-java/" "pyzy/" "software-properties/" "language-tools/" "java-wrappers/" "simple-scan/" "fontconfig/" "chicken/" "hwdata/" "sushi/" "nm-applet/" "hal/" "kde4/" "gnome-2.0/" "gnome-vpn-properties/" "ubufox/" "libnm-gtk/" "foo2zjs/" "dns/" "alsa/" "djvu/" "java/" "emacs/" "debianutils/" "alsa-base/" "menu/" "initramfs-tools/" "nautilus-share/" "apt-xapian-index/" "gupnp-dlna-2.0/" "speech-dispatcher/" "oneconf/" "readline/" "help/" "build-essential/" "linux-sound-base/" "hunspell/" "rhythmbox/" "mythes/" "wallpapers/" "tabset/" "postgresql/" "liblangtag/" "gupnp-av/" "gtk-doc/" "vte/" "usb_modeswitch/" "systemd/" "hyphen/" "info/" "gvfs/" "mpi-default-dev/" "libsensors4/" "mousetweaks/" "bug/" "resolvconf/" "software-center/" "images/" "unattended-upgrades/" "playonlinux/" "zeitgeist/" "apps/" "rubygems-integration/" "iptables/" "debconf/" "ppd/" "icu/" "libgnomekbd/" "gnome-settings-daemon/" "evince/" "transmission/" "ufw/" "ppp/" "command-not-found/" "gnome-sudoku/" "xfce4-mixer/" "apt-file/" "pkg-config-crosswrapper" "grub-gfxpayload-lists/" "popularity-contest/" "libthai/" "gutenprint/" "indicator-application/" "grilo-plugins/" "../" "./")
+
+ ("/usr/include/c++/4.9.2/" (21882 9775 555363 390000) "numeric" "iosfwd" "list" "scoped_allocator" "stack" "typeinfo" "utility" "condition_variable" "type_traits" "queue" "climits" "ciso646" "cstdio" "./" "cstdint" "bitset" "cstdarg" "cstdlib" "memory" "cstdbool" "string" "sstream" "forward_list" "locale" "array" "stdexcept" "map" "ctgmath" "cassert" "unordered_set" "random" "decimal/" "shared_mutex" "system_error" "cerrno" "cwchar" "iomanip" "cwctype" "new" "atomic" "istream" "set" "thread" "ccomplex" "bits/" "vector" "cstring" "unordered_map" "deque" "chrono" "tuple" "cctype" "exception" "ratio" "cxxabi.h" "parallel/" "limits" "functional" "clocale" "fstream" "../" "ostream" "tgmath.h" "streambuf" "ext/" "cstdalign" "csignal" "initializer_list" "complex" "future" "tr2/" "cmath" "iostream" "typeindex" "profile/" "complex.h" "ctime" "cinttypes" "regex" "sun/" "experimental/" "ios" "csetjmp" "valarray" "fenv.h" "cfloat" "debug/" "iterator" "cfenv" "cstddef" "tr1/" "backward/" "algorithm" "mutex")
+
+ ("/usr/include/c++/4.9/" (21882 9775 555363 390000) "numeric" "iosfwd" "list" "scoped_allocator" "stack" "typeinfo" "utility" "condition_variable" "type_traits" "queue" "climits" "ciso646" "cstdio" "./" "cstdint" "bitset" "cstdarg" "cstdlib" "memory" "cstdbool" "string" "sstream" "forward_list" "locale" "array" "stdexcept" "map" "ctgmath" "cassert" "unordered_set" "random" "decimal/" "shared_mutex" "system_error" "cerrno" "cwchar" "iomanip" "cwctype" "new" "atomic" "istream" "set" "thread" "ccomplex" "bits/" "vector" "cstring" "unordered_map" "deque" "chrono" "tuple" "cctype" "exception" "ratio" "cxxabi.h" "parallel/" "limits" "functional" "clocale" "fstream" "../" "ostream" "tgmath.h" "streambuf" "ext/" "cstdalign" "csignal" "initializer_list" "complex" "future" "tr2/" "cmath" "iostream" "typeindex" "profile/" "complex.h" "ctime" "cinttypes" "regex" "sun/" "experimental/" "ios" "csetjmp" "valarray" "fenv.h" "cfloat" "debug/" "iterator" "cfenv" "cstddef" "tr1/" "backward/" "algorithm" "mutex")
+
+ ("/usr/include/c++/" (21882 9775 623363 388000) "4.9.2/" "./" "4.9/" "../")
+
+ ("/usr/include/" (21988 60878 139309 44000) "time.h" "gnu-versions.h" "wait.h" "termio.h" "misc/" "fts.h" "endian.h" "xf86drm.h" "openssl/" "stdio.h" "regex.h" "gshadow.h" "fmtmsg.h" "pwd.h" "mqueue.h" "langinfo.h" "search.h" "openmpi/" "gmpxx.h" "c++/" "mtd/" "ttyent.h" "ifaddrs.h" "stdc-predef.h" "dirent.h" "nss.h" "expat.h" "execinfo.h" "dialog.h" "signal.h" "./" "monetary.h" "boost/" "x86_64-linux-gnu/" "infiniband/" "argz.h" "pcre.h" "xcb/" "xfce4/" "semaphore.h" "libdrm/" "GLFW/" "pcreposix.h" "racket/" "xf86drmMode.h" "error.h" "dlg_colors.h" "clang/" "libgen.h" "pcrecpp.h" "arpa/" "resolv.h" "gc.h" "lastlog.h" "netrom/" "inttypes.h" "ucontext.h" "netax25/" "_G_config.h" "numa.h" "linux/" "cblas_f77.h" "crypt.h" "netiucv/" "pty.h" "pthread.h" "netrose/" "limits.h" "ctype.h" "argp.h" "llvm-3.5/" "python2.7/" "iconv.h" "err.h" "ltdl.h" "asm-generic/" "fstab.h" "com_err.h" "cpio.h" "dlg_config.h" "byteswap.h" "mntent.h" "unistd.h" "getopt.h" "GL/" "thread_db.h" "aliases.h" "pcre_stringpiece.h" "ftw.h" "dlg_keys.h" "obstack.h" "locale.h" "rdma/" "paths.h" "fnmatch.h" "python3.4m/" "memory.h" "clif.h" "values.h" "hwloc.h" "drm/" "et/" "features.h" "printf.h" "link.h" "sound/" "stdlib.h" "setjmp.h" "utmp.h" "tar.h" "uapi/" "mit-krb5/" "mcheck.h" "sgtty.h" "sudo_plugin.h" "video/" "envz.h" "alloca.h" "libintl.h" "xlocale.h" "rpc/" "X11/" "wctype.h" "wchar.h" "expat_external.h" "utmpx.h" "termios.h" "numacompat1.h" "libltdl/" "netpacket/" "errno.h" "gettext-po.h" "regexp.h" "llvm-c-3.6/" "zlib.h" "malloc.h" "aio.h" "dlfcn.h" "dbus-1.0/" "gnumake.h" "math.h" "gconv.h" "netatalk/" "reglib/" "netash/" "llvm-3.6/" "../" "ulimit.h" "cblas.h" "tgmath.h" "gc_cpp.h" "netipx/" "elf.h" "numaif.h" "syslog.h" "mpi/" "llvm-c-3.5/" "grp.h" "chicken/" "xorg/" "stdio_ext.h" "ustat.h" "protocols/" "netinet/" "spawn.h" "poll.h" "uchar.h" "wordexp.h" "xen/" "gc/" "syscall.h" "sysexits.h" "assert.h" "net/" "netdb.h" "re_comp.h" "complex.h" "readline/" "rpcsvc/" "pcrecpparg.h" "string.h" "stdint.h" "postgresql/" "autosprintf.h" "pcre_scanner.h" "libio.h" "sched.h" "ar.h" "fenv.h" "strings.h" "neteconet/" "nfs/" "stropts.h" "utime.h" "glob.h" "fcntl.h" "stab.h" "hwloc/" "nl_types.h" "shadow.h" "scsi/")
+
+ ("/home/jon/Code/Vendor/clojure/src/jvm/clojure/lang/" (21967 49949 443886 138000) "Reduced.java" "LockingTransaction.java" "AFunction.java" "ILookupSite.java" "Concat.java" "ArrayChunk.java" "SeqEnumeration.java" "DynamicClassLoader.java" "Indexed.java" "ILookupThunk.java" "ITransientVector.java" "ASeq.java" "MapEntry.java" "PersistentQueue.java" "IReduce.java" "Atom.java" "Binding.java" "ARef.java" "IDeref.java" "ProxyHandler.java" "IKeywordLookup.java" "PersistentVector.java" "Box.java" "IExceptionInfo.java" "Range.java" "ALazySeq.java" "IType.java" "Cycle.java" "Ref.java" "./" "IFn.java" "Agent.java" "Keyword.java" "BigInt.java" "ChunkBuffer.java" "ISeq.java" "IBlockingDeref.java" "TaggedLiteral.java" "EnumerationSeq.java" "IPersistentMap.java" "Repeat.java" "RT.java" "PersistentArrayMap.java" "Delay.java" "Reversible.java" "IPending.java" "EdnReader.java" "KeywordLookupSite.java" "package.html" "FnLoaderThunk.java" "Named.java" "IndexedSeq.java" "IReference.java" "ChunkedCons.java" "Iterate.java" "LazilyPersistentVector.java" "Murmur3.java" "Intrinsics.java" "ITransientMap.java" "Symbol.java" "ReaderConditional.java" "IMapIterable.java" "ITransientAssociative.java" "Var.java" "Namespace.java" "Reflector.java" "MapEquivalence.java" "WarnBoxedMath.java" "APersistentMap.java" "IHashEq.java" "IRecord.java" "Compile.java" "Compiler.java" "IEditableCollection.java" "Sorted.java" "PersistentHashMap.java" "Associative.java" "MethodImplCache.java" "LongRange.java" "PersistentStructMap.java" "IMeta.java" "TransactionalHashMap.java" "AReference.java" "IteratorSeq.java" "IChunkedSeq.java" "ArityException.java" "IPersistentVector.java" "ITransientCollection.java" "Settable.java" "TransformerIterator.java" "Obj.java" "PersistentHashSet.java" "IObj.java" "ArrayIter.java" "IPersistentCollection.java" "IPersistentStack.java" "PersistentTreeSet.java" "AFn.java" "IPersistentList.java" "PersistentList.java" "Volatile.java" "RestFn.java" "IReduceInit.java" "APersistentSet.java" "Fn.java" "ILookup.java" "Sequential.java" "RecordIterator.java" "LineNumberingPushbackReader.java" "Ratio.java" "MultiFn.java" "../" "Numbers.java" "SeqIterator.java" "ExceptionInfo.java" "StringSeq.java" "LispReader.java" "LazySeq.java" "Script.java" "PersistentTreeMap.java" "ITransientSet.java" "IPersistentSet.java" "ArraySeq.java" "IChunk.java" "ATransientMap.java" "Seqable.java" "XMLHandler.java" "Cons.java" "IAtom.java" "IProxy.java" "IRef.java" "Counted.java" "ATransientSet.java" "IMapEntry.java" "APersistentVector.java" "Util.java" "AMapEntry.java" "Repl.java")
+
+ ("/home/jon/Code/Vendor/clojure/src/clj/clojure/core/" (21945 33562 576955 406000) "./" "reducers.clj" "protocols.clj" "../")
+
+ ("/home/jon/Code/Vendor/clojure/src/clj/clojure/" (21967 49949 439886 127000) "main.clj" "genclass.clj" "core_print.clj" "reflect/" "core.clj" "repl.clj" "./" "java/" "core_proxy.clj" "pprint/" "inspector.clj" "test.clj" "data.clj" "xml.clj" "core_deftype.clj" "parallel.clj" "set.clj" "core/" "edn.clj" "string.clj" "instant.clj" "../" "walk.clj" "pprint.clj" "uuid.clj" "template.clj" "test/" "stacktrace.clj" "zip.clj" "gvec.clj" "reflect.clj")
+
+ ("/home/jon/Code/Vendor/clojure/" (21967 49954 763899 674000) "src/" "epl-v10.html" "doc/" "maven-classpath.properties" "build.xml" "clojure.iml" "readme.txt" "./" ".git/" "changes.md" "maven-classpath" "0001-Define-clojure.lang.Concat.patch" "pom.xml" ".dir-locals.el" "antsetup.sh" "../" "test/" "target/" ".idea/" ".gitignore" "CONTRIBUTING.md")
+
+ ("/home/jon/Code/Langs/lambder/" (21995 26922 760002 877000) "./" "sample.lc" "main.c" "../")
+
+ ("/home/jon/Code/Langs/" (21995 17086 950587 477000) "wombat-j/" "funcy/" "lambder/" "./" "../" "persistent_map/")
+
+ ("/home/jon/Code/Langs/wombat-j/src/scm/" (21966 35438 570637 869000) "./" "core.scm" "../")
+
+ ("/home/jon/Code/Langs/wombat-j/src/clj/wombat/" (21965 28736 68004 700000) "printer.clj" "compiler.clj" "reader.clj" "core.clj" "./" "datatypes.clj" "compiler_defclass.clj" "../" "empty.clj")
+
+ ("/home/jon/Code/SimpleLighting/source/SimpleLighting/data/textures/" (20249 63112 0 0) "./" "ground.jpg" "rust.jpg" "../" "sun.jpg" "box.jpg")
+
+ ("/home/jon/Code/ChainOfCommand/CoC_Client/src/java/net/refugesystems/coc/client/math/" (21904 46584 271128 495000) "./" "Matrix4f.java" "Vector4f.java" "Vector3f.java" "Matrix2f.java" "Matrix3f.java" "../" "Vector2f.java")
+
+ ("/home/jon/Code/SimpleLighting/source/SimpleLighting/data/shaders/" (20249 49112 0 0) "./" "../" "shader.frag" "shader.vert")
+
+ ("/home/jon/Code/SimpleLighting/source/SimpleLighting/" (21931 47108 654490 432000) "openGLControl.cpp" "win_OpenGLApp.h" "renderScene.cpp" "08.) Simple Lighting.vcproj" "win_OpenGLApp.cpp" "common_header.h" "./" "geometry.h" "shaders.h" "walkingCamera.cpp" "texture.cpp" "shaders.cpp" "walkingCamera.h" "openGLControl.h" "texture.h" "vertexBufferObject.cpp" "vertexBufferObject.h" "../" "static_geometry.h" "data/" "static_geometry.cpp")
+
+ ("/home/jon/Code/ChainOfCommand/CoC_Client/src/java/net/refugesystems/coc/client/" (21931 47181 534493 727000) "Face.java" "CoC_BufferAllocator.java" "Utils.java" "WalkingCamera.java" "Texture.java" "./" "App.java" "Model.java" "Shader.java" "math/" "OBJLoader.java" "ShaderProgram.java" "../" "StaticGeometry.java" "VertexBufferObject.java")
+
+ ("/home/jon/Code/ChainOfCommand/CoC_Client/" (21922 64643 870514 85000) "LICENSE" "src/" "doc/" "./" ".git/" "README.md" "resources/" "LGPL.txt" "../" "target/" "project.clj" ".gitignore")
+
+ ("/home/jon/Code/Experiments/pthread/" (21950 39446 260539 304000) "threads.c" "./" "../" "threads")
+
+ ("/home/jon/Code/ChainOfCommand/gdx/coc_client/desktop/src/net/refugesystems/coc/client/desktop/" (21950 42618 432055 101000) "./" "../" "DesktopLauncher.java")
+
+ ("/home/jon/Code/ChainOfCommand/gdx/coc-clj/desktop/" (21955 47371 947701 551000) "src/" "src-common/" "./" "resources/" "../" "target/" "project.clj")
+
+ ("/usr/share/alsa/" (21954 20295 161187 929000) "sndo-mixer.alisp" "./" "cards/" "ucm/" "smixer.conf" "init/" "speaker-test/" "alsa.conf.d/" "../" "pulse-alsa.conf" "alsa.conf" "pcm/" "alsa.conf~" "utils.sh")
+
+ ("/home/jon/Code/ChainOfCommand/gdx/coc-clj/desktop/src-common/coc_clj/" (21955 47283 855703 939000) "core.clj" "./" "../")
+
+ ("/home/jon/Code/ChainOfCommand/gdx/coc-clj/desktop/src/coc_clj/core/" (21955 46195 203733 444000) "desktop_launcher.clj" "./" "../")
+
+ ("/home/jon/Code/Originate/Attack2015/attack_2015/" (21956 248 374735 28000) "params.json" "images/" "javascripts/" "./" ".git/" "index.html" "README.md" "stylesheets/" "../" "#index.html#")
+
+ ("/home/jon/Code/Langs/wombat-j/src/clj/" (21957 37943 766462 259000) "./" "wombat/" "../")
+
+ ("/home/jon/Code/Langs/wombat-j/src/" (21957 37943 766462 259000) "clj/" "./" "scm/" "jvm/" "../")
+
+ ("/home/jon/Code/Langs/funcy/src/funcy/" (21957 12002 546271 858000) "curry.clj" "core.clj" "./" "../")
+
+ ("/home/jon/Code/Langs/funcy/" (21957 23265 648450 535000) "LICENSE" "src/" "doc/" "./" "README.md" ".hgignore" "resources/" "../" "test/" "target/" "project.clj" ".gitignore")
+
+ ("/home/jon/Code/Originate/Attack2015/attack_2015/javascripts/" (21955 65515 175911 496000) "./" "jquery.js" "seat-selector.js" "main.js" "../")
+
+ ("/home/jon/Code/Originate/Attack2015/" (21955 65390 958833 55000) "js.js" "./" ".git/" "index.html" "attack_2015/" "../" "css.css" "jquery-1.11.3.js")
+
+ ("/home/jon/Code/Originate/" (21955 63517 317182 697000) "./" "devacurl/" "../" "Attack2015/")
+
+ ("/home/jon/Code/ChainOfCommand/gdx/coc_client/core/src/net/refugesystems/coc/client/" (21950 43642 862833 665000) "GDXClient.java" "./" "Drop.java" "MainMenuScreen.java" "EndScreen.java" "../")
+
+ ("/home/jon/Code/ChainOfCommand/gdx/coc_client/core/" (21950 40974 697238 541000) "src/" "./" "build.gradle" "build/" "assets/" "../")
+
+ ("/home/jon/Code/ChainOfCommand/gdx/coc_client/desktop/" (21950 41175 884897 646000) "src/" "./" "build.gradle" "build/" "../")
+
+ ("/home/jon/Code/ChainOfCommand/CoC_Universe-Server/CoC_Universe-Server/" (21902 41604 152067 252000) "src/" "build.xml" "CoCUniverseServer.jar" "./" ".project" ".classpath" ".settings/" ".externalToolBuilders/" "../" "build_server.xml" "target/" ".gitignore" "bin/")
+
+ ("/home/jon/Code/ChainOfCommand/CoC_Universe-Server/CoC_Universe-Server/src/net/refugesystems/coc/universe/server/clients/communication/" (21896 45110 440245 467000) "PrimaryStream.java" "./" "ClientListener.java" "PlayerRegistration.java" "../")
+
+ ("/usr/" (21815 36432 0 0) "local/" "src/" "./" "lib/" "share/" "bin/" "include/" "sbin/" "../" "games/")
+
+ ("/home/jon/Code/ChainOfCommand/grobots/src/grobots/" (21950 39451 884123 707000) "core.clj" "./" "../")
+
+ ("/home/jon/Code/ChainOfCommand/grobots/" (21950 37409 769578 493000) "LICENSE" "src/" "doc/" ".lein-repl-history" "./" ".git/" "README.md" ".hgignore" "resources/" ".dir-locals.el" "../" "test/" "target/" "project.clj" ".gitignore")
+
+ ("/home/jon/Code/ChainOfCommand/gdx/coc-clj/desktop/src/coc_clj/" (21951 27037 410339 535000) "./" "core/" "../")
+
+ ("/home/jon/Code/ChainOfCommand/gdx/coc-clj/desktop/src-common/" (21951 27037 410339 535000) "./" "coc_clj/" "../")
+
+ ("/home/jon/Code/ChainOfCommand/gdx/coc-clj/desktop/src/" (21951 27037 410339 535000) "./" "coc_clj/" "../")
+
+ ("/home/jon/Code/ChainOfCommand/gdx/coc-clj/ios/" (21951 27037 506339 173000) "src/" "./" "libs/" "../" "Info.plist.xml" "project.clj")
+
+ ("/home/jon/Code/ChainOfCommand/gdx/coc-clj/" (21951 27037 506339 173000) "./" "desktop/" "android/" "README.md" "../" "ios/" ".gitignore")
+
+ ("/home/jon/Code/ChainOfCommand/gdx/" (21951 27037 406339 550000) "./" "coc_client/" "gdx-setup.jar" "../" "coc-clj/")
+
+ ("/home/jon/Code/ChainOfCommand/gdx/coc_client/core/src/net/refugesystems/coc/" (21950 38860 507806 180000) "./" "../" "client/")
+
+ ("/home/jon/Code/ChainOfCommand/gdx/coc_client/core/src/net/refugesystems/" (21950 38860 507806 180000) "./" "coc/" "../")
+
+ ("/home/jon/Code/ChainOfCommand/gdx/coc_client/core/src/net/" (21950 38860 507806 180000) "refugesystems/" "./" "../")
+
+ ("/home/jon/Code/ChainOfCommand/gdx/coc_client/core/src/" (21950 38860 507806 180000) "./" "net/" "../")
+
+ ("/home/jon/Code/ChainOfCommand/gdx/coc_client/desktop/src/net/refugesystems/coc/client/" (21950 38860 511805 885000) "./" "desktop/" "../")
+
+ ("/home/jon/Code/ChainOfCommand/gdx/coc_client/desktop/src/net/refugesystems/coc/" (21950 38860 511805 885000) "./" "../" "client/")
+
+ ("/home/jon/Code/ChainOfCommand/gdx/coc_client/desktop/src/net/refugesystems/" (21950 38860 511805 885000) "./" "coc/" "../")
+
+ ("/home/jon/Code/ChainOfCommand/gdx/coc_client/desktop/src/net/" (21950 38860 511805 885000) "refugesystems/" "./" "../")
+
+ ("/home/jon/Code/ChainOfCommand/gdx/coc_client/desktop/src/" (21950 38860 511805 885000) "./" "net/" "../")
+
+ ("/home/jon/Code/ChainOfCommand/gdx/coc_client/" (21950 39460 131514 206000) "gradle.properties" ".gradle/" "./" ".git/" "build.gradle" "settings.gradle" "gradlew.bat" "desktop/" "core/" "../" "gradlew" "gradle/" ".gitignore")
+
+ ("/home/jon/Code/ChainOfCommand/" (21950 38661 746409 641000) "CoC_Universe-Server/" "./" "CoC_Universe-Core/" ".metadata/" "gdx/" "CoC_Core/" "CoC_Client/" "../" "asdf/" "grobots/")
+
+ ("/home/jon/Code/" (21950 37423 201689 745000) "Vendor/" "SimpleLighting/" "Langs/" "./" "Originate/" "opengl-playground/" "webtoot/" "Walker/" "../" "ChainOfCommand/" "hoplon-demos/" "Experiments/" "podio-rb/")
+
+ ("/home/jon/Code/Walker/" (21950 37423 577795 152000) "sprite.rb" "./" ".git/" "world.rb" "world_object.rb" "README.md" "player.png" "Gemfile.lock" "go_around.rb" "../" ".rvmrc" "Gemfile" "screen.rb")
+
+ ("/home/jon/Code/Vendor/clojure/src/clj/" (21945 33562 576955 406000) "./" "../" "clojure/")
+
+ ("/home/jon/Code/Experiments/" (21945 38932 486776 136000) "./" "ghcjs-toy/" "../" "pthread/")
+
+ ("/home/jon/Code/Vendor/clojure/src/jvm/clojure/java/api/" (21945 33562 588955 756000) "Clojure.java" "./" "package.html" "../")
+
+ ("/home/jon/Code/Vendor/clojure/src/jvm/clojure/java/" (21945 33562 588955 756000) "./" "../" "api/")
+
+ ("/home/jon/Code/ChainOfCommand/CoC_Core/CoC_Core/src/net/refugesystems/coc/core/io/network/" (21896 45079 405635 74000) "TransmissionCodes.java" "./" "packets/" "GeneralSerialization.java" "../")
+
+ ("/home/jon/Code/ChainOfCommand/CoC_Core/CoC_Core/src/net/refugesystems/coc/core/tests/cases/" (21898 39047 478499 27000) "./" "CASE_DataSerialization.java" "#CASE_DataSerialization.java#" "../" "CASE_EntityTrig.java")
+
+ ("/home/jon/Code/ChainOfCommand/CoC_Client/resources/shaders/" (21920 5045 412697 986000) "./" "../" "shader.frag" "shader.vert")
+
+ ("/home/jon/Code/Originate/devacurl/lib/tasks/" (21943 46422 943746 162000) ".keep" "./" "podio.rake" "../")
+
+ ("/home/jon/Code/Originate/devacurl/app/controllers/" (21943 57164 567920 88000) "podio_controller.rb" "./" "application_controller.rb" "finder_controller.rb" "../")
+
+ ("/home/jon/Code/Originate/devacurl/app/assets/stylesheets/" (21943 57164 567920 88000) "./" "finder/" "variables/" "application.sass" "bootstrap_overrides/" "variables.sass" "../")
+
+ ("/home/jon/Code/Originate/devacurl/spec/workers/" (21943 46422 943746 162000) "actions/" "./" "podio_worker_spec.rb" "../")
+
+ ("/home/jon/Code/Originate/devacurl/app/workers/" (21943 46422 939746 338000) "actions/" "./" "podio_worker.rb" "../")
+
+ ("/home/jon/Code/Originate/devacurl/app/views/finder/" (21943 57164 567920 88000) "find-a-stylist.html.erb" "harness.js.erb" "_results_map.slim" "./" "index.slim" "results.slim" "_results_location_summary.slim" "_salon_summary.slim" "../" "_search_bar.slim")
+
+ ("/home/jon/Code/Originate/devacurl/app/views/application/" (21943 57164 567920 88000) "_html5_shim.slim" "_flash.slim" "./" "_head.slim" "_footer.slim" "_header.slim" "../")
+
+ ("/home/jon/Code/Originate/devacurl/app/assets/javascripts/" (21943 57164 567920 88000) "application.coffee" "frame_switcher.module.coffee" "google_maps_initializer.module.coffee" "./" "../")
+
+ ("/home/jon/Code/Originate/devacurl/spec/workers/actions/" (21943 46422 943746 162000) "create_from_podio_item_spec.rb" "./" "podio_item_action_spec.rb" "../" "update_from_podio_item_spec.rb" "delete_from_podio_action_spec.rb")
+
+ ("/home/jon/Code/Originate/devacurl/spec/fixtures/" (21943 46422 943746 162000) "./" "podio_item.rb" "../")
+
+ ("/home/jon/Code/Originate/devacurl/db/" (21943 46422 943746 162000) "migrate/" "./" "seeds.rb" "schema.rb" "../")
+
+ ("/home/jon/Code/Originate/devacurl/db/migrate/" (21943 46422 943746 162000) "./" "20150717180419_stylist_has_location.rb" "20150722181221_make_location_full_address_text.rb" "20150715201932_expand_locations.rb" "../" "20150717212853_remove_salons.rb" "20150713161215_create_locations.rb" "20150713165920_create_salons.rb" "20150713175854_create_stylists.rb")
+
+ ("/home/jon/Code/Originate/devacurl/spec/" (21943 57164 567920 88000) "teaspoon_env.rb" "workers/" "factories.rb" "rails_helper.rb" "javascripts/" "models/" "./" "fixtures/" "support/" "spec_helper.rb" "../" "decorators_spec_helper.rb" "decorators/" "models_spec_helper.rb")
+
+ ("/home/jon/Code/Originate/devacurl/spec/models/" (21943 57164 567920 88000) "./" "stylist_spec.rb" "../" "location_search_spec.rb" "model_for_podio_item_spec.rb" "location_spec.rb")
+
+ ("/home/jon/Code/Vendor/clojure/src/jvm/clojure/" (21945 33562 596955 989000) "./" "java/" "main.java" "lang/" "asm/" "../")
+
+ ("/home/jon/Code/Vendor/clojure/src/jvm/" (21945 33562 584955 639000) "./" "../" "clojure/")
+
+ ("/home/jon/Code/Vendor/clojure/src/" (21945 33562 596955 989000) "clj/" "./" "assembly/" "jvm/" "resources/" "../" "script/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

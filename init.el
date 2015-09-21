@@ -27,7 +27,10 @@
 ;(add-hook 'after-init-hook 'global-company-mode)
 
 (setq geiser-guile-load-init-file-p t)
-;
+
+(global-unset-key (kbd "C-z"))
+(global-set-key (kbd "C-x C-k") 'ido-kill-buffer)
+
 ;(add-to-list 'load-path "/Users/jon/.emacs.d")
 (autoload 'forth-mode "gforth.el")
 (autoload 'forth-block-mode "gforth.el")
@@ -63,7 +66,7 @@
  kept-old-versions 2
  version-control t)
 
-(let ((path '("/home/jon/local/bin"
+(let ((path '("/home/jon/.local/bin"
               "/home/jon/.cabal/bin"
               "/usr/local/bin"
               "/usr/local/sbin"

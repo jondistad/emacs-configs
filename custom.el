@@ -15,7 +15,10 @@
  '(magit-use-overlays nil)
  '(safe-local-variable-values
    (quote
-    ((fill-width . 90)
+    ((clojure-local-indents
+      (gl-begin 1)
+      (gl-statics defun))
+     (fill-width . 90)
      (ffip-additional-patterns "*.java")
      (clojure-local-indents
       (->listener defun))

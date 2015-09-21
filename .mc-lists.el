@@ -3,8 +3,10 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        c-electric-colon
         c-electric-delete-forward
         c-electric-paren
+        c-electric-semi&comma
         c-electric-star
         coffee-dedent-line-backspace
         company-ignore
@@ -14,7 +16,10 @@
         org-delete-char
         orgtbl-hijacker-command-102
         paredit-backward-kill-word
+        paredit-forward-delete
         paredit-forward-kill-word
+        paredit-splice-sexp
+        yaml-electric-backspace
         ))
 
 (setq mc/cmds-to-run-once
