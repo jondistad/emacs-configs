@@ -26,6 +26,8 @@
 
 ;(add-hook 'after-init-hook 'global-company-mode)
 
+(setq require-final-newline 'visit-save)
+
 (setq geiser-guile-load-init-file-p t)
 
 (global-unset-key (kbd "C-z"))
@@ -70,12 +72,14 @@
               "/home/jon/.cabal/bin"
               "/usr/local/bin"
               "/usr/local/sbin"
+              "/opt/ghc/7.10.2/bin"
               "/usr/bin"
               "/bin"
               "/usr/sbin"
               "/sbin")))
   (setq exec-path (delete-dups (copy-sequence (append path exec-path))))
   (setenv "PATH" (mapconcat 'identity path '":")))
+(setenv "JAVA_HOME" "/usr/lib/jvm/java-8-openjdk-amd64")
 ;(setenv "SCHEMEHEAPDIRS" "/Users/jon/local/lib/csv%v/%m")
 ;(setenv "NODE_PATH" "/Users/jon/local/opt/node/lib/node_modules")
 ;(setenv "LD_LIBRARY_PATH" "/usr/local/Cellar/llvm/3.5.0/lib") ; Necessary to dynamically load clang/llvm in guile
@@ -102,6 +106,11 @@
 
 (when (eq system-type 'darwin)
   (setq ispell-program-name "/usr/local/bin/aspell"))
+
+(require 'ensime)
+(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
+(add-hook 'scala-mode-hook #'yas-minor-mode)
+;; (define-key company-active-map [tab] nil)
 
 (eval-after-load 'paredit
   '(progn

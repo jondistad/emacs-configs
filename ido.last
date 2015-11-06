@@ -2,6 +2,53 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/jon/Code/Originate/BCG/somatix/customerInfoService/src/main/scala/" . "services/")
+ ("/home/jon/Code/Originate/BCG/somatix/customerInfoService/src/main/" . "scala/")
+ ("/home/jon/Code/Originate/BCG/somatix/customerInfoService/src/" . "main/")
+ ("/home/jon/Code/Originate/BCG/somatix/customerInfoService/" . "src/")
+ ("/home/jon/Code/Experiments/gifdecoder/" . "data/")
+ ("/home/jon/.local/share/" . "applications/")
+ ("/home/jon/Code/Originate/BCG/somatix/common/src/main/scala/base/" . "streams/")
+ ("/home/jon/Code/Originate/BCG/somatix/common/src/main/scala/aws/" . "kinesis/")
+ ("/home/jon/Code/Originate/BCG/somatix/common/src/main/scala/" . "util/")
+ ("/home/jon/Code/Originate/BCG/somatix/common/src/main/" . "scala/")
+ ("/home/jon/Code/Originate/BCG/somatix/common/src/" . "main/")
+ ("/home/jon/Code/Originate/BCG/somatix/common/" . "src/")
+ ("/home/jon/Code/ChainOfCommand/Invocation-Isle/Invocation Isle/src/net/refugesystems/ii/common/" . "packet/")
+ ("/home/jon/Code/ChainOfCommand/Invocation-Isle/Invocation Isle/src/net/refugesystems/ii/" . "client/")
+ ("/home/jon/Code/ChainOfCommand/Invocation-Isle/Invocation Isle/src/net/refugesystems/" . "ii/")
+ ("/home/jon/Code/ChainOfCommand/Invocation-Isle/Invocation Isle/src/net/" . "refugesystems/")
+ ("/home/jon/Code/ChainOfCommand/Invocation-Isle/Invocation Isle/src/" . "net/")
+ ("/home/jon/Code/ChainOfCommand/Invocation-Isle/Invocation Isle/" . "src/")
+ ("/home/jon/Code/ChainOfCommand/Invocation-Isle/" . "Invocation Isle/")
+ ("/home/jon/Code/ChainOfCommand/RSCommons/RefugeCommons/src/net/refugesystems/commons/test/" . "tests/")
+ ("/home/jon/Code/ChainOfCommand/RSCommons/RefugeCommons/src/net/refugesystems/commons/" . "communication/")
+ ("/home/jon/Code/ChainOfCommand/RSCommons/RefugeCommons/src/net/refugesystems/" . "commons/")
+ ("/home/jon/Code/ChainOfCommand/RSCommons/RefugeCommons/src/net/" . "refugesystems/")
+ ("/home/jon/Code/ChainOfCommand/RSCommons/RefugeCommons/src/" . "net/")
+ ("/home/jon/Code/ChainOfCommand/RSCommons/RefugeCommons/test/images/" . "ii/")
+ ("/home/jon/Code/ChainOfCommand/RSCommons/RefugeCommons/test/" . "images/")
+ ("/home/jon/Code/ChainOfCommand/RSCommons/RefugeCommons/" . "src/")
+ ("/home/jon/Code/ChainOfCommand/RSCommons/" . "RefugeCommons/")
+ ("/home/jon/Code/Experiments/haskell/" . "evil/")
+ ("/home/jon/Code/Experiments/clojure/listthing/src/" . "listthing/")
+ ("/home/jon/Code/Experiments/clojure/listthing/" . "src/")
+ ("/home/jon/Code/Experiments/clojure/" . "listthing/")
+ ("/home/jon/Code/ChainOfCommand/Revolt/Client/desktop/src/main/" . "scala/")
+ ("/home/jon/Code/ChainOfCommand/Revolt/Client/desktop/src/" . "main/")
+ ("/home/jon/Code/ChainOfCommand/Revolt/Client/desktop/" . "src/")
+ ("/home/jon/Code/ChainOfCommand/Revolt/Client/project/" . "project/")
+ ("/home/jon/Code/ChainOfCommand/Revolt/Client/core/src/main/" . "scala/")
+ ("/home/jon/Code/ChainOfCommand/Revolt/Client/core/src/" . "main/")
+ ("/home/jon/Code/ChainOfCommand/Revolt/Client/core/" . "src/")
+ ("/home/jon/Code/ChainOfCommand/Revolt/Client/" . "desktop/")
+ ("/home/jon/Code/ChainOfCommand/Revolt/" . "Client/")
+ ("/home/jon/Code/Originate/BCG/somatix/emailService/src/main/" . "scala/")
+ ("/home/jon/Code/Originate/BCG/somatix/emailService/src/" . "main/")
+ ("/home/jon/Code/Originate/BCG/somatix/emailService/" . "src/")
+ ("/home/jon/Code/Originate/BCG/somatix/" . "customerInfoService/")
+ ("/home/jon/.sbt/" . "0.13/")
+ ("/home/jon/Code/Originate/BCG/" . "somatix/")
  ("/usr/include/" . "c++/")
  ("/usr/share/man/" . "en_AU/")
  ("/usr/local/man/" . "man1/")
@@ -34,7 +81,7 @@
  ("/home/jon/Code/ChainOfCommand/gdx/coc_client/" . "core/")
  ("/home/jon/Code/ChainOfCommand/gdx/" . "coc_client/")
  ("/home/jon/Code/Vendor/clojure/src/clj/" . "clojure/")
- ("/home/jon/Code/Experiments/" . "pthread/")
+ ("/home/jon/Code/Experiments/" . "gifdecoder/")
  ("/home/jon/Code/Vendor/clojure/src/jvm/clojure/java/" . "api/")
  ("/home/jon/Code/Vendor/clojure/src/jvm/clojure/" . "lang/")
  ("/home/jon/Code/Vendor/clojure/src/jvm/" . "clojure/")
@@ -63,7 +110,7 @@
  ("/home/jon/Code/Originate/devacurl/spec/" . "models/")
  ("/home/jon/Code/Originate/devacurl/app/" . "models/")
  ("/home/jon/Code/Originate/devacurl/" . "app/")
- ("/home/jon/Code/Originate/" . "devacurl/")
+ ("/home/jon/Code/Originate/" . "BCG/")
  ("/home/jon/Code/SimpleLighting/source/SimpleLighting/" . "data/")
  ("/home/jon/Code/ChainOfCommand/CoC_Client/src/java/net/refugesystems/coc/client/" . "math/")
  ("/home/jon/Code/SimpleLighting/source/SimpleLighting/data/" . "shaders/")
@@ -96,22 +143,54 @@
  ("/home/jon/Code/ChainOfCommand/CoC_Core/CoC_Core/" . "src/")
  ("/home/jon/Code/ChainOfCommand/CoC_Core/" . "CoC_Core/")
  ("/home/jon/Code/ChainOfCommand/CoC_Universe-Server/" . "CoC_Universe-Server/")
- ("/home/jon/Code/ChainOfCommand/" . "gdx/")
+ ("/home/jon/Code/ChainOfCommand/" . "Invocation-Isle/")
  ("/home/jon/Code/" . "Originate/")
  ("/home/jon/" . "Code/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/jon/Code/Originate/BCG/somatix/customerInfoService/src/main/scala/services/"
+ "/home/jon/Code/Originate/BCG/somatix/customerInfoService/src/main/scala/"
+ "/home/jon/Code/Originate/BCG/somatix/common/src/main/scala/util/"
+ "/home/jon/Code/Experiments/gifdecoder/data/"
+ "/home/jon/Code/Experiments/gifhaskell/"
+ "/home/jon/.emacs.d/"
+ "/home/jon/Code/Experiments/gifdecoder/test/"
+ "/home/jon/Code/Experiments/gifdecoder/"
+ "/home/jon/.local/share/applications/"
+ "/home/jon/"
+ "/home/jon/Code/Originate/BCG/somatix/common/src/main/scala/base/streams/"
+ "/home/jon/Code/Originate/BCG/somatix/common/src/main/scala/aws/kinesis/"
+ "/home/jon/Code/Originate/BCG/somatix/common/src/main/scala/"
+ "/home/jon/Code/Originate/BCG/somatix/common/src/main/resources/"
+ "/home/jon/.aws/"
+ "/home/jon/Code/ChainOfCommand/RSCommons/RefugeCommons/src/net/refugesystems/commons/communication/"
+ "/home/jon/Code/ChainOfCommand/Invocation-Isle/Invocation Isle/src/net/refugesystems/ii/client/"
+ "/home/jon/Code/ChainOfCommand/Invocation-Isle/Invocation Isle/src/net/refugesystems/ii/common/packet/"
+ "/home/jon/Code/ChainOfCommand/RSCommons/RefugeCommons/src/net/refugesystems/commons/test/tests/"
+ "/home/jon/Code/ChainOfCommand/RSCommons/RefugeCommons/src/net/refugesystems/commons/test/objects/"
+ "/home/jon/Code/Experiments/haskell/"
+ "/home/jon/Code/Vendor/clojure/src/jvm/clojure/lang/"
+ "/home/jon/Code/Vendor/clojure/src/clj/clojure/"
+ "/home/jon/Code/Experiments/haskell/evil/"
+ "/home/jon/Code/Experiments/clojure/listthing/src/listthing/"
+ "/home/jon/Code/Experiments/clojure/listthing/"
+ "/home/jon/Code/Experiments/pthread/"
+ "/home/jon/Code/ChainOfCommand/Revolt/Client/core/src/main/scala/"
+ "/home/jon/Code/ChainOfCommand/Revolt/Client/desktop/src/main/scala/"
+ "/home/jon/Code/Originate/BCG/somatix/"
+ "/home/jon/Code/Originate/BCG/somatix/project/"
+ "/home/jon/Code/ChainOfCommand/Revolt/Client/project/"
+ "/home/jon/Code/ChainOfCommand/Revolt/Client/core/"
+ "/home/jon/Code/Originate/BCG/somatix/emailService/src/test/scala/"
+ "/home/jon/Code/Originate/BCG/somatix/emailService/src/main/scala/"
  "/home/jon/Code/Originate/devacurl/app/models/"
  "/home/jon/Code/Originate/devacurl/config/"
  "/usr/include/c++/4.9.2/"
  "/usr/include/"
  "/home/jon/Code/Langs/persistent_map/"
- "/home/jon/"
  "/home/jon/Code/Vendor/clojure/"
- "/home/jon/Code/Vendor/clojure/src/jvm/clojure/lang/"
- "/home/jon/Code/Vendor/clojure/src/clj/clojure/"
  "/home/jon/Code/Langs/wombat-j/src/scm/"
  "/home/jon/Code/Langs/wombat-j/src/clj/wombat/"
  "/home/jon/Code/Langs/wombat-j/"
@@ -121,255 +200,223 @@
  "/home/jon/Code/ChainOfCommand/gdx/coc_client/core/src/net/refugesystems/coc/client/"
  "/home/jon/Code/ChainOfCommand/gdx/coc-clj/desktop/src/coc_clj/core/"
  "/home/jon/Code/ChainOfCommand/gdx/coc-clj/desktop/src-common/coc_clj/"
- "/usr/share/alsa/"
- "/home/jon/Code/ChainOfCommand/grobots/src/grobots/"
- "/home/jon/Code/ChainOfCommand/gdx/coc-clj/desktop/"
- "/home/jon/Code/ChainOfCommand/gdx/coc_client/desktop/src/net/refugesystems/coc/client/desktop/"
- "/home/jon/Code/Walker/"
- "/home/jon/Code/"
- "/home/jon/Code/ChainOfCommand/grobots/"
- "/home/jon/.lein/"
- "/home/jon/Code/Experiments/pthread/"
- "/home/jon/Code/Originate/devacurl/config/initializers/"
- "/home/jon/.emacs.d/"
- "/home/jon/Code/opengl-playground/clj/src/clj/opengl/"
- "/home/jon/Code/ChainOfCommand/CoC_Client/"
- "/home/jon/Code/Originate/devacurl/spec/models/"
- "/home/jon/Code/Originate/devacurl/spec/"
- "/home/jon/Code/Originate/devacurl/db/migrate/"
- "/home/jon/Code/Originate/devacurl/db/"
- "/home/jon/Code/Originate/devacurl/spec/fixtures/"
- "/home/jon/Code/Originate/devacurl/spec/workers/actions/"
- "/home/jon/Code/Originate/devacurl/app/assets/javascripts/"
- "/home/jon/Code/Originate/devacurl/app/views/application/"
- "/home/jon/Code/Originate/devacurl/app/views/finder/"
- "/home/jon/Code/Originate/devacurl/"
- "/home/jon/Code/Originate/devacurl/app/workers/"
- "/home/jon/Code/Originate/devacurl/spec/workers/"
- "/home/jon/Code/Originate/devacurl/app/assets/stylesheets/bootstrap_overrides/"
- "/home/jon/Code/Originate/devacurl/app/assets/stylesheets/"
- "/home/jon/Code/Originate/devacurl/app/controllers/"
- "/home/jon/Code/Langs/funcy/"
- "/home/jon/Code/Originate/devacurl/lib/tasks/"
- "/home/jon/Code/Originate/devacurl/scripts/"
- "/home/jon/Code/podio-rb/lib/podio/models/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "recent_search.rb"
- "settings.local.yml"
- "settings.yml"
- "secrets.yml"
- "functional"
- "cstdint"
- "stdint.h"
- "cctype"
- "mutex"
- "unordered_map"
+ "SubscriptionImportService.scala"
+ "TestMain.scala"
+ "Main.scala"
+ "FutureBatcher.scala"
+ "sample_1_enlarged.gif"
+ "sample_1.gif"
+ "gifhaskell.cabal"
+ "foo.hs"
+ ".gitignore"
+ "Main.hs"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/jon/Code/Originate/devacurl/app/models/" (22007 515 285393 151000) "recent_search.rb" "podio_attributes.rb" "./" "stylist.rb" "review.rb" "model_for_podio_item.rb" "location_search.rb" "location.rb" "../" "podio_finders.rb")
+ ("/home/jon/Code/Originate/BCG/somatix/customerInfoService/" (22077 9760 198408 930000) "src/" "./" "build.sbt" "elastic-beanstalk/" "../" "target/")
 
- ("/home/jon/Code/Originate/devacurl/app/" (22007 515 285393 151000) "workers/" "inputs/" "models/" "./" "helpers/" "builders/" "views/" "controllers/" "assets/" "../" "mailers/" "decorators/")
+ ("/home/jon/Code/Originate/BCG/somatix/customerInfoService/src/main/scala/services/" (22077 9893 210397 320000) "./" "../" "SubscriptionImportService.scala")
 
- ("/home/jon/Code/Originate/devacurl/" (22007 810 759020 28000) ".rspec" "spec/" "coverage/" "tmp/" "./" ".git/" "config/" "TECHDEBT.md" "lib/" "db/" "README.md" "Procfile" "Gemfile.lock" "prod.dump" "public/" "config.ru" "../" "Rakefile" "test/" "log/" "Guardfile" "Gemfile" "circle.yml" "vendor/" "app/" ".ruby-version" ".gitignore" "bin/")
+ ("/home/jon/Code/Originate/BCG/somatix/customerInfoService/src/main/scala/" (22077 9652 336994 541000) "Registry.scala" "models/" "./" "services/" "dto/" "persistence/" "controllers/" "../" "TestMain.scala" "Main.scala")
 
- ("/home/jon/Code/Originate/devacurl/config/" (22007 620 164396 62000) "boot.rb" "database.yml" "environment.rb" "./" "secrets.yml" "database.yml.sample" "puma.rb" "routes.rb" "settings/" "newrelic.yml" "application.rb" "../" "locales/" "settings.yml" "initializers/" "environments/" "settings.local.yml")
+ ("/home/jon/Code/Originate/BCG/somatix/customerInfoService/src/main/" (22077 9652 336994 541000) "./" "scala/" "../")
 
- ("/home/jon/" (22007 531 314178 939000) ".gitconfig" ".emacs_backups/" ".purple/" "Templates/" ".pulse-cookie" "sites.tgz" "Public/" "Music/" ".nave/" "Games/" ".lastpass/" ".cider-repl-history" ".rediscli_history" ".irbrc" ".cache/" ".adobe/" ".macromedia/" ".xsel.log" ".heroku/" ".gradle/" ".zshrc" ".cabal/" ".gnupg/" ".psql_history" ".xscreensaver" ".guard_history" "./" ".vim-fuf-data/" ".config/" ".zsh/" ".vim/" ".gconf/" ".rbenv/" "lein" ".sbt/" ".netrc" ".java_history" ".java/" ".mozilla/" ".ivy2/" ".sudo_as_admin_successful" ".racket_history" ".ghc/" ".bash_history" ".gnome2/" ".vimrc" ".local/" "Documents/" ".gitignore_global" ".racket/" ".gstreamer-0.10/" ".irb_history_x86_64-linux_2.2.2" ".gem/" ".PlayOnLinux/" "PlayOnLinux's virtual drives/" ".bashrc" "backup.tgz" ".pki/" ".lesshst" ".pg_service.conf" ".ICEauthority" ".steampath" ".viminfo" ".steam/" ".gnome/" "Code/" ".ghcjs/" ".profile" ".xinitrc" ".ssh/" "../" ".boot/" ".zcompdump" ".dbus/" ".scala_history" ".zsh_history" "configs/" ".m2/" ".lein/" "Desktop/" ".emacs.d/" ".bash_logout" "Pictures/" ".steampid" ".gnome2_private/" ".gphoto/" "Downloads/" "Videos/")
+ ("/home/jon/Code/Originate/BCG/somatix/customerInfoService/src/" (22077 9652 336994 541000) "./" "../" "main/")
 
- ("/home/jon/Code/Langs/persistent_map/" (21995 29423 632015 471000) "IPersistentMap.hpp" "Protocol.hpp" ".#Protocol.hpp" "./" "APersistentMap.cpp" ".git/" "#Protocol.hpp#" "ISeq.hpp" "Seqable.hpp" "APersistentMap.hpp" "../" "IPersistentCollection.hpp" "test" "testit.cpp")
+ ("/home/jon/Code/Originate/BCG/somatix/common/src/main/scala/" (22077 9652 336994 541000) "AppConfig.scala" "util/" "./" "CommonRegistry.scala" "Section.scala" "base/" "Constants.scala" "exceptions/" "Environment.scala" "dto/" "Clock.scala" "../" "aws/" "data/")
 
- ("/home/jon/Code/podio-rb/lib/podio/models/" (21934 51764 535651 919000) "comment.rb" "item_diff.rb" "by_line.rb" "form.rb" "friend.rb" "extension.rb" "device.rb" "recurrence.rb" "linked_account.rb" "item_field.rb" "voucher.rb" "question_option.rb" "condition_set.rb" "account_provider.rb" "contract_event.rb" "stream_activity_group.rb" "view.rb" "space_member.rb" "category.rb" "calendar_event.rb" "organization_member.rb" "embed.rb" "./" "organization.rb" "experiment.rb" "conversation_message.rb" "activation_status.rb" "space_invitation.rb" "app_store_share.rb" "tag_search.rb" "search.rb" "conversation_event.rb" "stream_mute.rb" "email_contact.rb" "tag.rb" "contact.rb" "answer.rb" "application_field.rb" "application_email.rb" "conversation_participant.rb" "integration.rb" "stream_object.rb" "condition.rb" "pin.rb" "file_attachment.rb" "promotion.rb" "widget.rb" "task_label.rb" "calendar_mute.rb" "item.rb" "filter.rb" "app_store_category.rb" "task.rb" "activity.rb" "hook.rb" "item_transaction.rb" "status.rb" "organization_membership.rb" "item_revision.rb" "organization_contact.rb" "contract_price.rb" "question_answer.rb" "subscription.rb" "application.rb" "invoice.rb" "reference.rb" "conversation.rb" "contract.rb" "voting.rb" "reminder.rb" "batch.rb" "user_mail.rb" "external_file.rb" "profile.rb" "contract_period.rb" "vote.rb" "contract_attribution.rb" "../" "user_status.rb" "o_auth.rb" "contract_user.rb" "importer.rb" "notification_group.rb" "referral.rb" "o_auth_scope.rb" "live.rb" "campaign.rb" "space_contact.rb" "promotion_group.rb" "email_subscription_setting.rb" "net_promoter_score.rb" "user.rb" "contract_accounting.rb" "promotion_group_member.rb" "grant.rb" "rating.rb" "notification.rb" "o_auth_client.rb" "organization_profile.rb" "linked_account_data.rb" "space.rb" "action.rb" "via.rb" "question.rb")
+ ("/home/jon/Code/Originate/BCG/somatix/" (22077 9652 336994 541000) ".editorconfig" "emailService/" "fix-imports.go" "./" "project/" ".git/" "dataImport/" "build.sbt" "workflowEngine/" "customerInfoService/" "mailgunWebhookService/" "requirements.txt" ".gitattributes" "api-docs/" "README.md" "userService/" "scripts/" ".ensime_cache/" "../" "target/" "logs/" "common/" "circle.yml" ".gitignore" ".ensime")
 
- ("/home/jon/Code/Originate/devacurl/app/assets/stylesheets/bootstrap_overrides/" (21937 5654 419830 12000) "./" "jumbotron.sass" "forms.sass" "../")
+ ("/home/jon/" (22077 9700 152010 437000) ".gitconfig" ".emacs_backups/" ".purple/" "Templates/" ".pulse-cookie" "sites.tgz" "Public/" "Music/" "jondistad.pub" ".nave/" "Games/" ".lastpass/" ".cider-repl-history" ".rediscli_history" ".irbrc" ".cache/" ".adobe/" ".macromedia/" ".xsel.log" ".heroku/" ".gradle/" ".zshrc" ".cabal/" ".gnupg/" ".psql_history" ".xscreensaver" ".guard_history" "./" ".vim-fuf-data/" ".csi_history" ".config/" ".ghci" ".zsh/" ".vim/" ".gconf/" ".rbenv/" "lein" ".sbt/" ".netrc" ".java_history" ".java/" ".mozilla/" ".ivy2/" ".sudo_as_admin_successful" ".racket_history" ".ghc/" ".bash_history" ".gnome2/" ".vimrc" ".local/" "Documents/" ".spamassassin/" ".gitignore_global" ".racket/" ".gstreamer-0.10/" ".irb_history_x86_64-linux_2.2.2" ".gem/" ".PlayOnLinux/" "PlayOnLinux's virtual drives/" ".xsessionrc" ".bashrc" "backup.tgz" ".pki/" ".lesshst" ".pg_service.conf" ".ICEauthority" ".steampath" ".viminfo" ".steam/" ".gnome/" "Code/" ".ghcjs/" ".npm/" ".aws/" ".profile" ".xinitrc" "somatix" ".ssh/" "../" ".boot/" ".zcompdump" ".dbus/" ".scala_history" ".zsh_history" "configs/" ".m2/" ".lein/" "Desktop/" ".emacs.d/" ".bash_logout" "Pictures/" ".steampid" ".gnome2_private/" ".gphoto/" "Downloads/" "Videos/")
 
- ("/usr/share/man/en_AU/" (21815 36938 0 0) "./" "man1/" "../")
+ ("/home/jon/Code/Originate/BCG/somatix/common/src/main/scala/util/" (22073 28280 500542 730000) "FutureBatcher.scala" "HmacSha256.scala" "./" "HttpLogger.scala" "MD5.scala" "../" "IdGenerator.scala" "JsonFormats.scala" "PasswordHash.scala" "Tap.scala" "JsonWebToken.scala")
 
- ("/usr/share/man/" (21954 19092 892473 13000) "ro/" "mhr/" "kk/" "ku/" "fr.ISO8859-1/" "fa/" "en_CA/" "nn/" "fr.UTF-8/" "bs/" "lv/" "he/" "ja/" "cs/" "./" "te/" "io/" "zh_HK/" "ar/" "hi/" "be/" "pt_BR/" "vi/" "hr/" "lt/" "man7/" "man3/" "zh_TW/" "ug/" "en_GB/" "az/" "ta/" "man4/" "eu/" "uk/" "bo/" "it/" "ru/" "sq/" "sl/" "en_AU/" "ml/" "pt/" "da/" "nb/" "fr/" "sr/" "et/" "pl.UTF-8/" "el/" "se/" "de.UTF-8/" "ca/" "km/" "ps/" "ms/" "man5/" "man1/" "sv/" "shn/" "sk/" "nl/" "pl/" "hu/" "../" "my/" "cy/" "de/" "fo/" "ko/" "th/" "oc/" "bn/" "man6/" "gl/" "man2/" "eo/" "si/" "bg/" "fy/" "ast/" "man8/" "fr_CA/" "gd/" "es/" "tr/" "zh_CN/" "fi/" "ca@valencia/" "pa/" "uz/" "id/")
+ ("/home/jon/Code/Originate/BCG/somatix/common/src/main/resources/" (22068 6501 24051 254000) "application.local.conf" "logback-prod.xml" "./" "application.conf" "../" "logback.xml")
 
- ("/usr/local/man/man1/" (21855 63228 0 0) "node.1" "./" "../")
+ ("/home/jon/Code/Originate/BCG/" (22016 17340 693875 197000) "./" "somatix/" "../" "dynamodb/")
 
- ("/usr/local/man/" (21855 63228 0 0) "./" "man1/" "../")
+ ("/home/jon/Code/Originate/" (22016 17202 239874 693000) "./" "devacurl/" "../" "Attack2015/" "BCG/")
 
- ("/usr/local/" (21966 35045 875942 326000) "heroku/" "src/" "./" "lib/" "LICENSE" "share/" "README.md" "man/" "etc/" "ChangeLog" "bin/" "include/" "sbin/" "../" "games/")
+ ("/home/jon/.emacs.d/" (22073 28272 202300 463000) ".mc-lists.el" "elpa/" "gforth.el" "ac-comphist.dat" "./" "abbrev_defs" ".git/" "url/" "auto-save-list/" "init.el" "opt/" "../" "custom.el" "ido.last" "ensime/")
 
- ("/home/jon/.emacs.d/" (21994 9895 518534 777000) ".mc-lists.el" "elpa/" "gforth.el" "ac-comphist.dat" "./" "abbrev_defs" ".git/" "url/" "auto-save-list/" "init.el" "opt/" "../" "custom.el" "ido.last")
+ ("/home/jon/Code/Experiments/gifhaskell/" (22071 26548 961207 82000) "LICENSE" ".cabal-sandbox/" "./" ".git/" "Setup.hs" "Main.hs" "dist/" "cabal.sandbox.config" "../" "Types.hs" ".gitignore" "gifhaskell.cabal")
 
- ("/home/jon/.lein/" (21967 17663 991793 70000) "./" "repl-history" "../" "profiles.clj" "self-installs/")
+ ("/home/jon/Code/Experiments/gifdecoder/data/" (22070 40582 163327 436000) "sample_1_enlarged.gif" "./" "sample_1.gif" "../")
 
- ("/home/jon/Code/Langs/wombat-j/" (21966 39090 959288 860000) "LICENSE" "src/" "doc/" "./" ".git/" "notes/" "README.md" ".java-version" "../" "test/" "target/" "project.clj" ".gitignore")
+ ("/home/jon/Code/Experiments/gifdecoder/test/" (22068 10422 846979 551000) "./" "valid_header.bin" "decoder_test.c" "../" "test.c" "test.h" "runbuilder.js" "table_ext_test.c" ".gitignore" "bitcursor_test.c" "Makefile")
 
- ("/usr/share/" (21967 11750 218210 83000) "xsessions/" "desktop-base/" "indicators/" "gnome-mines/" "sgml-base/" "aisleriot/" "yelp-xsl/" "liblouis/" "telepathy/" "xfwm4/" "foo2qpdl/" "bash-completion/" "GeoIP/" "gtkhtml-4.0/" "misc/" "pulseaudio/" "vim/" "sounds/" "gtksourceview-3.0/" "pyshared/" "rlwrap/" "python-apt/" "guile/" "i18n/" "glib-2.0/" "GConf/" "update-manager/" "debhelper/" "ssl-cert/" "emacs24/" "doc-base/" "dbus-1/" "gnome-shell/" "aspell/" "fonts/" "orca/" "proj/" "mono/" "openmpi/" "dnsmasq-base/" "poppler/" "ant/" "gdal/" "mozilla/" "tracker/" "libparse-debianchangelog-perl/" "avahi/" "media-player-info/" "libquvi-scripts/" "mime-info/" "nano/" "gst-plugins-base/" "language-selector/" "usb-creator/" "xml/" "dictionaries-common/" "terminator/" "python-wxgtk2.8/" "rsyslog/" "git-core/" "mime/" "dotnet/" "file/" "xml-core/" "brasero/" "applications/" "zsh/" "mobile-broadband-provider-info/" "gstreamer-1.0/" "gstreamer-0.10/" "man-db/" "im-config/" "session-migration/" "libtool/" "netpbm/" "libc-bin/" "grub/" "gnome-tweak-tool/" "winetricks/" "gnome-session/" "libwacom/" "brltty/" "ubuntu-release-upgrader/" "orage/" "ca-certificates/" "directfb-1.2.10/" "xfce4/" "boostbook/" "totem/" "package-data-downloads/" "automake-1.14/" "mono-2.0/" "gnome-background-properties/" "binfmts/" "dconf/" "sysv-rc/" "gnome-bluetooth/" "racket/" "color/" "eog/" "itstool/" "m17n/" "accounts/" "groff/" "common-licenses/" "perl5/" "qtchooser/" "webkitgtk-3.0/" "clang/" "pam-configs/" "snmp/" "caribou/" "calendar/" "libexttextcat/" "locale/" "adduser/" "consolefonts/" "gnome-maps/" "postgresql-common/" "language-support/" "cups/" "adium/" "system-config-printer/" "backgrounds/" "app-install/" "farstream/" "polkit-1/" "gtk-engines/" "evolution-data-server/" "gdb/" "python3/" "seahorse/" "zenity/" "gcc-4.9/" "ibus/" "aclocal/" "llvm-3.5/" "gnome-mahjongg/" "fonts-droid/" "spamassassin/" "xdiagnose/" "gnome-settings-daemon-3.0/" "pygtk/" "samba/" "xscreensaver/" "mysql-common/" "aclocal-1.14/" "boost-build/" "yelp/" "pam/" "midi/" "perl/" "gnome-color-manager/" "evolution/" "dpkg/" "maven/" "libgphoto2/" "appdata/" "desktop-directories/" "python/" "sbt-launcher-packaging/" "p11-kit/" "apport/" "gettext/" "thumbnailers/" "jetty/" "intltool-debian/" "pkgconfig/" "ibus-table/" "Thunar/" "unity/" "apturl/" "gnome/" "gedit/" "org.gnome.Weather/" "yelp-tools/" "man/" "help-langpack/" "os-prober/" "plymouth/" "locale-langpack/" "dh-python/" "xul-ext/" "themes/" "vino/" "sgml/" "gnome-documents/" "application-registry/" "tcltk/" "lintian/" "et/" "libvisual-plugins-0.4/" "gnome-video-effects/" "hardening-includes/" "libgweather/" "idl/" "icons/" "file-roller/" "wine/" "gnupg/" "doc/" "insserv/" "cmake-3.0/" "autoconf/" "base-files/" "ubuntu-drivers-common/" "zoneinfo/" "purple/" "gdm/" "empathy/" "X11/" "fop/" "colord/" "update-notifier/" "lightdm/" "libreoffice/" "console-setup/" "deja-dup/" "consoletrans/" "upstart/" "ImageMagick-6/" "mimelnk/" "gnome-user-share/" "gitweb/" "libaudio2/" "ibus-pinyin/" "myspell/" "hplip/" "gconf/" "qt4/" "keyrings/" "cli-common/" "apt/" "shotwell/" "acpi-support/" "gcr-3/" "pnm2ppa/" "llvm-3.6/" "cogl/" "ghostscript/" "gnome-control-center/" "enchant/" "dict/" "locales/" "gnome-online-accounts/" "pixmaps/" "base-passwd/" "javascript/" "maven-repo/" "ca-certificates-java/" "pyzy/" "software-properties/" "language-tools/" "java-wrappers/" "simple-scan/" "fontconfig/" "chicken/" "hwdata/" "sushi/" "nm-applet/" "hal/" "kde4/" "gnome-2.0/" "gnome-vpn-properties/" "ubufox/" "libnm-gtk/" "foo2zjs/" "dns/" "alsa/" "djvu/" "java/" "emacs/" "debianutils/" "alsa-base/" "menu/" "initramfs-tools/" "nautilus-share/" "apt-xapian-index/" "gupnp-dlna-2.0/" "speech-dispatcher/" "oneconf/" "readline/" "help/" "build-essential/" "linux-sound-base/" "hunspell/" "rhythmbox/" "mythes/" "wallpapers/" "tabset/" "postgresql/" "liblangtag/" "gupnp-av/" "gtk-doc/" "vte/" "usb_modeswitch/" "systemd/" "hyphen/" "info/" "gvfs/" "mpi-default-dev/" "libsensors4/" "mousetweaks/" "bug/" "resolvconf/" "software-center/" "images/" "unattended-upgrades/" "playonlinux/" "zeitgeist/" "apps/" "rubygems-integration/" "iptables/" "debconf/" "ppd/" "icu/" "libgnomekbd/" "gnome-settings-daemon/" "evince/" "transmission/" "ufw/" "ppp/" "command-not-found/" "gnome-sudoku/" "xfce4-mixer/" "apt-file/" "pkg-config-crosswrapper" "grub-gfxpayload-lists/" "popularity-contest/" "libthai/" "gutenprint/" "indicator-application/" "grilo-plugins/" "../" "./")
+ ("/home/jon/Code/Experiments/" (22068 10526 988662 611000) "gifhaskell/" "./" "frege/" "ghcjs-toy/" "haskell/" "scala/" "../" "gifdecoder/" "pthread/" "clojure/")
 
- ("/usr/include/c++/4.9.2/" (21882 9775 555363 390000) "numeric" "iosfwd" "list" "scoped_allocator" "stack" "typeinfo" "utility" "condition_variable" "type_traits" "queue" "climits" "ciso646" "cstdio" "./" "cstdint" "bitset" "cstdarg" "cstdlib" "memory" "cstdbool" "string" "sstream" "forward_list" "locale" "array" "stdexcept" "map" "ctgmath" "cassert" "unordered_set" "random" "decimal/" "shared_mutex" "system_error" "cerrno" "cwchar" "iomanip" "cwctype" "new" "atomic" "istream" "set" "thread" "ccomplex" "bits/" "vector" "cstring" "unordered_map" "deque" "chrono" "tuple" "cctype" "exception" "ratio" "cxxabi.h" "parallel/" "limits" "functional" "clocale" "fstream" "../" "ostream" "tgmath.h" "streambuf" "ext/" "cstdalign" "csignal" "initializer_list" "complex" "future" "tr2/" "cmath" "iostream" "typeindex" "profile/" "complex.h" "ctime" "cinttypes" "regex" "sun/" "experimental/" "ios" "csetjmp" "valarray" "fenv.h" "cfloat" "debug/" "iterator" "cfenv" "cstddef" "tr1/" "backward/" "algorithm" "mutex")
+ ("/home/jon/Code/Experiments/gifdecoder/" (22068 10422 846979 551000) "decoder.c" "decoder.h" "pcg/" "./" "README" ".git/" "table_ext.c" "main.c" "bitcursor.c" "table_ext.h" "../" "test/" "data/" "bitcursor.h" ".gitignore" "Makefile")
 
- ("/usr/include/c++/4.9/" (21882 9775 555363 390000) "numeric" "iosfwd" "list" "scoped_allocator" "stack" "typeinfo" "utility" "condition_variable" "type_traits" "queue" "climits" "ciso646" "cstdio" "./" "cstdint" "bitset" "cstdarg" "cstdlib" "memory" "cstdbool" "string" "sstream" "forward_list" "locale" "array" "stdexcept" "map" "ctgmath" "cassert" "unordered_set" "random" "decimal/" "shared_mutex" "system_error" "cerrno" "cwchar" "iomanip" "cwctype" "new" "atomic" "istream" "set" "thread" "ccomplex" "bits/" "vector" "cstring" "unordered_map" "deque" "chrono" "tuple" "cctype" "exception" "ratio" "cxxabi.h" "parallel/" "limits" "functional" "clocale" "fstream" "../" "ostream" "tgmath.h" "streambuf" "ext/" "cstdalign" "csignal" "initializer_list" "complex" "future" "tr2/" "cmath" "iostream" "typeindex" "profile/" "complex.h" "ctime" "cinttypes" "regex" "sun/" "experimental/" "ios" "csetjmp" "valarray" "fenv.h" "cfloat" "debug/" "iterator" "cfenv" "cstddef" "tr1/" "backward/" "algorithm" "mutex")
+ ("/home/jon/.local/share/applications/" (22068 4479 553188 523000) "chrome-pjkljhegncpnkpknbcohdijeoejaedia-Default.desktop" "chrome-app-list.desktop" "./" "chrome-knipolnnllmklapflnccelgolnpehhpl-Default.desktop" "chrome-aohghmighlieiainnegkcijnfilokake-Default.desktop" "chrome-nmmhkkegccagdldgiimedpiccmgmieda-Default.desktop" "../" "chrome-coobgpohoikkiipiblmjeljniedjpjpf-Default.desktop" "mimeapps.list" "chrome-apdfllckaahabafndbhieahigkjlhalf-Default.desktop" "chrome-blpcfgokakmgnkcojhhkbfbldkacnbeo-Default.desktop")
 
- ("/usr/include/c++/" (21882 9775 623363 388000) "4.9.2/" "./" "4.9/" "../")
+ ("/home/jon/.local/share/" (22068 9005 623779 35000) "telepathy/" "Steam/" "session_migration-gnome" "Trash/" "doublefine/" "icons/" "applications/" "gnome-shell/" "./" "rhythmbox/" "gnome-settings-daemon/" "sounds/" "fonts/" "gegl-0.3/" "evolution/" "nautilus/" "../" "gvfs-metadata/" "desktop-directories/" "zeitgeist/" ".converted-launchers" "recently-used.xbel" "keyrings/" "gsettings-data-convert" "shotwell/" "tracker/" "folks/" "icc/")
 
- ("/usr/include/" (21988 60878 139309 44000) "time.h" "gnu-versions.h" "wait.h" "termio.h" "misc/" "fts.h" "endian.h" "xf86drm.h" "openssl/" "stdio.h" "regex.h" "gshadow.h" "fmtmsg.h" "pwd.h" "mqueue.h" "langinfo.h" "search.h" "openmpi/" "gmpxx.h" "c++/" "mtd/" "ttyent.h" "ifaddrs.h" "stdc-predef.h" "dirent.h" "nss.h" "expat.h" "execinfo.h" "dialog.h" "signal.h" "./" "monetary.h" "boost/" "x86_64-linux-gnu/" "infiniband/" "argz.h" "pcre.h" "xcb/" "xfce4/" "semaphore.h" "libdrm/" "GLFW/" "pcreposix.h" "racket/" "xf86drmMode.h" "error.h" "dlg_colors.h" "clang/" "libgen.h" "pcrecpp.h" "arpa/" "resolv.h" "gc.h" "lastlog.h" "netrom/" "inttypes.h" "ucontext.h" "netax25/" "_G_config.h" "numa.h" "linux/" "cblas_f77.h" "crypt.h" "netiucv/" "pty.h" "pthread.h" "netrose/" "limits.h" "ctype.h" "argp.h" "llvm-3.5/" "python2.7/" "iconv.h" "err.h" "ltdl.h" "asm-generic/" "fstab.h" "com_err.h" "cpio.h" "dlg_config.h" "byteswap.h" "mntent.h" "unistd.h" "getopt.h" "GL/" "thread_db.h" "aliases.h" "pcre_stringpiece.h" "ftw.h" "dlg_keys.h" "obstack.h" "locale.h" "rdma/" "paths.h" "fnmatch.h" "python3.4m/" "memory.h" "clif.h" "values.h" "hwloc.h" "drm/" "et/" "features.h" "printf.h" "link.h" "sound/" "stdlib.h" "setjmp.h" "utmp.h" "tar.h" "uapi/" "mit-krb5/" "mcheck.h" "sgtty.h" "sudo_plugin.h" "video/" "envz.h" "alloca.h" "libintl.h" "xlocale.h" "rpc/" "X11/" "wctype.h" "wchar.h" "expat_external.h" "utmpx.h" "termios.h" "numacompat1.h" "libltdl/" "netpacket/" "errno.h" "gettext-po.h" "regexp.h" "llvm-c-3.6/" "zlib.h" "malloc.h" "aio.h" "dlfcn.h" "dbus-1.0/" "gnumake.h" "math.h" "gconv.h" "netatalk/" "reglib/" "netash/" "llvm-3.6/" "../" "ulimit.h" "cblas.h" "tgmath.h" "gc_cpp.h" "netipx/" "elf.h" "numaif.h" "syslog.h" "mpi/" "llvm-c-3.5/" "grp.h" "chicken/" "xorg/" "stdio_ext.h" "ustat.h" "protocols/" "netinet/" "spawn.h" "poll.h" "uchar.h" "wordexp.h" "xen/" "gc/" "syscall.h" "sysexits.h" "assert.h" "net/" "netdb.h" "re_comp.h" "complex.h" "readline/" "rpcsvc/" "pcrecpparg.h" "string.h" "stdint.h" "postgresql/" "autosprintf.h" "pcre_scanner.h" "libio.h" "sched.h" "ar.h" "fenv.h" "strings.h" "neteconet/" "nfs/" "stropts.h" "utime.h" "glob.h" "fcntl.h" "stab.h" "hwloc/" "nl_types.h" "shadow.h" "scsi/")
+ ("/home/jon/.local/" (21884 32505 406130 695000) "./" "share/" "opt/" "../" "bin/")
 
- ("/home/jon/Code/Vendor/clojure/src/jvm/clojure/lang/" (21967 49949 443886 138000) "Reduced.java" "LockingTransaction.java" "AFunction.java" "ILookupSite.java" "Concat.java" "ArrayChunk.java" "SeqEnumeration.java" "DynamicClassLoader.java" "Indexed.java" "ILookupThunk.java" "ITransientVector.java" "ASeq.java" "MapEntry.java" "PersistentQueue.java" "IReduce.java" "Atom.java" "Binding.java" "ARef.java" "IDeref.java" "ProxyHandler.java" "IKeywordLookup.java" "PersistentVector.java" "Box.java" "IExceptionInfo.java" "Range.java" "ALazySeq.java" "IType.java" "Cycle.java" "Ref.java" "./" "IFn.java" "Agent.java" "Keyword.java" "BigInt.java" "ChunkBuffer.java" "ISeq.java" "IBlockingDeref.java" "TaggedLiteral.java" "EnumerationSeq.java" "IPersistentMap.java" "Repeat.java" "RT.java" "PersistentArrayMap.java" "Delay.java" "Reversible.java" "IPending.java" "EdnReader.java" "KeywordLookupSite.java" "package.html" "FnLoaderThunk.java" "Named.java" "IndexedSeq.java" "IReference.java" "ChunkedCons.java" "Iterate.java" "LazilyPersistentVector.java" "Murmur3.java" "Intrinsics.java" "ITransientMap.java" "Symbol.java" "ReaderConditional.java" "IMapIterable.java" "ITransientAssociative.java" "Var.java" "Namespace.java" "Reflector.java" "MapEquivalence.java" "WarnBoxedMath.java" "APersistentMap.java" "IHashEq.java" "IRecord.java" "Compile.java" "Compiler.java" "IEditableCollection.java" "Sorted.java" "PersistentHashMap.java" "Associative.java" "MethodImplCache.java" "LongRange.java" "PersistentStructMap.java" "IMeta.java" "TransactionalHashMap.java" "AReference.java" "IteratorSeq.java" "IChunkedSeq.java" "ArityException.java" "IPersistentVector.java" "ITransientCollection.java" "Settable.java" "TransformerIterator.java" "Obj.java" "PersistentHashSet.java" "IObj.java" "ArrayIter.java" "IPersistentCollection.java" "IPersistentStack.java" "PersistentTreeSet.java" "AFn.java" "IPersistentList.java" "PersistentList.java" "Volatile.java" "RestFn.java" "IReduceInit.java" "APersistentSet.java" "Fn.java" "ILookup.java" "Sequential.java" "RecordIterator.java" "LineNumberingPushbackReader.java" "Ratio.java" "MultiFn.java" "../" "Numbers.java" "SeqIterator.java" "ExceptionInfo.java" "StringSeq.java" "LispReader.java" "LazySeq.java" "Script.java" "PersistentTreeMap.java" "ITransientSet.java" "IPersistentSet.java" "ArraySeq.java" "IChunk.java" "ATransientMap.java" "Seqable.java" "XMLHandler.java" "Cons.java" "IAtom.java" "IProxy.java" "IRef.java" "Counted.java" "ATransientSet.java" "IMapEntry.java" "APersistentVector.java" "Util.java" "AMapEntry.java" "Repl.java")
+ ("/home/jon/Code/Originate/BCG/dynamodb/" (22016 17348 313876 956000) "third_party_licenses/" "./" "LICENSE.txt" "DynamoDBLocal.jar" "README.txt" "DynamoDBLocal_lib/" "../")
 
- ("/home/jon/Code/Vendor/clojure/src/clj/clojure/core/" (21945 33562 576955 406000) "./" "reducers.clj" "protocols.clj" "../")
+ ("/home/jon/Code/Originate/BCG/somatix/common/src/main/scala/aws/kinesis/" (22060 4201 870324 297000) "KinesisClient.scala" "./" "../" "RecordProcessor.scala")
 
- ("/home/jon/Code/Vendor/clojure/src/clj/clojure/" (21967 49949 439886 127000) "main.clj" "genclass.clj" "core_print.clj" "reflect/" "core.clj" "repl.clj" "./" "java/" "core_proxy.clj" "pprint/" "inspector.clj" "test.clj" "data.clj" "xml.clj" "core_deftype.clj" "parallel.clj" "set.clj" "core/" "edn.clj" "string.clj" "instant.clj" "../" "walk.clj" "pprint.clj" "uuid.clj" "template.clj" "test/" "stacktrace.clj" "zip.clj" "gvec.clj" "reflect.clj")
+ ("/home/jon/Code/Originate/BCG/somatix/common/src/main/scala/dto/" (22059 48787 534114 209000) "streams/" "./" "../" "JwtClaims.scala" "ApiResponse.scala")
 
- ("/home/jon/Code/Vendor/clojure/" (21967 49954 763899 674000) "src/" "epl-v10.html" "doc/" "maven-classpath.properties" "build.xml" "clojure.iml" "readme.txt" "./" ".git/" "changes.md" "maven-classpath" "0001-Define-clojure.lang.Concat.patch" "pom.xml" ".dir-locals.el" "antsetup.sh" "../" "test/" "target/" ".idea/" ".gitignore" "CONTRIBUTING.md")
+ ("/home/jon/Code/Originate/BCG/somatix/common/src/main/scala/dto/streams/" (22061 19460 15353 954000) "./" "../" "StreamDto.scala")
 
- ("/home/jon/Code/Langs/lambder/" (21995 26922 760002 877000) "./" "sample.lc" "main.c" "../")
+ ("/home/jon/Code/Originate/BCG/somatix/common/src/main/scala/base/streams/" (22061 19269 896973 972000) "./" "ProcessableStream.scala" "package.scala" "../" "BaseStreamProcessor.scala")
 
- ("/home/jon/Code/Langs/" (21995 17086 950587 477000) "wombat-j/" "funcy/" "lambder/" "./" "../" "persistent_map/")
+ ("/home/jon/Code/Originate/BCG/somatix/common/src/main/scala/base/" (22059 48787 534114 209000) "streams/" "WithId.scala" "./" "PagingData.scala" "controller/" "persistence/" "../")
 
- ("/home/jon/Code/Langs/wombat-j/src/scm/" (21966 35438 570637 869000) "./" "core.scm" "../")
+ ("/home/jon/Code/Originate/BCG/somatix/common/src/main/scala/aws/" (22059 48787 534114 209000) "AwsAsync.scala" "./" "../" "kinesis/" "dynamodb/")
 
- ("/home/jon/Code/Langs/wombat-j/src/clj/wombat/" (21965 28736 68004 700000) "printer.clj" "compiler.clj" "reader.clj" "core.clj" "./" "datatypes.clj" "compiler_defclass.clj" "../" "empty.clj")
+ ("/home/jon/Code/Originate/BCG/somatix/common/src/main/" (22050 15476 649536 502000) "./" "resources/" "scala/" "../")
 
- ("/home/jon/Code/SimpleLighting/source/SimpleLighting/data/textures/" (20249 63112 0 0) "./" "ground.jpg" "rust.jpg" "../" "sun.jpg" "box.jpg")
+ ("/home/jon/Code/Originate/BCG/somatix/common/src/" (22016 17213 565535 262000) "./" "../" "test/" "main/")
 
- ("/home/jon/Code/ChainOfCommand/CoC_Client/src/java/net/refugesystems/coc/client/math/" (21904 46584 271128 495000) "./" "Matrix4f.java" "Vector4f.java" "Vector3f.java" "Matrix2f.java" "Matrix3f.java" "../" "Vector2f.java")
+ ("/home/jon/Code/Originate/BCG/somatix/common/" (22050 15476 649536 502000) "src/" "./" "build.sbt" "../" "target/")
 
- ("/home/jon/Code/SimpleLighting/source/SimpleLighting/data/shaders/" (20249 49112 0 0) "./" "../" "shader.frag" "shader.vert")
+ ("/home/jon/Code/ChainOfCommand/RSCommons/RefugeCommons/src/net/refugesystems/commons/communication/" (22053 36133 189368 143000) "RSClientRequestPassword.java" "RSConnection.java" "./" "RSAuthenticator.java" "RSListener.java" "RSClient.java" "exception/" "RSPacket.java" "RSClientListener.java" "RSServer.java" "../" "ui/" "RSSocket.java")
 
- ("/home/jon/Code/SimpleLighting/source/SimpleLighting/" (21931 47108 654490 432000) "openGLControl.cpp" "win_OpenGLApp.h" "renderScene.cpp" "08.) Simple Lighting.vcproj" "win_OpenGLApp.cpp" "common_header.h" "./" "geometry.h" "shaders.h" "walkingCamera.cpp" "texture.cpp" "shaders.cpp" "walkingCamera.h" "openGLControl.h" "texture.h" "vertexBufferObject.cpp" "vertexBufferObject.h" "../" "static_geometry.h" "data/" "static_geometry.cpp")
+ ("/home/jon/Code/ChainOfCommand/Invocation-Isle/Invocation Isle/src/net/refugesystems/ii/client/" (22053 35490 858138 15000) "./" "../" "IsleClient.java")
 
- ("/home/jon/Code/ChainOfCommand/CoC_Client/src/java/net/refugesystems/coc/client/" (21931 47181 534493 727000) "Face.java" "CoC_BufferAllocator.java" "Utils.java" "WalkingCamera.java" "Texture.java" "./" "App.java" "Model.java" "Shader.java" "math/" "OBJLoader.java" "ShaderProgram.java" "../" "StaticGeometry.java" "VertexBufferObject.java")
+ ("/home/jon/Code/ChainOfCommand/Invocation-Isle/Invocation Isle/src/net/refugesystems/ii/common/packet/" (22053 35490 858138 15000) "IsleSummonPacket.java" "./" "../")
 
- ("/home/jon/Code/ChainOfCommand/CoC_Client/" (21922 64643 870514 85000) "LICENSE" "src/" "doc/" "./" ".git/" "README.md" "resources/" "LGPL.txt" "../" "target/" "project.clj" ".gitignore")
+ ("/home/jon/Code/ChainOfCommand/Invocation-Isle/Invocation Isle/src/net/refugesystems/ii/common/" (22053 35490 858138 15000) "packet/" "./" "../" "entities/")
 
- ("/home/jon/Code/Experiments/pthread/" (21950 39446 260539 304000) "threads.c" "./" "../" "threads")
+ ("/home/jon/Code/ChainOfCommand/Invocation-Isle/Invocation Isle/src/net/refugesystems/ii/server/" (22053 35490 858138 15000) "simulation/" "./" "entity/" "signal/" "../" "IsleServer.java")
 
- ("/home/jon/Code/ChainOfCommand/gdx/coc_client/desktop/src/net/refugesystems/coc/client/desktop/" (21950 42618 432055 101000) "./" "../" "DesktopLauncher.java")
+ ("/home/jon/Code/ChainOfCommand/Invocation-Isle/Invocation Isle/src/net/refugesystems/ii/" (22053 35490 858138 15000) "./" "cami/" "../" "server/" "client/" "common/")
 
- ("/home/jon/Code/ChainOfCommand/gdx/coc-clj/desktop/" (21955 47371 947701 551000) "src/" "src-common/" "./" "resources/" "../" "target/" "project.clj")
+ ("/home/jon/Code/ChainOfCommand/Invocation-Isle/Invocation Isle/src/net/refugesystems/" (22053 35490 858138 15000) "./" "ii/" "../")
 
- ("/usr/share/alsa/" (21954 20295 161187 929000) "sndo-mixer.alisp" "./" "cards/" "ucm/" "smixer.conf" "init/" "speaker-test/" "alsa.conf.d/" "../" "pulse-alsa.conf" "alsa.conf" "pcm/" "alsa.conf~" "utils.sh")
+ ("/home/jon/Code/ChainOfCommand/Invocation-Isle/Invocation Isle/src/net/" (22053 35490 858138 15000) "refugesystems/" "./" "../")
 
- ("/home/jon/Code/ChainOfCommand/gdx/coc-clj/desktop/src-common/coc_clj/" (21955 47283 855703 939000) "core.clj" "./" "../")
+ ("/home/jon/Code/ChainOfCommand/Invocation-Isle/Invocation Isle/src/" (22053 35490 858138 15000) "./" "net/" "../")
 
- ("/home/jon/Code/ChainOfCommand/gdx/coc-clj/desktop/src/coc_clj/core/" (21955 46195 203733 444000) "desktop_launcher.clj" "./" "../")
+ ("/home/jon/Code/ChainOfCommand/Invocation-Isle/Invocation Isle/" (22053 35490 858138 15000) "src/" "images/" "./" ".project" ".classpath" "tests/" "configuration/" "../" ".gitignore")
 
- ("/home/jon/Code/Originate/Attack2015/attack_2015/" (21956 248 374735 28000) "params.json" "images/" "javascripts/" "./" ".git/" "index.html" "README.md" "stylesheets/" "../" "#index.html#")
+ ("/home/jon/Code/ChainOfCommand/Invocation-Isle/" (22053 35490 850138 25000) "./" ".git/" "Invocation Isle/" "../")
 
- ("/home/jon/Code/Langs/wombat-j/src/clj/" (21957 37943 766462 259000) "./" "wombat/" "../")
+ ("/home/jon/Code/ChainOfCommand/" (22053 35489 666139 445000) "./" "Invocation-Isle/" ".metadata/" "RSCommons/" "Revolt/" "CoC/" "../")
 
- ("/home/jon/Code/Langs/wombat-j/src/" (21957 37943 766462 259000) "clj/" "./" "scm/" "jvm/" "../")
+ ("/home/jon/Code/ChainOfCommand/RSCommons/RefugeCommons/" (22053 34962 626771 133000) "src/" ".testlog.1445300370631.log" "security/" "./" ".project" ".classpath" "../" "test/" "target/" ".gitignore")
 
- ("/home/jon/Code/Langs/funcy/src/funcy/" (21957 12002 546271 858000) "curry.clj" "core.clj" "./" "../")
+ ("/home/jon/Code/ChainOfCommand/RSCommons/RefugeCommons/src/net/refugesystems/commons/test/" (22053 34950 494785 674000) "./" "tests/" "Scratch.java" "../" "objects/")
 
- ("/home/jon/Code/Langs/funcy/" (21957 23265 648450 535000) "LICENSE" "src/" "doc/" "./" "README.md" ".hgignore" "resources/" "../" "test/" "target/" "project.clj" ".gitignore")
+ ("/home/jon/Code/ChainOfCommand/RSCommons/RefugeCommons/src/net/refugesystems/commons/test/tests/" (22053 34494 547332 154000) "TEST_AuthSimple.java" "TEST_PanelPrompt.java" "./" "TEST_RSServer.java" "../" "TEST_MessagePanel.java")
 
- ("/home/jon/Code/Originate/Attack2015/attack_2015/javascripts/" (21955 65515 175911 496000) "./" "jquery.js" "seat-selector.js" "main.js" "../")
+ ("/home/jon/Code/ChainOfCommand/RSCommons/RefugeCommons/src/net/refugesystems/commons/test/objects/" (22053 34494 547332 154000) "./" "TOBJ_RSServer.java" "../" "TOBJ_RSClient.java")
 
- ("/home/jon/Code/Originate/Attack2015/" (21955 65390 958833 55000) "js.js" "./" ".git/" "index.html" "attack_2015/" "../" "css.css" "jquery-1.11.3.js")
+ ("/home/jon/Code/ChainOfCommand/RSCommons/RefugeCommons/src/net/refugesystems/commons/" (22053 34494 547332 154000) "authentication/" "./" "support/" "signal/" "../" "test/" "communication/" "specialized/")
 
- ("/home/jon/Code/Originate/" (21955 63517 317182 697000) "./" "devacurl/" "../" "Attack2015/")
+ ("/home/jon/Code/ChainOfCommand/RSCommons/RefugeCommons/src/net/refugesystems/" (22053 34494 543332 159000) "./" "commons/" "../")
 
- ("/home/jon/Code/ChainOfCommand/gdx/coc_client/core/src/net/refugesystems/coc/client/" (21950 43642 862833 665000) "GDXClient.java" "./" "Drop.java" "MainMenuScreen.java" "EndScreen.java" "../")
+ ("/home/jon/Code/ChainOfCommand/RSCommons/RefugeCommons/src/net/" (22053 34494 543332 159000) "refugesystems/" "./" "../")
 
- ("/home/jon/Code/ChainOfCommand/gdx/coc_client/core/" (21950 40974 697238 541000) "src/" "./" "build.gradle" "build/" "assets/" "../")
+ ("/home/jon/Code/ChainOfCommand/RSCommons/RefugeCommons/src/" (22053 34494 543332 159000) "./" "net/" "../")
 
- ("/home/jon/Code/ChainOfCommand/gdx/coc_client/desktop/" (21950 41175 884897 646000) "src/" "./" "build.gradle" "build/" "../")
+ ("/home/jon/Code/ChainOfCommand/RSCommons/RefugeCommons/test/images/ii/" (22053 34494 547332 154000) "ii.png" "./" "ii-icon.png" "../")
 
- ("/home/jon/Code/ChainOfCommand/CoC_Universe-Server/CoC_Universe-Server/" (21902 41604 152067 252000) "src/" "build.xml" "CoCUniverseServer.jar" "./" ".project" ".classpath" ".settings/" ".externalToolBuilders/" "../" "build_server.xml" "target/" ".gitignore" "bin/")
+ ("/home/jon/Code/ChainOfCommand/RSCommons/RefugeCommons/test/images/" (22053 34494 547332 154000) "./" "ii/" "../")
 
- ("/home/jon/Code/ChainOfCommand/CoC_Universe-Server/CoC_Universe-Server/src/net/refugesystems/coc/universe/server/clients/communication/" (21896 45110 440245 467000) "PrimaryStream.java" "./" "ClientListener.java" "PlayerRegistration.java" "../")
+ ("/home/jon/Code/ChainOfCommand/RSCommons/RefugeCommons/test/serializations/" (22053 34494 547332 154000) "rsserver.xml" "rsclient.xml" "./" "../")
 
- ("/usr/" (21815 36432 0 0) "local/" "src/" "./" "lib/" "share/" "bin/" "include/" "sbin/" "../" "games/")
+ ("/home/jon/Code/ChainOfCommand/RSCommons/RefugeCommons/test/auth/" (22053 34494 547332 154000) "client.xml" "./" "credentials.xml" "system.xml" "users.xml" "../" "conf.xml")
 
- ("/home/jon/Code/ChainOfCommand/grobots/src/grobots/" (21950 39451 884123 707000) "core.clj" "./" "../")
+ ("/home/jon/Code/ChainOfCommand/RSCommons/RefugeCommons/test/lib/" (22053 34494 547332 154000) "./" "keystore.jks" "../")
 
- ("/home/jon/Code/ChainOfCommand/grobots/" (21950 37409 769578 493000) "LICENSE" "src/" "doc/" ".lein-repl-history" "./" ".git/" "README.md" ".hgignore" "resources/" ".dir-locals.el" "../" "test/" "target/" "project.clj" ".gitignore")
+ ("/home/jon/Code/ChainOfCommand/RSCommons/RefugeCommons/test/" (22053 34494 547332 154000) "images/" "./" "lib/" "serializations/" "../" "auth/")
 
- ("/home/jon/Code/ChainOfCommand/gdx/coc-clj/desktop/src/coc_clj/" (21951 27037 410339 535000) "./" "core/" "../")
+ ("/home/jon/Code/ChainOfCommand/RSCommons/RefugeCommons/security/" (22053 34494 543332 159000) "./" "client.jks" "server.jks" "../")
 
- ("/home/jon/Code/ChainOfCommand/gdx/coc-clj/desktop/src-common/" (21951 27037 410339 535000) "./" "coc_clj/" "../")
+ ("/home/jon/Code/ChainOfCommand/RSCommons/" (22053 34494 543332 159000) "RefugeCommons/" "./" ".git/" "../")
 
- ("/home/jon/Code/ChainOfCommand/gdx/coc-clj/desktop/src/" (21951 27037 410339 535000) "./" "coc_clj/" "../")
-
- ("/home/jon/Code/ChainOfCommand/gdx/coc-clj/ios/" (21951 27037 506339 173000) "src/" "./" "libs/" "../" "Info.plist.xml" "project.clj")
-
- ("/home/jon/Code/ChainOfCommand/gdx/coc-clj/" (21951 27037 506339 173000) "./" "desktop/" "android/" "README.md" "../" "ios/" ".gitignore")
-
- ("/home/jon/Code/ChainOfCommand/gdx/" (21951 27037 406339 550000) "./" "coc_client/" "gdx-setup.jar" "../" "coc-clj/")
-
- ("/home/jon/Code/ChainOfCommand/gdx/coc_client/core/src/net/refugesystems/coc/" (21950 38860 507806 180000) "./" "../" "client/")
-
- ("/home/jon/Code/ChainOfCommand/gdx/coc_client/core/src/net/refugesystems/" (21950 38860 507806 180000) "./" "coc/" "../")
-
- ("/home/jon/Code/ChainOfCommand/gdx/coc_client/core/src/net/" (21950 38860 507806 180000) "refugesystems/" "./" "../")
-
- ("/home/jon/Code/ChainOfCommand/gdx/coc_client/core/src/" (21950 38860 507806 180000) "./" "net/" "../")
-
- ("/home/jon/Code/ChainOfCommand/gdx/coc_client/desktop/src/net/refugesystems/coc/client/" (21950 38860 511805 885000) "./" "desktop/" "../")
-
- ("/home/jon/Code/ChainOfCommand/gdx/coc_client/desktop/src/net/refugesystems/coc/" (21950 38860 511805 885000) "./" "../" "client/")
-
- ("/home/jon/Code/ChainOfCommand/gdx/coc_client/desktop/src/net/refugesystems/" (21950 38860 511805 885000) "./" "coc/" "../")
-
- ("/home/jon/Code/ChainOfCommand/gdx/coc_client/desktop/src/net/" (21950 38860 511805 885000) "refugesystems/" "./" "../")
-
- ("/home/jon/Code/ChainOfCommand/gdx/coc_client/desktop/src/" (21950 38860 511805 885000) "./" "net/" "../")
-
- ("/home/jon/Code/ChainOfCommand/gdx/coc_client/" (21950 39460 131514 206000) "gradle.properties" ".gradle/" "./" ".git/" "build.gradle" "settings.gradle" "gradlew.bat" "desktop/" "core/" "../" "gradlew" "gradle/" ".gitignore")
-
- ("/home/jon/Code/ChainOfCommand/" (21950 38661 746409 641000) "CoC_Universe-Server/" "./" "CoC_Universe-Core/" ".metadata/" "gdx/" "CoC_Core/" "CoC_Client/" "../" "asdf/" "grobots/")
-
- ("/home/jon/Code/" (21950 37423 201689 745000) "Vendor/" "SimpleLighting/" "Langs/" "./" "Originate/" "opengl-playground/" "webtoot/" "Walker/" "../" "ChainOfCommand/" "hoplon-demos/" "Experiments/" "podio-rb/")
-
- ("/home/jon/Code/Walker/" (21950 37423 577795 152000) "sprite.rb" "./" ".git/" "world.rb" "world_object.rb" "README.md" "player.png" "Gemfile.lock" "go_around.rb" "../" ".rvmrc" "Gemfile" "screen.rb")
-
- ("/home/jon/Code/Vendor/clojure/src/clj/" (21945 33562 576955 406000) "./" "../" "clojure/")
-
- ("/home/jon/Code/Experiments/" (21945 38932 486776 136000) "./" "ghcjs-toy/" "../" "pthread/")
-
- ("/home/jon/Code/Vendor/clojure/src/jvm/clojure/java/api/" (21945 33562 588955 756000) "Clojure.java" "./" "package.html" "../")
-
- ("/home/jon/Code/Vendor/clojure/src/jvm/clojure/java/" (21945 33562 588955 756000) "./" "../" "api/")
-
- ("/home/jon/Code/ChainOfCommand/CoC_Core/CoC_Core/src/net/refugesystems/coc/core/io/network/" (21896 45079 405635 74000) "TransmissionCodes.java" "./" "packets/" "GeneralSerialization.java" "../")
-
- ("/home/jon/Code/ChainOfCommand/CoC_Core/CoC_Core/src/net/refugesystems/coc/core/tests/cases/" (21898 39047 478499 27000) "./" "CASE_DataSerialization.java" "#CASE_DataSerialization.java#" "../" "CASE_EntityTrig.java")
-
- ("/home/jon/Code/ChainOfCommand/CoC_Client/resources/shaders/" (21920 5045 412697 986000) "./" "../" "shader.frag" "shader.vert")
-
- ("/home/jon/Code/Originate/devacurl/lib/tasks/" (21943 46422 943746 162000) ".keep" "./" "podio.rake" "../")
-
- ("/home/jon/Code/Originate/devacurl/app/controllers/" (21943 57164 567920 88000) "podio_controller.rb" "./" "application_controller.rb" "finder_controller.rb" "../")
-
- ("/home/jon/Code/Originate/devacurl/app/assets/stylesheets/" (21943 57164 567920 88000) "./" "finder/" "variables/" "application.sass" "bootstrap_overrides/" "variables.sass" "../")
-
- ("/home/jon/Code/Originate/devacurl/spec/workers/" (21943 46422 943746 162000) "actions/" "./" "podio_worker_spec.rb" "../")
-
- ("/home/jon/Code/Originate/devacurl/app/workers/" (21943 46422 939746 338000) "actions/" "./" "podio_worker.rb" "../")
-
- ("/home/jon/Code/Originate/devacurl/app/views/finder/" (21943 57164 567920 88000) "find-a-stylist.html.erb" "harness.js.erb" "_results_map.slim" "./" "index.slim" "results.slim" "_results_location_summary.slim" "_salon_summary.slim" "../" "_search_bar.slim")
-
- ("/home/jon/Code/Originate/devacurl/app/views/application/" (21943 57164 567920 88000) "_html5_shim.slim" "_flash.slim" "./" "_head.slim" "_footer.slim" "_header.slim" "../")
-
- ("/home/jon/Code/Originate/devacurl/app/assets/javascripts/" (21943 57164 567920 88000) "application.coffee" "frame_switcher.module.coffee" "google_maps_initializer.module.coffee" "./" "../")
-
- ("/home/jon/Code/Originate/devacurl/spec/workers/actions/" (21943 46422 943746 162000) "create_from_podio_item_spec.rb" "./" "podio_item_action_spec.rb" "../" "update_from_podio_item_spec.rb" "delete_from_podio_action_spec.rb")
-
- ("/home/jon/Code/Originate/devacurl/spec/fixtures/" (21943 46422 943746 162000) "./" "podio_item.rb" "../")
-
- ("/home/jon/Code/Originate/devacurl/db/" (21943 46422 943746 162000) "migrate/" "./" "seeds.rb" "schema.rb" "../")
-
- ("/home/jon/Code/Originate/devacurl/db/migrate/" (21943 46422 943746 162000) "./" "20150717180419_stylist_has_location.rb" "20150722181221_make_location_full_address_text.rb" "20150715201932_expand_locations.rb" "../" "20150717212853_remove_salons.rb" "20150713161215_create_locations.rb" "20150713165920_create_salons.rb" "20150713175854_create_stylists.rb")
-
- ("/home/jon/Code/Originate/devacurl/spec/" (21943 57164 567920 88000) "teaspoon_env.rb" "workers/" "factories.rb" "rails_helper.rb" "javascripts/" "models/" "./" "fixtures/" "support/" "spec_helper.rb" "../" "decorators_spec_helper.rb" "decorators/" "models_spec_helper.rb")
-
- ("/home/jon/Code/Originate/devacurl/spec/models/" (21943 57164 567920 88000) "./" "stylist_spec.rb" "../" "location_search_spec.rb" "model_for_podio_item_spec.rb" "location_spec.rb")
+ ("/home/jon/Code/Experiments/haskell/" (22052 5250 278066 815000) "main.o" "dev-resources/" "main.hs" "twice.hs" "prots.clj" "./" "twice.o" "asfd/" "show.scala" ".git/" "ifaces.go" "#main.hs#" "twice" ".nrepl-port" "main.hi" ".#main.hs" "resources/" "evil/" "../" "ifaces.scala" "test/" "target/" "main" "project.clj" "twice.hi" "poly2.hs" "poly2.txt" ".gitignore")
 
  ("/home/jon/Code/Vendor/clojure/src/jvm/clojure/" (21945 33562 596955 989000) "./" "java/" "main.java" "lang/" "asm/" "../")
 
  ("/home/jon/Code/Vendor/clojure/src/jvm/" (21945 33562 584955 639000) "./" "../" "clojure/")
 
+ ("/home/jon/Code/Vendor/clojure/src/clj/" (21945 33562 576955 406000) "./" "../" "clojure/")
+
  ("/home/jon/Code/Vendor/clojure/src/" (21945 33562 596955 989000) "clj/" "./" "assembly/" "jvm/" "resources/" "../" "script/")
+
+ ("/home/jon/Code/Vendor/" (21945 33558 268830 48000) "ghcjs-dom/" "ghcjs-base/" "./" "ghcjs-jquery/" "ghcjs-prim/" "ghcjs/" "../" "clojure/")
+
+ ("/home/jon/Code/Experiments/haskell/evil/" (22050 39767 108509 310000) "heterolist.hs" "./" "evil.c" "evil.h" "../")
+
+ ("/home/jon/.lein/" (22050 34784 818914 228000) "repl-port" "./" "repl-history" "../" "profiles.clj" "self-installs/")
+
+ ("/home/jon/Code/Walker/" (21950 37423 577795 152000) "sprite.rb" "./" ".git/" "world.rb" "world_object.rb" "README.md" "player.png" "Gemfile.lock" "go_around.rb" "../" ".rvmrc" "Gemfile" "screen.rb")
+
+ ("/home/jon/Code/Originate/BCG/somatix/emailService/src/main/scala/" (22050 15476 653536 95000) "Registry.scala" "util/" "models/" "./" "services/" "persistence/" "controllers/" "../" "Main.scala")
+
+ ("/home/jon/Code/Originate/BCG/somatix/emailService/src/test/scala/" (22050 15476 653536 95000) "util/" "./" "services/" "support/" "persistence/" "controllers/" "../")
+
+ ("/home/jon/Code/Originate/BCG/somatix/project/" (22050 15476 653536 95000) "Common.scala" "plugins.sbt" "./" "project/" "build.properties" "ElasticBeanstalk.scala" "../" "target/" "Dependencies.scala" "scalastyle-config.xml")
+
+ ("/home/jon/Code/ChainOfCommand/Revolt/Client/core/src/main/scala/" (22032 22987 564578 693000) "GameScreen.scala" "MainMenuScreen.scala" "./" "GameOverScreen.scala" "CocRevoltClient.scala" "BaseScreen.scala" "../")
+
+ ("/home/jon/Code/Experiments/clojure/listthing/" (22050 34901 653535 47000) "LICENSE" "src/" "dev-resources/" "doc/" "./" "README.md" ".nrepl-port" ".hgignore" "resources/" "../" "test/" "target/" "project.clj" ".gitignore")
+
+ ("/home/jon/Code/Experiments/clojure/listthing/src/listthing/" (22050 34893 949472 916000) "core.clj" "./" "../")
+
+ ("/home/jon/Code/Experiments/clojure/listthing/src/" (22050 34840 696647 625000) "listthing/" "./" "../")
+
+ ("/home/jon/Code/Experiments/clojure/" (22050 34840 692647 535000) "listthing/" "./" "../")
+
+ ("/home/jon/Code/" (21950 37423 201689 745000) "Vendor/" "SimpleLighting/" "Langs/" "./" "Originate/" "opengl-playground/" "webtoot/" "Walker/" "../" "ChainOfCommand/" "hoplon-demos/" "Experiments/" "podio-rb/")
+
+ ("/home/jon/Code/ChainOfCommand/Revolt/Client/desktop/src/main/scala/" (22032 20889 229617 69000) "./" "../" "Main.scala")
+
+ ("/home/jon/Code/ChainOfCommand/Revolt/Client/desktop/src/main/" (22016 17948 21991 350000) "./" "scala/" "../")
+
+ ("/home/jon/Code/ChainOfCommand/Revolt/Client/desktop/src/" (22016 17948 21991 350000) "./" "../" "main/")
+
+ ("/home/jon/Code/ChainOfCommand/Revolt/Client/desktop/" (22016 18192 746054 238000) "src/" "proguard-project.txt" "./" "../" "target/" "manifest/")
+
+ ("/home/jon/Code/ChainOfCommand/Revolt/Client/project/" (22032 20416 812164 808000) "plugins.sbt" "./" "project/" "build.properties" "build.scala" "../" "target/" "Dependencies.scala")
+
+ ("/home/jon/Code/ChainOfCommand/Revolt/Client/project/project/" (22016 18183 898051 875000) "./" "../" "target/")
+
+ ("/home/jon/Code/Originate/devacurl/app/assets/stylesheets/" (22007 515 281392 936000) "./" "finder/" "variables/" "shared/" "application.sass" "bootstrap_overrides/" "variables.sass" "../" "locations/" "reviews/")
+
+ ("/home/jon/Code/Originate/devacurl/app/assets/stylesheets/bootstrap_overrides/" (22007 515 281392 936000) "./" "jumbotron.sass" "forms.sass" "../")
+
+ ("/home/jon/Code/Originate/devacurl/spec/workers/" (22007 515 313394 653000) "geocoder_worker_spec.rb" "actions/" "./" "podio_worker_spec.rb" "micro_rate_limiter_spec.rb" "../" "job_halter_spec.rb")
+
+ ("/home/jon/Code/Originate/devacurl/app/workers/" (22007 515 285393 151000) "actions/" "./" "job_halter.rb" "podio_worker.rb" "../" "micro_rate_limiter.rb" "geocoder_worker.rb")
+
+ ("/home/jon/Code/Originate/devacurl/app/views/finder/" (22007 515 285393 151000) "_location_type_summary.slim" "harness.js.erb" "_results_map.slim" "./" "_stylist_certifications.slim" "index.slim" "results.slim" "../" "_stylist_certification.slim" "_search_details_bar.slim" "_search_bar.slim")
+
+ ("/home/jon/Code/Originate/devacurl/app/views/application/" (22007 515 285393 151000) "_html5_shim.slim" "_flash.slim" "./" "_head.slim" "_footer.slim" "_header.slim" "../")
+
+ ("/home/jon/Code/Originate/devacurl/app/assets/javascripts/" (22007 515 281392 936000) "application.coffee" "frame_switcher.module.coffee" "google_custom_map_marker.module.coffee" "./" "partial_frame_switcher.coffee" "accordion.coffee" "dropdown_check_boxes.coffee" "../" "google_maps_api.module.coffee" "000jquery_ujs.js" "path_switcher.module.coffee" "map_initializer.module.coffee" "jump_link.coffee" "form_geocoder.module.coffee" "refine_search_form.module.coffee")
+
+ ("/home/jon/Code/Originate/devacurl/spec/workers/actions/" (22007 515 313394 653000) "create_from_podio_item_spec.rb" "./" "podio_item_action_spec.rb" "../" "update_from_podio_item_spec.rb" "delete_from_podio_action_spec.rb")
+
+ ("/home/jon/Code/Originate/devacurl/spec/fixtures/" (22007 515 313394 653000) "podio_location.rb" "./" "podio_review.rb" "../" "podio_stylist.rb")
+
+ ("/home/jon/Code/Originate/devacurl/db/" (22007 515 285393 151000) "migrate/" "./" "seeds.rb" "schema.rb" "../")
+
+ ("/home/jon/Code/Originate/devacurl/db/migrate/" (22007 515 285393 151000) "20150813190020_add_description_to_locations.rb" "./" "20150811163933_create_reviews.rb" "20150817203048_index_reviews_on_location_id.rb" "20150723234559_create_locations_stylists.rb" "20150817181034_add_images_to_locations.rb" "20150717180419_stylist_has_location.rb" "20150722181221_make_location_full_address_text.rb" "20150715201932_expand_locations.rb" "20150821150011_add_devachan_to_locations.rb" "20150812010625_change_stylists_last_name_null.rb" "20150730152029_podio_id_is_never_null.rb" "../" "20150817185243_change_reviews_rating_null.rb" "20150826145545_create_recent_searches.rb" "20150723233147_add_podio_id_to_stylists.rb" "20150810182711_add_url_to_locations.rb" "20150717212853_remove_salons.rb" "20150723230545_add_services_to_stylists.rb" "20150713161215_create_locations.rb" "20150713165920_create_salons.rb" "20150819174315_add_podio_id_to_reviews.rb" "20150713175854_create_stylists.rb")
+
+ ("/home/jon/Code/Originate/devacurl/spec/" (22007 515 313394 653000) "teaspoon_env.rb" "workers/" "factories.rb" "rails_helper.rb" "javascripts/" "models/" "./" "fixtures/" "support/" "builders/" "spec_helper.rb" "../" "decorators_spec_helper.rb" "decorators/" "models_spec_helper.rb")
+
+ ("/home/jon/Code/Originate/devacurl/spec/models/" (22007 515 313394 653000) "./" "stylist_spec.rb" "podio_attributes_spec.rb" "review_spec.rb" "../" "location_search_spec.rb" "model_for_podio_item_spec.rb" "recent_search_spec.rb" "location_spec.rb")
+
+ ("/home/jon/Code/opengl-playground/clj/src/clj/opengl/" (21941 19226 827649 17000) "core.clj" "./" "../")
+
+ ("/home/jon/Code/Originate/devacurl/config/initializers/" (22007 515 285393 151000) "assets.rb" "backtrace_silencers.rb" "sidekiq.rb" "./" "podio.rb" "simple_form_bootstrap.rb" "mime_types.rb" "inflections.rb" "rails_config.rb" "wrap_parameters.rb" "simple_form.rb" "session_store.rb" "../" "cookies_serializer.rb" "filter_parameter_logging.rb" "geocoder.rb")
+
+ ("/home/jon/Code/Langs/persistent_map/" (21996 47092 36000 649000) "IPersistentMap.hpp" "Protocol.hpp" "./" "APersistentMap.cpp" ".git/" "ISeq.hpp" "Seqable.hpp" "APersistentMap.hpp" "../" "IPersistentCollection.hpp" "test" "testit.cpp")
+
+ ("/home/jon/Code/ChainOfCommand/Revolt/Client/.ensime_cache/dep-src/source-jars/com/badlogic/gdx/" (22016 27659 752291 678000) "InputProcessorQueue.java" "Graphics.java" "InputAdapter.java" "Screen.java" "Input.java" "./" "Gdx.java" "ScreenAdapter.java" "utils/" "InputProcessor.java" "math/" "input/" "InputMultiplexer.java" "Game.java" "assets/" "../" "maps/" "graphics/" "scenes/" "audio/")
 )
 
 ;; ----- ido-unc-hosts-cache -----

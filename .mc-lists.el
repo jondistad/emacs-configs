@@ -24,6 +24,7 @@
 
 (setq mc/cmds-to-run-once
       '(
+        ensime-mouse-motion
         ido-switch-buffer
         indent-for-tab-command
         orgtbl-self-insert-command
