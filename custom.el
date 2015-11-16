@@ -15,7 +15,12 @@
  '(magit-use-overlays nil)
  '(safe-local-variable-values
    (quote
-    ((clojure-local-indents
+    ((ffip-limit . 13000)
+     (ffip-additional-patterns "*.java" "*.proto")
+     (ffip-exclude-dirs ".ensime_cache" "target")
+     (ffip-exclude-dirs ".ensime_cache")
+     (ffip-additional-patterns "*.conf" "*.java" "*.xml")
+     (clojure-local-indents
       (gl-begin 1)
       (gl-statics defun))
      (fill-width . 90)
