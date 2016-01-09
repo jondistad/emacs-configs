@@ -4,8 +4,8 @@
 
 ;; Author: Johan Andersson <johan.rejeep@gmail.com>
 ;; Maintainer: Johan Andersson <johan.rejeep@gmail.com>
-;; Version: 0.3.2
-;; Package-Version: 0.3.2
+;; Version: 0.3.3
+;; Package-Version: 0.3.3
 ;; Keywords: test
 ;; Package-Requires: ((s "1.7.0") (dash "2.2.0") (f "0.12.1"))
 ;; URL: http://github.com/ecukes/espuds
@@ -324,7 +324,7 @@ chain. Otherwise simulate the TYPING."
 (When "^I turn on \\(.+\\)$"
   "Turns on some mode."
   (lambda (mode)
-    (let ((v (vconcat [?\C-u 1 ?\M-x] (string-to-vector mode))))
+    (let ((v (vconcat [?\C-u ?\M-x] (string-to-vector mode))))
       (execute-kbd-macro v))))
 
 (When "^I set \\(.+\\) to \\(.+\\)$"

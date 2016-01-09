@@ -228,6 +228,7 @@
                      (append (list "*.scala" "*.coffee" "*.c" "*.cpp" "*.cc" "*.h" "*.hh" "*.hpp")
                              ffip-patterns)))
 (setq ffip-limit 5000)
+(setq ffip-prefer-ido-mode t)
 
 (defun find-file-in-project-with-options ()
   (interactive)
