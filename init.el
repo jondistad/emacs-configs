@@ -100,6 +100,7 @@
 (setq-default indent-tabs-mode nil)
 (tool-bar-mode -1)
 (menu-bar-mode -1)
+(scroll-bar-mode -1)
 (set-face-attribute 'default nil :font "Fantasque Sans Mono-13")
 ;(color-theme-molokai)
 (global-auto-revert-mode)
@@ -108,8 +109,8 @@
   (setq ispell-program-name "/usr/local/bin/aspell"))
 
 (require 'ensime)
-(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
-(add-hook 'scala-mode-hook #'yas-minor-mode)
+;; (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
+;; (add-hook 'scala-mode-hook #'yas-minor-mode)
 ;; (define-key company-active-map [tab] nil)
 
 (eval-after-load 'paredit

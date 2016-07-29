@@ -2,6 +2,14 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/" . "util/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/" . "app/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/main/scala/" . "models/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/main/" . "scala/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/" . "main/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/" . "src/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/" . "6fusion-api-server/")
+ ("/home/jon/Code/Originate/6fusion/" . "6fusion-online/")
  ("/home/jon/Code/Originate/BCG/somatix/somatix-unsub-import/src/main/scala/" . "services/")
  ("/home/jon/Code/Originate/BCG/somatix/somatix-unsub-import/src/main/" . "scala/")
  ("/home/jon/Code/Originate/BCG/somatix/somatix-unsub-import/src/" . "main/")
@@ -198,7 +206,7 @@
  ("/home/jon/Code/Originate/devacurl/spec/" . "models/")
  ("/home/jon/Code/Originate/devacurl/app/" . "models/")
  ("/home/jon/Code/Originate/devacurl/" . "app/")
- ("/home/jon/Code/Originate/" . "BCG/")
+ ("/home/jon/Code/Originate/" . "6fusion/")
  ("/home/jon/Code/SimpleLighting/source/SimpleLighting/" . "data/")
  ("/home/jon/Code/ChainOfCommand/CoC_Client/src/java/net/refugesystems/coc/client/" . "math/")
  ("/home/jon/Code/SimpleLighting/source/SimpleLighting/data/" . "shaders/")
@@ -233,11 +241,16 @@
  ("/home/jon/Code/ChainOfCommand/CoC_Universe-Server/" . "CoC_Universe-Server/")
  ("/home/jon/Code/ChainOfCommand/" . "InvocationIsle/")
  ("/home/jon/Code/" . "Originate/")
- ("/home/jon/" . "Code/")
+ ("/home/jon/" . ".emacs.d/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/jon/.emacs.d/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/util/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/"
+ "/home/jon/.sbt/plugins/"
+ "/home/jon/"
  "/home/jon/Code/Originate/BCG/somatix/"
  "/home/jon/Code/Originate/BCG/somatix/scripts/"
  "/home/jon/Code/Originate/BCG/somatix/somatix-unsub-import/src/main/scala/services/"
@@ -246,7 +259,6 @@
  "/home/jon/Code/Experiments/haskell/evil/"
  "/home/jon/Code/Originate/BCG/somatix/scripts/circle/"
  "/home/jon/Code/Originate/BCG/ops/scripts/"
- "/home/jon/"
  "/home/jon/Code/Originate/BCG/Vendor/amazon-kinesis-producer/java/amazon-kinesis-producer/src/main/java/com/amazonaws/services/kinesis/producer/"
  "/home/jon/Code/Originate/BCG/Vendor/amazon-kinesis-producer/"
  "/home/jon/Code/Originate/BCG/somatix/somatix-common/src/test/scala/support/"
@@ -281,31 +293,67 @@
  "/home/jon/Code/Originate/BCG/somatix/somatix-customer-info/src/main/scala/"
  "/home/jon/Code/Originate/BCG/somatix/somatix-customer-info/src/main/scala/services/"
  "/home/jon/Code/Originate/BCG/somatix/somatix-customer-info/src/test/scala/services/"
- "/home/jon/.emacs.d/"
  "/home/jon/Code/Originate/BCG/somatix/somatix-customer-info/src/main/scala/models/"
  "/home/jon/Code/Experiments/clj-cryptopals/src/cryptopals/"
  "/home/jon/Code/Experiments/cryptopals/"
- "/home/jon/Code/Originate/BCG/somatix/somatix-common/src/main/scala/base/streams/"
- "/home/jon/Code/Originate/BCG/somatix/somatix-common/src/main/scala/aws/dynamodb/"
- "/home/jon/Code/Experiments/cryptopals/data/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "init.el"
+ "FutureR.scala"
+ "docker-compose.yml"
+ "plugins.sbt"
+ ".gitignore_global"
  "circle.yml"
  "deploy"
  "SubscriptionImportService.scala"
  "RecordProcessor.scala"
  "application.local.conf"
- "badjump.s"
- "save-cache"
- "restore-cache"
- "install-kinesalite"
- "set-env-all"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/jon/.emacs.d/" (22427 50615 908633 459000) "custom.el" "url/" "../" "abbrev_defs" "./" ".git/" "opt/" "init.el" "gforth.el" "auto-save-list/" "elpa/" "ido.last" "ensime/" ".mc-lists.el" "ac-comphist.dat")
+
+ ("/home/jon/" (22427 50674 900368 823000) ".nv/" ".pki/" ".gnome2_private/" ".profile" ".bash_history" ".vimrc" "../" ".config/" ".zcompdump" "./" "Code/" "Pictures/" ".gitignore_global" ".emacs_backups/" ".gnupg/" ".gnome2/" "target/" ".ivy2/" ".ssh/" ".sudo_as_admin_successful" "Videos/" ".mozilla/" ".cache/" "Desktop/" ".zsh_history" ".zshrc" ".irbrc" ".scala_history" ".emacs.d/" "Music/" ".bashrc" "Templates/" "configs/" ".gitconfig" ".local/" "Public/" ".gconf/" "Documents/" ".sbt/" ".bash_logout" ".lesshst" "project/" ".gnome/" "Downloads/" ".xsel.log" ".ICEauthority")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/util/" (22427 50326 261949 410000) "../" "OptionHelpers.scala" "JsonEnum.scala" "./" "FutureR.scala" "Result.scala" "Tap.scala" "Logging.scala" "Crypto.scala")
+
+ ("/home/" (22426 34482 68167 385000) "lost+found/" "jon/" "../" "./")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/" (22427 49069 983918 256000) "meter-schemas/" "6fusion-common/" "build.sbt" "../" "./" "6fusion-spark/" "readme.md" ".git/" "target/" "generator/" ".gitignore" ".ensime_cache/" "scripts/" "6fusion-api-server/" "circle.yml" ".fix-imports.yml" "project/" "6fusion-seed-data/" ".ensime" "docker-compose.yml" "scalastyle-config.xml" ".sbtopts" "capnp/" ".dir-locals.el")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/model/" (22427 39066 497841 690000) "User.scala" "../" "./" "WithId.scala" "Organization.scala" "Password.scala")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/" (22427 39066 497841 690000) "persistence/" "dto/" "util/" "../" "./" "controllers/" "global/" "views/" "services/" "model/")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/" (22427 39066 381840 139000) "build.sbt" "../" "conf/" "./" "test/" "target/" "app/" "public/" "project/" "LICENSE")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/main/scala/models/" (22427 39066 381840 139000) "DiskReading.scala" "NicReading.scala" "../" "Sample.scala" "./" "SerializableTime.scala" "MachineReading.scala" "SampleBatch.scala" "Blob.scala" "MeterId.scala" "UUID.scala")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/main/scala/" (22413 7367 0 0) "exceptions/" "util/" "../" "./" "Section.scala" "models/" "capnp/")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/main/java/" (22427 39066 381840 139000) "../" "./" "Readings.java")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/main/" (22427 39066 381840 139000) "java/" "../" "./" "scala/")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/" (22427 39066 381840 139000) "../" "./" "test/" "main/")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/" (22427 39066 353839 765000) "src/" "target-2.11/" "build.sbt" "../" "./" "target/" ".cross/" "target-2.10/")
+
+ ("/home/jon/Code/Originate/6fusion/" (22427 39049 585612 867000) "dcos.notes" "notes.org" "aws.org" "dcos-vagrant/" "../" "./" "dcos/" "6fusion-online/" "dcos-cli/" "data/" "flatbuffers-java-1.2.0-SNAPSHOT.jar" "kickoff.org" "mesosphere.org" "repos/" "spikes/")
+
+ ("/home/jon/Code/Originate/" (22427 39008 829037 761000) "tododrop/" "OA/" "../" "./" "BCG/" "guide_private/" "RMS/" "devacurl/" "TwentyPercent/" "foodstand/" "FPClass/" "6fusion/")
+
+ ("/home/jon/Code/" (22417 10160 0 0) "Misc/" "Vendor/" "../" "Langs/" "ClojureBridge/" "._TwentyPercent" "./" "._Eudyptula" "Originate/" "Game/" "._OpenSource" "OpenSource/" "TwentyPercent/" "._Game" "Notes/" "._Langs" "repos.json" "._Notes" "Sterf/" "Wombats/" ".DS_Store" "Eudyptula/" "._Misc" "._Sterf" "._.DS_Store")
+
+ ("/home/jon/.sbt/" (22427 39575 314813 33000) "../" "./" "boot/")
+
+ ("/home/jon/configs/" (22427 39407 825498 609000) ".ackrc" ".vimrc" "../" ".rvmrc" "./" ".git/" ".gitignore_global" ".gitignore" ".zshrc" ".gemrc" ".irbrc" "README" ".gitconfig" "IR_Black.terminal" ".rdebugrc" ".vim/" ".gvimrc")
+
+ ("/home/jon/.ssh/" (22427 33426 167262 905000) "../" "authorized_keys" "known_hosts" "./" "id_rsa.pub" "id_rsa")
+
  ("/home/jon/Code/Originate/BCG/somatix/scripts/" (22160 26013 546956 929000) "deploy" "kinesis-read" "./" "circle/" "../" "check-root-subprojects")
 
  ("/home/jon/Code/Originate/BCG/somatix/" (22160 27016 185944 394000) "somatix-mailer/" "jsonpaths/" ".editorconfig" "somatix-unsub-import/" "somatix-shared-daos/" "./" "project/" "somatix-persistence/" ".git/" "somatix-frontend-api/" "lib/" "somatix-streams/" "build.sbt" "somatix-customer-info/" "requirements.txt" "somatix-data-import/" ".gitattributes" "somatix-common/" "api-docs/" "README.md" "somatix-lambda-firehose/" "scripts/" ".ensime_cache/" "somatix-mailgun-webhooks/" ".dir-locals.el" "somatix-aws/" "../" "target/" ".fix-imports.yml" "logs/" "circle.yml" "somatix-domain-models/" "scalastyle-config.xml" "somatix-lambda-import-trigger/" ".gitignore" ".ensime")
@@ -313,8 +361,6 @@
  ("/home/jon/Code/Originate/BCG/somatix/somatix-unsub-import/" (22160 26910 402473 241000) "src/" "./" "build.sbt" "elastic-beanstalk/" "../" "target/")
 
  ("/home/jon/Code/Originate/BCG/somatix/somatix-unsub-import/src/main/scala/services/" (22160 27076 265644 34000) "S3Service.scala" "./" "UnsubNotificationService.scala" "UnsubReconciler.scala" "../" "SubscriptionImporter.scala" "SubscriptionImportService.scala" "ImportStatus.scala")
-
- ("/home/jon/" (22160 27176 261144 122000) ".gitconfig" ".emacs_backups/" ".purple/" "Templates/" ".pulse-cookie" "sites.tgz" "Public/" "Music/" "jondistad.pub" ".nave/" "Games/" ".lastpass/" ".cider-repl-history" ".rediscli_history" ".irbrc" ".cache/" ".adobe/" ".macromedia/" ".xsel.log" ".heroku/" ".gradle/" ".zshrc" ".cabal/" ".gnupg/" ".psql_history" ".xscreensaver" ".guard_history" "./" ".vim-fuf-data/" ".gimp-2.8/" ".csi_history" ".config/" ".ghci" ".zsh/" ".vim/" ".gconf/" ".rbenv/" "lein" ".sbt/" ".netrc" ".java_history" ".pip/" ".java/" ".mozilla/" ".ivy2/" ".sudo_as_admin_successful" ".racket_history" ".ghc/" ".bash_history" ".gnome2/" ".vimrc" ".local/" "Documents/" ".spamassassin/" ".gitignore_global" ".racket/" ".gstreamer-0.10/" ".irb_history_x86_64-linux_2.2.2" ".gem/" ".PlayOnLinux/" "PlayOnLinux's virtual drives/" ".xsessionrc" ".bashrc" "backup.tgz" ".pki/" ".lesshst" ".pg_service.conf" ".ICEauthority" ".steampath" ".viminfo" ".steam/" ".gnome/" "Code/" ".ghcjs/" ".npm/" ".aws/" ".profile" ".xinitrc" "somatix" ".ssh/" "../" ".boot/" ".zcompdump" ".dbus/" ".scala_history" ".zsh_history" "configs/" ".m2/" ".lein/" "Desktop/" ".emacs.d/" ".thumbnails/" ".bash_logout" "Pictures/" ".steampid" ".gnome2_private/" ".gphoto/" "Downloads/" "Videos/")
 
  ("/home/jon/Code/Originate/BCG/somatix/somatix-unsub-import/src/main/scala/" (22160 26013 550956 909000) "Registry.scala" "models/" "./" "services/" "eventprocessor/" "package.scala" "dto/" "persistence/" "controllers/" "../" "Main.scala")
 
@@ -362,11 +408,7 @@
 
  ("/home/jon/Code/Experiments/haskell/" (22153 32910 585558 516000) "main.o" "stg/" "dev-resources/" "main.hs" "twice.hs" "prots.clj" "./" "twice.o" "asfd/" "show.scala" ".git/" "ifaces.go" "twice" "main.hi" "resources/" "evil/" "../" "ifaces.scala" "test/" "target/" "main" "project.clj" "twice.hi" "poly2.hs" "poly2.txt" ".gitignore")
 
- ("/home/" (22091 9899 465541 178000) "lenge/" "./" "lost+found/" "jon/" "../" "puppycam/")
-
  ("/home/jon/Code/Experiments/haskell/evil/" (22153 32905 117570 385000) "heterolist.hs" "./" "dist/" "llvmbin/" "evil.c" "evil.h" "../")
-
- ("/home/jon/configs/" (22115 26627 231936 323000) ".gitconfig" ".irbrc" ".zshrc" "./" "README" ".git/" ".gemrc" ".rdebugrc" ".vim/" "IR_Black.terminal" ".vimrc" ".gitignore_global" "../" ".ackrc" ".rvmrc" ".gvimrc" ".gitignore")
 
  ("/home/jon/Code/Originate/BCG/Vendor/amazon-kinesis-producer/java/amazon-kinesis-producer/src/main/java/com/amazonaws/services/kinesis/producer/" (22081 10749 225663 145000) "_ConfigTemplate.java" "Attempt.java" "./" "protobuf/" "KinesisProducer.java" "Daemon.java" "DaemonException.java" "Metric.java" "UserRecordFailedException.java" "KinesisProducerConfiguration.java" "../" "UserRecordResult.java" "IrrecoverableError.java")
 
@@ -456,15 +498,9 @@
 
  ("/home/jon/Code/Originate/BCG/somatix/somatix-customer-info/src/" (22108 23354 982006 532000) "./" "../" "test/" "main/")
 
- ("/home/jon/.ssh/" (22108 24625 577261 334000) "./" "config" "somatix-bastion.pem" "known_hosts" "../" "id_rsa.pub" "somatixcraft.pem" "somatix_deployment.pem" "somatix-prod.pem" "id_rsa")
-
  ("/home/jon/Code/Originate/BCG/somatix/somatix-common/src/main/scala/base/" (22138 65198 715125 249000) "WithId.scala" "./" "PagingData.scala" "controller/" "../")
 
  ("/home/jon/Code/Originate/BCG/somatix/somatix-customer-info/src/main/scala/services/" (22136 10591 89532 498000) "S3Service.scala" "./" "UnsubNotificationService.scala" "SubscriptionInfoService.scala" "UnsubReconciler.scala" "../" "SubscriptionImporter.scala" "SubscriptionImportService.scala" "ImportStatus.scala")
-
- ("/home/jon/Code/Originate/" (22016 17202 239874 693000) "./" "devacurl/" "../" "Attack2015/" "BCG/")
-
- ("/home/jon/Code/" (21950 37423 201689 745000) "Vendor/" "SimpleLighting/" "Langs/" "./" "Originate/" "opengl-playground/" "webtoot/" "Walker/" "../" "ChainOfCommand/" "hoplon-demos/" "Experiments/" "podio-rb/")
 
  ("/home/jon/Code/Originate/BCG/ops/scripts/" (22136 15027 130551 593000) "deploy" "./" "notify-airbrake" "build-inventory" "print-env" "set-env-all" "cleanup-versions" "../" "set-env")
 
@@ -477,34 +513,6 @@
  ("/home/jon/Code/Originate/BCG/somatix/somatix-streams/src/main/" (22123 28040 602506 834000) "./" "scala/" "../")
 
  ("/home/jon/Code/Originate/BCG/somatix/somatix-streams/src/main/scala/base/" (22136 10591 93532 448000) "SomatixEventType.scala" "./" "ProcessableStream.scala" "package.scala" "../" "BaseStreamProcessor.scala")
-
- ("/home/jon/Code/Originate/BCG/somatix/somatix-mailer/src/main/scala/eventprocessor/" (22136 8388 605232 454000) "EmailEventProcessor.scala" "./" "../")
-
- ("/home/jon/Code/Originate/BCG/somatix/somatix-mailer/src/main/scala/" (22123 28040 602506 834000) "Registry.scala" "util/" "./" "services/" "eventprocessor/" "controllers/" "../" "Main.scala")
-
- ("/home/jon/Code/Experiments/cryptopals/src/" (22125 49884 246557 226000) "Utils.hs" "Set1.hs" "KeyDetect.hs" "./" "Main.hs" "BufferOps.hs" "../" "Types.hs" "Set2.hs" "Oracle.hs" "MockWeb.hs" "TextEncodings.hs" "Cipher.hs")
-
- ("/home/jon/Code/Experiments/" (22104 26166 811420 936000) "gifhaskell/" "./" "frege/" "clj-cryptopals/" "ghcjs-toy/" "cryptopals/" "haskell/" "scala/" "../" "gifdecoder/" "pthread/" "clojure/")
-
- ("/home/jon/Code/Originate/BCG/prototype/Kinesis/" (22119 30949 723958 109000) "./" "Conversion.hs" "API.hs" "KCL/" "../" "Types.hs")
-
- ("/home/jon/Code/Originate/BCG/prototype/" (22119 43457 395472 366000) "LICENSE" "Utils.hs" "somatix_api/" "transaction-csv-importer/" "Kinesis/" ".cabal-sandbox/" "cms_assets/" "./" ".git/" "Setup.hs" "somatix_web/" ".email-event-receiver" "Servant/" "import-transactions.properties" "email-event-receiver/" "dist/" "SendGrid/" "cms/" "README.md" "Aws/" ".import-transactions" "import-transactions/" "Apollo/" "somatix_api_assets/" "Model/" "SOMATIX.cabal" "cabal.sandbox.config" "kclmld" "DynamoDB/" "../" "apollo-reports/" "Workflow/" "test/" "Events/" ".apollo-reports" "Mailgun/" "javalib/" "circle.yml" "stack.yaml" "email-sender/" "import-with-kcl/" ".gitignore" "somatix_web_assets/")
-
- ("/home/jon/Code/Originate/BCG/prototype/email-sender/" (22119 43710 10683 847000) "./" "Main.hs" "../" "EmailSender/")
-
- ("/home/jon/Code/Originate/BCG/somatix/somatix-mailer/src/main/" (22108 23354 986006 354000) "./" "scala/" "../")
-
- ("/home/jon/Code/Originate/BCG/somatix/somatix-mailer/src/" (22108 23354 990006 174000) "./" "../" "test/" "main/")
-
- ("/home/jon/Code/Vendor/OpenGL/src/" (22116 47845 800775 140000) "./" "Graphics/" "../")
-
- ("/home/jon/Code/Vendor/OpenGL/" (22116 47845 800775 140000) "LICENSE" "src/" "./" ".git/" "Setup.hs" "specs/" "README.md" "../" "OpenGL.cabal" "CHANGELOG.md" ".travis.yml" ".gitignore")
-
- ("/home/jon/Code/Vendor/" (22116 47844 364764 745000) "OpenGL/" "ghcjs-dom/" "ghcjs-base/" "./" "ghcjs-jquery/" "ghcjs-prim/" "ghcjs/" "GLUtil/" "../" "clojure/")
-
- ("/home/jon/Code/ChainOfCommand/InvocationIsle/Haskell/shaders/" (22116 47685 207681 641000) "vertex.glsl" "./" "fragment.glsl" "../")
-
- ("/home/jon/Code/Vendor/GLUtil/src/Graphics/GLUtil/" (22116 47468 298489 92000) "Camera2D.hs" "Shaders.hs" "BufferObjects.hs" "Textures.hs" "ShaderProgram.hs" "./" "TypeMapping.hs" "Drawing.hs" "Viewport.hs" "Linear.hs" "GLError.hs" "../" "Camera3D.hs" "JuicyTextures.hs" "VertexArrayObjects.hs")
 )
 
 ;; ----- ido-unc-hosts-cache -----
