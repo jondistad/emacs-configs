@@ -11,6 +11,7 @@
         coffee-dedent-line-backspace
         company-ignore
         dabbrev-expand
+        forward-sexp
         haskell-indentation-delete-backward-char
         kill-region
         org-delete-char
