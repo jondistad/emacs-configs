@@ -114,6 +114,8 @@
 (require 'ensime)
 ;; (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
 ;; (add-hook 'scala-mode-hook #'yas-minor-mode)
+(add-hook 'scala-mode-hook (lambda ()
+                             (setq-local electric-indent-chars '(?\n ?\}))))
 ;; (define-key company-active-map [tab] nil)
 
 (eval-after-load 'paredit
