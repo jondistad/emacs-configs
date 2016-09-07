@@ -15,7 +15,9 @@
  '(magit-use-overlays nil)
  '(safe-local-variable-values
    (quote
-    ((ffip-additional-patterns "*.java" "*.xml")
+    ((ffip-additional-patterns "*.conf")
+     (ffip-additional-patterns "*.conf" "*.java" "*.xml" "*.sbt")
+     (ffip-additional-patterns "*.java" "*.xml")
      (ffip-limit . 13000)
      (ffip-additional-patterns "*.java" "*.proto")
      (ffip-exclude-dirs ".ensime_cache" "target")

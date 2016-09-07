@@ -2,18 +2,90 @@
 
 ;; ----- ido-last-directory-list -----
 (
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/test/scala/" . "models/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/test/scala/" . "util/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/test/" . "scala/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/test/scala/capnp/" . "example/")
+ ("/home/jon/Code/Originate/6fusion/repos/on-prem-api/app/controllers/api/" . "v1/")
+ ("/home/jon/Code/Originate/6fusion/repos/on-prem-api/app/controllers/" . "api/")
+ ("/home/jon/Code/Originate/6fusion/repos/on-prem-api/app/models/" . "concerns/")
+ ("/home/jon/Code/Originate/6fusion/repos/on-prem-api/app/" . "models/")
+ ("/home/jon/Code/Vendor/quill/quill-cassandra/src/main/scala/io/" . "getquill/")
+ ("/home/jon/Code/Vendor/quill/quill-cassandra/src/main/scala/" . "io/")
+ ("/home/jon/Code/Vendor/quill/quill-cassandra/src/main/" . "scala/")
+ ("/home/jon/Code/Vendor/quill/quill-cassandra/src/" . "main/")
+ ("/home/jon/Code/Vendor/quill/quill-cassandra/" . "src/")
+ ("/home/jon/Code/Vendor/scala/src/library/scala/collection/" . "immutable/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/conf/evolutions/" . "cassandra/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/conf/" . "evolutions/")
+ ("/home/jon/Code/Vendor/quill/quill-core/src/main/scala/io/getquill/" . "ast/")
+ ("/home/jon/Code/Originate/6fusion/repos/meter-dashboard/app/" . "controllers/")
+ ("/home/jon/Code/Originate/6fusion/repos/meter-dashboard/images/" . "coreos/")
+ ("/home/jon/Code/Originate/6fusion/repos/meter-dashboard/lib/" . "tasks/")
+ ("/home/jon/Code/Originate/6fusion/repos/meter-dashboard/" . "app/")
+ ("/home/jon/Code/Originate/6fusion/repos/on-prem-api/lib/" . "tasks/")
+ ("/home/jon/Code/Originate/6fusion/repos/on-prem-api/" . "app/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/controllers/api/" . "v1/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/controllers/" . "api/")
+ ("/home/jon/Code/Originate/6fusion/repos/" . "on-prem-api/")
+ ("/home/jon/Code/Vendor/cassandra-unit/cassandra-unit/src/main/java/org/cassandraunit/dataset/" . "cql/")
+ ("/home/jon/Code/Vendor/cassandra-unit/cassandra-unit/src/main/java/org/cassandraunit/" . "utils/")
+ ("/home/jon/Code/Vendor/cassandra-unit/cassandra-unit/src/main/java/org/" . "cassandraunit/")
+ ("/home/jon/Code/Vendor/cassandra-unit/cassandra-unit/src/main/java/" . "org/")
+ ("/home/jon/Code/Vendor/cassandra-unit/cassandra-unit/src/main/" . "resources/")
+ ("/home/jon/Code/Vendor/cassandra-unit/cassandra-unit/src/" . "main/")
+ ("/home/jon/Code/Vendor/cassandra-unit/cassandra-unit/" . "src/")
+ ("/home/jon/Code/Vendor/cassandra-unit/" . "cassandra-unit/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-seed-data/src/main/" . "scala/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-seed-data/src/" . "main/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-seed-data/" . "src/")
+ ("/home/jon/Code/Originate/TwentyPercent/CoC-Alpha/TestServer/.ensime_cache/dep-src/source-jars/akka/actor/" . "dungeon/")
+ ("/home/jon/Code/Originate/TwentyPercent/CoC-Alpha/TestServer/src/main/" . "scala/")
+ ("/home/jon/Code/Originate/TwentyPercent/CoC-Alpha/TestServer/src/" . "main/")
+ ("/home/jon/Code/Originate/TwentyPercent/CoC-Alpha/TestServer/" . "src/")
+ ("/home/jon/Code/Originate/TwentyPercent/RSCommons/RefugeCommons/src/net/refugesystems/commons/support/" . "daemon/")
+ ("/home/jon/Code/Originate/TwentyPercent/RSCommons/RefugeCommons/src/net/refugesystems/commons/" . "support/")
+ ("/home/jon/Code/Originate/TwentyPercent/RSCommons/RefugeCommons/src/net/refugesystems/" . "commons/")
+ ("/home/jon/Code/Originate/TwentyPercent/RSCommons/RefugeCommons/src/net/" . "refugesystems/")
+ ("/home/jon/Code/Originate/TwentyPercent/RSCommons/RefugeCommons/src/" . "net/")
+ ("/home/jon/Code/Originate/TwentyPercent/RSCommons/RefugeCommons/" . "src/")
+ ("/home/jon/Code/Originate/TwentyPercent/RSCommons/" . "RefugeCommons/")
+ ("/home/jon/Code/Originate/TwentyPercent/AlphaServerPrototype/src/net/refugesystems/coc/server/" . "simulation/")
+ ("/home/jon/Code/Originate/TwentyPercent/AlphaServerPrototype/src/net/refugesystems/coc/" . "server/")
+ ("/home/jon/Code/Originate/TwentyPercent/AlphaServerPrototype/src/net/refugesystems/" . "coc/")
+ ("/home/jon/Code/Originate/TwentyPercent/AlphaServerPrototype/src/net/" . "refugesystems/")
+ ("/home/jon/Code/Originate/TwentyPercent/AlphaServerPrototype/src/" . "net/")
+ ("/home/jon/Code/Originate/TwentyPercent/AlphaServerPrototype/" . "src/")
+ ("/etc/X11/" . "Xsession.d/")
+ ("/etc/" . "X11/")
+ ("/home/jon/Code/Originate/TwentyPercent/CoC-Alpha/CoC/src/net/refugesystems/coc/server/" . "simulation/")
+ ("/home/jon/Code/Originate/TwentyPercent/CoC-Alpha/CoC/src/net/refugesystems/coc/" . "server/")
+ ("/home/jon/Code/Originate/TwentyPercent/CoC-Alpha/CoC/src/net/refugesystems/" . "coc/")
+ ("/home/jon/Code/Originate/TwentyPercent/CoC-Alpha/CoC/src/net/" . "refugesystems/")
+ ("/home/jon/Code/Originate/TwentyPercent/CoC-Alpha/CoC/src/" . "net/")
+ ("/home/jon/Code/Originate/TwentyPercent/CoC-Alpha/CoC/" . "src/")
+ ("/home/jon/Code/Vendor/quill/quill-core/src/main/scala/io/" . "getquill/")
+ ("/home/jon/Code/Vendor/quill/quill-core/src/main/scala/" . "io/")
+ ("/home/jon/Code/Vendor/quill/quill-core/src/main/" . "scala/")
+ ("/home/jon/Code/Vendor/quill/quill-core/src/" . "main/")
+ ("/home/jon/Code/Vendor/quill/quill-core/" . "src/")
+ ("/home/jon/Code/Vendor/quill/" . "quill-cassandra/")
+ ("/home/jon/Code/Vendor/quill/quill-cassandra/src/main/scala/io/getquill/context/" . "cassandra/")
+ ("/home/jon/Code/Vendor/quill/quill-cassandra/src/main/scala/io/getquill/" . "context/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/test/persistence/" . "cassandra/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/main/resources/" . "conf/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/main/scala/models/" . "spark/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/test/scala/" . "capnp/")
  ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/test/" . "scala/")
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/main/scala/" . "util/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/main/scala/" . "models/")
  ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/main/" . "scala/")
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/" . "main/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/" . "test/")
  ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/" . "src/")
  ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/persistence/" . "cassandra/")
- ("/home/jon/Code/Vendor/scala/src/library/scala/" . "concurrent/")
+ ("/home/jon/Code/Vendor/scala/src/library/scala/" . "collection/")
  ("/home/jon/Code/Vendor/scala/src/library/" . "scala/")
  ("/home/jon/Code/Vendor/scala/src/" . "library/")
  ("/home/jon/Code/Vendor/scala/" . "src/")
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/test/" . "util/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/test/" . "support/")
  ("/home/jon/.local/" . "share/")
  ("/usr/share/icons/Numix-Circle/16x16/" . "panel/")
  ("/usr/share/icons/Numix-Circle/" . "16x16/")
@@ -31,7 +103,7 @@
  ("/home/jon/Code/Originate/6fusion/capnproto-scala/src/main/scala/" . "schema/")
  ("/home/jon/Code/Originate/6fusion/capnproto-scala/src/main/" . "scala/")
  ("/home/jon/Code/Originate/6fusion/capnproto-scala/src/" . "main/")
- ("/home/jon/Code/Originate/6fusion/capnproto-scala/" . "src/")
+ ("/home/jon/Code/Originate/6fusion/capnproto-scala/" . "capnp/")
  ("/home/jon/.emacs.d/" . "opt/")
  ("/home/jon/Code/Misc/opengl-playground/scala/src/main/scala/opengl/" . "book/")
  ("/home/jon/Code/Misc/opengl-playground/scala/src/main/scala/" . "opengl/")
@@ -39,19 +111,19 @@
  ("/home/jon/Code/Misc/opengl-playground/scala/src/" . "main/")
  ("/home/jon/Code/Misc/opengl-playground/scala/" . "src/")
  ("/home/jon/Code/Originate/TwentyPercent/CoC-Alpha/Client/" . "src/")
- ("/home/jon/Code/Originate/TwentyPercent/CoC-Alpha/" . "Client/")
+ ("/home/jon/Code/Originate/TwentyPercent/CoC-Alpha/" . "TestServer/")
  ("/home/jon/Code/Originate/TwentyPercent/" . "CoC-Alpha/")
  ("/home/jon/Code/Misc/opengl-playground/haskell/" . "glfw/")
  ("/home/jon/Code/Misc/opengl-playground/" . "haskell/")
  ("/home/jon/Code/Misc/" . "opengl-playground/")
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/" . "dto/")
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/" . "app/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/" . "persistence/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/" . "conf/")
  ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/main/scala/" . "models/")
  ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/main/" . "scala/")
  ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/" . "main/")
  ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/" . "src/")
- ("/home/jon/Code/Originate/6fusion/6fusion-online/" . "6fusion-spark/")
- ("/home/jon/Code/Originate/6fusion/" . "6fusion-online/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/" . "6fusion-api-server/")
+ ("/home/jon/Code/Originate/6fusion/" . "6fusion-online-go/")
  ("/home/jon/Code/Originate/BCG/somatix/somatix-unsub-import/src/main/scala/" . "services/")
  ("/home/jon/Code/Originate/BCG/somatix/somatix-unsub-import/src/main/" . "scala/")
  ("/home/jon/Code/Originate/BCG/somatix/somatix-unsub-import/src/" . "main/")
@@ -184,15 +256,15 @@
  ("/home/jon/Code/Originate/BCG/somatix/emailService/src/main/" . "scala/")
  ("/home/jon/Code/Originate/BCG/somatix/emailService/src/" . "main/")
  ("/home/jon/Code/Originate/BCG/somatix/emailService/" . "src/")
- ("/home/jon/Code/Originate/BCG/somatix/" . "scripts/")
- ("/home/jon/.sbt/" . "boot/")
+ ("/home/jon/Code/Originate/BCG/somatix/" . "project/")
+ ("/home/jon/.sbt/" . "0.13/")
  ("/home/jon/Code/Originate/BCG/" . "somatix/")
  ("/usr/include/" . "GLFW/")
  ("/usr/share/man/" . "en_AU/")
  ("/usr/local/man/" . "man1/")
  ("/usr/local/" . "lib/")
  ("/usr/include/c++/" . "4.9.2/")
- ("/usr/" . "include/")
+ ("/usr/" . "local/")
  ("/home/jon/Code/Vendor/clojure/src/clj/clojure/" . "core/")
  ("/home/jon/Code/Langs/wombat-j/src/clj/" . "wombat/")
  ("/home/jon/Code/Langs/wombat-j/src/" . "jvm/")
@@ -283,278 +355,278 @@
  ("/home/jon/Code/ChainOfCommand/CoC_Universe-Server/" . "CoC_Universe-Server/")
  ("/home/jon/Code/ChainOfCommand/" . "InvocationIsle/")
  ("/home/jon/Code/" . "Originate/")
- ("/home/jon/" . ".emacs.d/")
+ ("/home/jon/" . "Code/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/main/scala/util/"
- "/home/jon/.emacs.d/"
- "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/main/scala/jobs/"
- "/home/jon/"
- "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/main/scala/capnp/"
- "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/main/scala/dto/"
- "/home/jon/Code/Originate/6fusion/6fusion-online/project/"
- "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/conf/"
- "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/global/"
- "/home/jon/Code/Originate/6fusion/capnproto-scala/src/main/scala/"
- "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/persistence/cassandra/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online-go/"
  "/home/jon/Code/Originate/6fusion/6fusion-online/"
- "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/test/util/"
- "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/test/scala/util/"
- "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/main/scala/util/"
- "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/test/support/"
- "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/util/"
- "/home/jon/Code/Vendor/scala/src/library/scala/concurrent/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/conf/evolutions/cassandra/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/main/scala/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/main/resources/conf/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/main/scala/models/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-seed-data/src/main/scala/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/main/scala/models/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/main/scala/dto/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/main/scala/models/spark/"
+ #("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/" 56 62 (face flx-highlight-face))
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/main/scala/util/"
  "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/"
- "/home/jon/.local/share/applications/"
- "/home/jon/Code/Originate/6fusion/6fusion-online/generator/"
- "/home/jon/Code/Originate/6fusion/capnproto-scala/src/main/scala/schema/"
- "/home/jon/Code/Originate/6fusion/capnproto-scala/capnp/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/persistence/cassandra/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/main/scala/jobs/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/conf/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/project/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/model/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/controllers/api/v1/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/seed/"
+ "/home/jon/Code/Originate/6fusion/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/persistence/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/main/scala/util/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/dto/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/marathon/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/test/support/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/test/scala/capnp/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/test/scala/capnp/example/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/test/scala/capnp/sampleimpl/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/main/scala/capnp/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/test/java/"
  "/home/jon/Code/Originate/6fusion/capnproto-scala/"
- "/home/jon/Code/Vendor/capnproto-java/runtime/src/main/java/org/capnproto/"
- "/home/jon/Code/Originate/6fusion/capnproto-scala/src/main/resources/"
- "/home/jon/Code/Originate/6fusion/capnproto-scala/src/main/java/"
- "/home/jon/Code/Originate/6fusion/capnproto-scala/script/"
+ "/home/jon/Code/Originate/6fusion/capnproto-scala/capnp/"
  "/home/jon/Code/Originate/6fusion/6fusion-online/capnp/"
- "/home/jon/.emacs.d/opt/"
- "/home/jon/glmark/"
- "/home/jon/Code/Misc/opengl-playground/haskell/glfw/"
- "/home/jon/Code/Misc/opengl-playground/scala/src/main/scala/opengl/book/"
- "/home/jon/Code/Misc/opengl-playground/scala/src/main/scala/opengl/"
- "/home/jon/Code/Misc/opengl-playground/scala/"
- "/home/jon/Code/Originate/TwentyPercent/CoC-Alpha/Client/src/"
- "/home/jon/Code/"
- "/home/jon/.sbt/plugins/"
- "/home/jon/Code/Originate/BCG/somatix/"
- "/home/jon/Code/Originate/BCG/somatix/scripts/"
- "/home/jon/Code/Originate/BCG/somatix/somatix-unsub-import/src/main/scala/services/"
- "/home/jon/Code/Originate/BCG/somatix/somatix-streams/src/main/scala/kinesis/"
- "/home/jon/Code/Originate/BCG/somatix/somatix-common/src/main/resources/"
- "/home/jon/Code/Experiments/haskell/evil/"
- "/home/jon/Code/Originate/BCG/somatix/scripts/circle/"
- "/home/jon/Code/Originate/BCG/ops/scripts/"
- "/home/jon/Code/Originate/BCG/Vendor/amazon-kinesis-producer/java/amazon-kinesis-producer/src/main/java/com/amazonaws/services/kinesis/producer/"
- "/home/jon/Code/Originate/BCG/Vendor/amazon-kinesis-producer/"
- "/home/jon/Code/Originate/BCG/somatix/somatix-common/src/test/scala/support/"
- "/home/jon/Code/Langs/wombat-j/src/jvm/wombat/"
+ "/home/jon/Code/Originate/6fusion/capnproto-scala/src/main/scala/schema/"
+ "/home/jon/Code/Originate/6fusion/capnproto-scala/src/main/scala/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/test/global/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/global/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/controllers/api/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/controllers/"
+ "/home/jon/Code/Originate/6fusion/repos/on-prem-api/app/models/"
+ "/home/jon/Code/Originate/6fusion/repos/on-prem-api/app/controllers/api/v1/"
+ "/home/jon/Code/Originate/6fusion/repos/on-prem-api/"
+ "/home/jon/Code/Originate/6fusion/repos/on-prem-api/app/controllers/"
+ "/home/jon/Code/Originate/6fusion/repos/on-prem-api/app/models/concerns/"
+ "/home/jon/Code/Vendor/scala/src/library/scala/collection/immutable/"
+ "/home/jon/Code/Vendor/scala/src/library/scala/collection/"
+ "/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/main/java/"
+ "/home/jon/Code/Vendor/quill/quill-cassandra/src/main/scala/io/getquill/context/cassandra/encoding/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "RollupOps.scala"
- "init.el"
- "SamplesJob.scala"
- ".zshrc"
- "CapnProto.scala"
- "CassandraSample.scala"
- "Dependencies.scala"
- "application.conf"
+ "circle.yml"
+ "7.cql"
+ "8.cql"
+ "9.cql"
+ "10.cql"
  "AppConfig.scala"
+ "application.conf"
+ "Metric.scala"
  "Registry.scala"
+ "Main.scala"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/main/scala/util/" (22435 46520 649761 70000) "../" "./" "RollupOps.scala" "Rollup.scala" "TimeOps.scala" "Migrator.scala" "InfrastructureRollup.scala")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online-go/" (22480 13968 219249 19000) "receiver/" "../" "marathon/" "./" ".git/" "common/" "connector/" "generator/" "scripts/" "README.md" "circle.yml" "docker-compose.yml")
 
- ("/home/jon/.emacs.d/" (22437 165 193407 555000) "session.101bb0b389df0fad68146993797947759700000220390059" "custom.el" "url/" "../" "abbrev_defs" "./" ".git/" "opt/" ".gitignore" "init.el" "gforth.el" "auto-save-list/" "elpa/" "ido.last" "ensime/" ".mc-lists.el" "ac-comphist.dat")
+ ("/home/jon/Code/Originate/6fusion/" (22480 13967 839252 906000) "dcos.notes" "notes.org" "6fusion-online-go/" "aws.org" "dcos-vagrant/" "../" "./" "capnproto-scala/" "target/" "dcos/" "6fusion-online/" "dcos-cli/" "sample-data-upload.zip" "data/" "flatbuffers-java-1.2.0-SNAPSHOT.jar" "kickoff.org" "project/" "mesosphere.org" "repos/" "spikes/")
 
- ("/home/jon/" (22440 52534 700734 290000) ".xsession-errors.old" ".go/" ".nv/" ".dmrc" "VirtualBox VMs/" ".pki/" ".gnome2_private/" ".QtWebEngineProcess/" ".stack/" ".profile" ".bash_history" ".zsh/" ".xsession-errors" ".vimrc" "../" ".Heaven/" ".config/" ".zcompdump" ".Xauthority" "./" "Code/" ".xsessionrc" ".nix-profile/" "Pictures/" ".gitignore_global" ".nix-defexpr/" ".emacs_backups/" ".gnupg/" ".nix-channels" ".gnome2/" "target/" ".ivy2/" ".ssh/" ".sudo_as_admin_successful" "Videos/" ".mozilla/" ".vagrant.d/" ".cache/" "Desktop/" ".zsh_history" ".xbindkeysrc" ".zshrc" ".irbrc" ".scala_history" ".dbus/" ".emacs.d/" "windoze/" "Music/" ".xinitrc" ".bashrc" "Templates/" ".apport-ignore.xml" "configs/" ".irb_history_x86_64-linux-gnu_2.3.1" ".gitconfig" ".local/" "Public/" ".gconf/" "Documents/" ".sbt/" ".bash_logout" ".lesshst" ".ghc/" "project/" ".gnome/" "glmark/" ".nvidia-settings-rc" "Downloads/" ".xsel.log" ".zoom/" ".ICEauthority")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/main/scala/jobs/" (22480 13344 604584 170000) "../" "./" "SamplesJob.scala")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/" (22436 59302 994837 680000) "src/" "target-2.11/" "build.sbt" "../" "./" "target/" ".cross/" "target-2.10/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/conf/evolutions/cassandra/" (22480 8047 325412 691000) "5.cql" "4.cql" "9.cql" "../" "./" "7.cql" "2.cql" "10.cql" "1.cql" "8.cql" "6.cql" "3.cql")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/dto/" (22434 6927 428446 800000) "CreateOrganization.scala" "SetPassword.scala" "../" "./" "ClearPassword.scala" "Login.scala" "AddUserRequest.scala" "ResetPasswordEmail.scala" "UserData.scala" "sendgrid/" "SetUserRole.scala" "ApiResponse.scala")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/main/scala/" (22480 13348 648366 511000) "Main.scala" "dto/" "util/" "../" "./" "AppConfig.scala" "jobs/" "Registry.scala" "models/")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/project/" (22436 59299 178875 810000) "../" "Docker.scala" "./" "Common.scala" "target/" "plugins.sbt" "build.properties" "project/" ".ensime" "Dependencies.scala")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/main/resources/conf/" (22480 12886 196628 775000) "application.conf" "../" "./")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/global/" (22436 59378 6135 105000) "MacwireApplicationLoader.scala" "../" "./" "AppConfig.scala" "Registry.scala")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/" (22479 11881 823294 446000) "src/" "build.sbt" "../" "./" "target/")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/conf/" (22436 58590 583674 585000) "application.conf" "prod.conf" "integration.test.conf" "../" "./" "logback.xml" "swagger.yml" ".#application.conf" "routes" "messages" "evolutions/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/main/scala/models/" (22480 8047 325412 691000) "UtilizationMetric.scala" "spark/" "../" "Sample.scala" "MachineMetrics.scala" "./" "InfrastructureMetricsSummary.scala" "MetricsWithCapacity.scala" "SerializableTime.scala" "UtilizationMetrics.scala" "SampleBatch.scala" "InfrastructureInfo.scala" "Tag.scala" "MetricsOverTime.scala" "Blob.scala" "MeterId.scala" "UUID.scala" "Metric.scala" "InfrastructureMetrics.scala")
 
- ("/home/jon/Code/Originate/6fusion/capnproto-scala/src/main/scala/" (22433 6978 785680 745000) "Main.scala" "AST.scala" "util/" "../" "./" "CapnProto.scala" "schema/" "Exceptions.scala")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/main/scala/models/spark/" (22480 12371 852799 1000) "RollupValue.scala" "../" "./")
 
- ("/home/jon/Code/Originate/6fusion/capnproto-scala/" (22433 7662 116963 793000) "src/" "build.sbt" "../" "./" "script/" ".git/" "target/" ".ensime_cache/" ".fix-imports.yml" "project/" ".ensime" ".sbtopts" "capnp/" ".dir-locals.el")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/" (22480 8340 687012 107000) "project-structure.md" "meter-schemas/" "6fusion-common/" "build.sbt" "../" "marathon/" "./" "6fusion-spark/" "readme.md" ".git/" "tmp/" "target/" ".gitignore" ".ensime_cache/" "requirements.txt" "scripts/" "6fusion-api-server/" "circle.yml" ".fix-imports.yml" "project/" "6fusion-seed-data/" ".ensime" "docker-compose.yml" "scalastyle-config.xml" ".sbtopts" "capnp/" ".dir-locals.el")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/persistence/cassandra/" (22435 46520 649761 70000) "../" "./" "BaseCassandraDao.scala")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/test/scala/util/" (22435 33214 459682 382000) "../" "./" "TimeOpsSpec.scala")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/persistence/" (22435 46520 645761 73000) "CrudDao.scala" "../" "cassandra/" "./" "BaseDao.scala" "OrganizationDao.scala" "UserDao.scala")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/test/scala/" (22435 33214 459682 382000) ".gitkeep" "util/" "../" "./")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/" (22435 46520 649761 70000) "build.sbt" "../" "conf/" "./" "test/" "target/" "app/" "public/" "project/" "LICENSE")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/test/" (22413 7367 0 0) "../" "./" "scala/")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/" (22436 41100 559480 346000) "meter-schemas/" "6fusion-common/" "build.sbt" "../" "./" "6fusion-spark/" "readme.md" ".git/" "tmp/" "target/" "generator/" ".gitignore" ".ensime_cache/" "scripts/" "6fusion-api-server/" "circle.yml" ".fix-imports.yml" "project/" "6fusion-seed-data/" ".ensime" "docker-compose.yml" "scalastyle-config.xml" ".sbtopts" "capnp/" ".dir-locals.el")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/" (22479 11881 819294 475000) "src/" "build.sbt" "../" "./" "target/")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/test/util/" (22435 46009 558040 656000) "../" "./" "ResultSpec.scala" "FutureRSpec.scala")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-seed-data/" (22478 57460 574239 813000) "src/" "build.sbt" "../" "./" "target/")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/test/scala/util/" (22435 46009 558040 656000) "../" "./" "OpsSpec.scala" "JsonCasesSpec.scala" "StatsSpec.scala")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/main/scala/models/" (22479 10225 212219 458000) "SampleJournal.scala" "../" "JournalCheckpoint.scala" "./")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/main/scala/util/" (22435 46009 558040 656000) "Ops.scala" "../" "./" "JsonCases.scala" "IdGenerator.scala" "Stats.scala")
+ ("/home/jon/Code/Vendor/scala/src/library/scala/collection/" (22427 38995 52835 443000) "parallel/" "GenIterable.scala" "SeqProxyLike.scala" "GenSeq.scala" "TraversableView.scala" "SeqViewLike.scala" "Iterable.scala" "DefaultMap.scala" "concurrent/" "JavaConverters.scala" "IterableProxyLike.scala" "GenMap.scala" "../" "mutable/" "MapLike.scala" "SortedMap.scala" "TraversableOnce.scala" "SortedSet.scala" "./" "IterableViewLike.scala" "GenIterableLike.scala" "BitSetLike.scala" "script/" "TraversableProxy.scala" "TraversableProxyLike.scala" "LinearSeq.scala" "IndexedSeq.scala" "Iterator.scala" "SetLike.scala" "GenSeqLike.scala" "TraversableLike.scala" "SeqExtractors.scala" "BitSet.scala" "SortedMapLike.scala" "SetProxyLike.scala" "Seq.scala" "BufferedIterator.scala" "GenTraversable.scala" "MapProxyLike.scala" "IterableView.scala" "convert/" "GenTraversableLike.scala" "SeqLike.scala" "MapProxy.scala" "Parallel.scala" "SetProxy.scala" "IndexedSeqLike.scala" "JavaConversions.scala" "SeqView.scala" "LinearSeqLike.scala" "GenTraversableOnce.scala" "SeqProxy.scala" "GenSetLike.scala" "readme-if-you-want-to-add-something.txt" "IndexedSeqOptimized.scala" "GenSet.scala" "Traversable.scala" "LinearSeqOptimized.scala" "Searching.scala" "CustomParallelizable.scala" "generic/" "immutable/" "Set.scala" "IterableProxy.scala" "TraversableViewLike.scala" "Parallelizable.scala" "GenMapLike.scala" "Map.scala" "SortedSetLike.scala" "package.scala" "IterableLike.scala")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/" (22435 43111 706797 101000) "src/" "build.sbt" "../" "./" "target/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/global/" (22478 59308 762982 527000) "MacwireApplicationLoader.scala" "../" "./" "AppConfig.scala" "Registry.scala")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/test/scala/models/" (22427 39066 381840 139000) "../" "./" "UUIDSpec.scala")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/test/global/" (22472 26710 332444 110000) "../" "./" "MockRegistry.scala")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/test/scala/" (22417 3675 0 0) "util/" "../" "./" "SixfusionSpec.scala" "models/" "capnp/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/test/scala/capnp/" (22472 26710 336444 130000) "../" "./" "example/" "CapnProtoSpec.scala")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/test/" (22389 31980 0 0) "../" "./" "scala/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/test/support/" (22472 26710 336444 130000) "ControllerSpec.scala" "EvolutionTransformingReader.scala" "../" "DBFunctionalSpec.scala" "./" "FunctionalSpec.scala" "IntegrationSpec.scala" "WSHelpers.scala" "MockHelpers.scala" "BaseSpec.scala" "IntegrationSpecContexts.scala" "CassandraSpec.scala" "CrudDaoBaseSpec.scala")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/main/scala/models/" (22435 33214 459682 382000) "DiskReading.scala" "NicReading.scala" "spark/" "UtilizationData.scala" "../" "Sample.scala" "./" "SerializableTime.scala" "MachineReading.scala" "SampleBatch.scala" "InfrastructureInfo.scala" "Tag.scala" "Blob.scala" "MeterId.scala" "UUID.scala")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/marathon/" (22473 34818 328699 476000) "api-server.json" "../" "./" "seed-data.json")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/main/scala/models/spark/" (22435 43163 282454 653000) "RollupValue.scala" "../" "./")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/dto/" (22479 5204 996345 538000) "CreateOrganization.scala" "SetPassword.scala" "TagGroupData.scala" "../" "./" "ClearPassword.scala" "Login.scala" "OrganizationData.scala" "AddUserRequest.scala" "SetInfrastructureInfo.scala" "PagingData.scala" "ResetPasswordEmail.scala" "UserData.scala" "sendgrid/" "SetUserRole.scala" "ApiResponse.scala")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/main/scala/" (22435 33214 459682 382000) "exceptions/" "util/" "../" "./" "Section.scala" "models/" "capnp/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/main/scala/dto/" (22479 7568 765968 934000) "CassandraSampleKey.scala" "../" "./" "CassandraKeyValue.scala" "CassandraInfraRollup.scala")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/main/" (22427 39066 381840 139000) "java/" "../" "./" "scala/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/main/scala/util/" (22479 7573 621912 814000) "../" "./" "Rollup.scala" "TimeOps.scala" "InfrastructureRollup.scala")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/" (22427 39066 381840 139000) "../" "./" "test/" "main/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/persistence/cassandra/" (22478 59308 762982 527000) "../" "./" "RollupQueryService.scala" "SixfusionContext.scala")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/main/scala/dto/" (22435 33214 459682 382000) "CassandraSample.scala" "../" "./" "CassandraInfraRollup.scala")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/services/" (22472 26710 332444 110000) "../" "./" "mailer/" "TagGroupService.scala" "BaseService.scala" "#UserService.scala#" "OrganizationService.scala" "UserService.scala")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/main/scala/jobs/" (22435 42558 296327 995000) "../" "./" "SamplesJob.scala")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/main/scala/util/" (22478 59282 375036 554000) "Ops.scala" "TimeSplit.scala" "../" "./" "JsonCases.scala" "Tap.scala" "IdGenerator.scala")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/main/scala/" (22435 33214 459682 382000) "Main.scala" "dto/" "util/" "../" "./" "AppConfig.scala" "jobs/" "Registry.scala")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/persistence/" (22478 59282 371036 562000) "CrudDao.scala" "../" "cassandra/" "./" "BaseDao.scala" "OrganizationDao.scala" "UserDao.scala" "#OrganizationDao.scala#" "TagGroupDao.scala")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/main/" (22427 39066 345839 658000) "../" "./" "scala/" "resources/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/controllers/api/v1/" (22478 59308 762982 527000) "AuthController.scala" "../" "./" "OrganizationsController.scala" "InfrastructuresController.scala" "AccountsController.scala" "TagGroupController.scala")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/project/" (22478 59282 379036 546000) "../" "Docker.scala" "./" "Common.scala" "target/" "plugins.sbt" "build.properties" "project/" ".ensime" "Dependencies.scala")
+
+ ("/home/jon/" (22479 2788 644930 940000) ".xsession-errors.old" ".go/" ".nv/" ".dmrc" "VirtualBox VMs/" ".pki/" ".gnome2_private/" ".QtWebEngineProcess/" ".stack/" ".profile" ".bash_history" ".zsh/" ".xsession-errors" ".vimrc" "../" ".Heaven/" ".config/" ".zcompdump" ".Xauthority" "./" "Code/" ".xsessionrc" ".nix-profile/" "Pictures/" ".gitignore_global" ".nix-defexpr/" ".emacs_backups/" ".gnupg/" ".nix-channels" ".gnome2/" "target/" ".ivy2/" ".ssh/" ".sudo_as_admin_successful" "Videos/" ".mozilla/" ".vagrant.d/" "unity-editor-5.4.0p1+20160810_amd64.deb" ".cache/" "Desktop/" ".zsh_history" ".xbindkeysrc" ".zshrc" ".irb_history_x86_64-linux_2.3.1" ".irbrc" ".scala_history" ".dbus/" ".emacs.d/" "windoze/" "Music/" ".rnd" ".xinitrc" ".bashrc" "Templates/" ".apport-ignore.xml" "configs/" ".irb_history_x86_64-linux-gnu_2.3.1" ".gitconfig" ".recently-used" ".local/" "Public/" ".gconf/" "Documents/" ".sbt/" ".dcos/" ".bash_logout" ".lesshst" ".ghc/" "project/" ".gnome/" "glmark/" ".nvidia-settings-rc" "Downloads/" ".xsel.log" ".zoom/" ".ICEauthority")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/conf/" (22478 63982 96159 977000) "application.conf" "prod.conf" "integration.test.conf" "../" "./" "application.local.conf" "logback.xml" "swagger.yml" "routes" "messages" "dev.conf" "evolutions/")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/conf/evolutions/" (22444 54338 973662 832000) "../" "cassandra/" "./" "default/")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/" (22478 57460 574239 813000) "build.sbt" "../" "conf/" "./" "test/" "target/" "app/" ".gitignore" "public/" "project/" "LICENSE")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/main/resources/" (22444 54338 981662 865000) "../" "conf/" "log4j.properties" "./")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/model/" (22473 34805 229676 430000) "User.scala" "TagGroup.scala" "../" "./" "WithId.scala" "Organization.scala" "Password.scala")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-seed-data/src/main/" (22413 7367 0 0) "../" "./" "scala/")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-seed-data/src/" (22427 39066 353839 765000) "../" "./" "main/")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/public/" (22427 39066 497841 690000) "images/" "../" "stylesheets/" "./" "javascripts/")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/controllers/api/" (22472 26710 328444 90000) "../" "./" "ApiCrudController.scala" "BaseApiController.scala" "v1/")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/controllers/" (22472 26710 328444 90000) "PathBinders.scala" "composition/" "../" "ApiErrorHandler.scala" "./" "api/" "HomeController.scala" "SwaggerController.scala" "QueryStringBinders.scala")
+
+ ("/home/jon/Code/Originate/6fusion/repos/meter-dashboard/" (22455 29194 1464 618000) "entrypoint.sh" "README.rdoc" "images/" "Gemfile" "../" "lib/" "./" "Vagrantfile" "test/" ".git/" ".ruby-gemset" ".bundle/" "app/" ".gitignore" "Rakefile" "public/" "vendor/" "README" "Dockerfile" "db/" "bin/" ".ruby-version" "retrieve-token.sh" "log/" "config/" "Gemfile.lock" "config.ru")
+
+ ("/home/jon/Code/Originate/6fusion/repos/meter-dashboard/config/" (22455 29133 49144 22000) "secrets.yml" "../" "./" "puma_ssl.rb" "database.yml" "application.rb" "routes.rb" "environments/" "boot.rb" "environment.rb" "locales/" "initializers/")
+
+ ("/home/jon/Code/Originate/6fusion/repos/meter-dashboard/app/controllers/" (22455 29133 45144 0) "dashboard_controller.rb" "setup_wizard_controller.rb" "../" "sessions_controller.rb" "health_controller.rb" "settings_controller.rb" "./" "tokens_controller.rb" "application_controller.rb" "concerns/" "data_controller.rb")
+
+ ("/home/jon/Code/Vendor/quill/quill-core/src/main/scala/io/getquill/ast/" (22444 49877 589412 589000) "AstShow.scala" "../" "CollectAst.scala" "./" "OptionOperationType.scala" "StatelessTransformer.scala" "Ast.scala" "Transform.scala" "JoinType.scala" "StatefulTransformer.scala" "Operator.scala")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/test/persistence/cassandra/" (22463 2412 143425 532000) "../" "./" "RollupQueryServiceSpec.scala")
+
+ ("/home/jon/Code/Vendor/quill/quill-cassandra/src/main/scala/io/getquill/context/cassandra/" (22444 49877 589412 589000) "encoding/" "Ops.scala" "cluster/" "CqlIdiom.scala" "CassandraContext.scala" "util/" "../" "./" "ExpandMappedInfix.scala" "CassandraContextMacro.scala" "PrepareStatementCache.scala" "Prepare.scala" "BindVariables.scala" "CassandraContextSession.scala" "CqlQuery.scala")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/main/java/" (22463 2116 834089 770000) "../" "./" "Readings.java")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-seed-data/src/main/scala/" (22463 1743 47125 311000) "Main.scala" "../" "./" "Options.scala" "CassandraMigrations.scala" "AppWithDatabaseConfig.scala")
+
+ ("/home/jon/Code/Originate/6fusion/capnproto-scala/src/main/scala/" (22461 57117 554797 137000) "Main.scala" "AST.scala" "util/" "../" "./" "CapnProto.scala" "schema/" "Exceptions.scala")
+
+ ("/home/jon/Code/Originate/6fusion/capnproto-scala/src/main/scala/schema/" (22461 56418 834342 557000) "Enumerant.scala" "CodeGeneratorRequest.scala" "Field.scala" "../" "./" "Brand.scala" "Node.scala" "Superclass.scala" "Method.scala" "ElementSize.scala" "Annotation.scala" "Type.scala" "Id.scala" "Value.scala")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/capnp/" (22463 16025 425855 633000) "test-data.capnp" "../" "lib/" "./" "data.capnp" "bin/")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/test/java/" (22463 2116 834089 770000) "../" "./" "TestData.java")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/test/scala/capnp/example/" (22463 2116 834089 770000) "Food.scala" "../" "School.scala" "./" "Person.scala")
 
  ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/" (22427 39066 345839 658000) "../" "./" "test/" "main/")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/services/" (22434 6927 428446 800000) "../" "./" "mailer/" "BaseService.scala" "OrganizationService.scala" "UserService.scala")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-spark/src/main/" (22427 39066 345839 658000) "../" "./" "scala/" "resources/")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/generator/" (22435 33101 951636 200000) "kafka_generator_integration_test.go" "../" "./" "generator" ".gitignore" "generator.go" "README.md" "meter_generator.go" "meter_generator_integration_test.go" "kafka_generator.go" "base_generator.go")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/main/scala/capnp/" (22463 2129 678183 504000) "../" "./" "CapnProto.scala")
 
- ("/home/jon/.local/share/applications/" (22435 21753 52582 916000) "chrome-aohghmighlieiainnegkcijnfilokake-Default.desktop" "chrome-knipolnnllmklapflnccelgolnpehhpl-Default.desktop" "chrome-blpcfgokakmgnkcojhhkbfbldkacnbeo-Default.desktop" "../" "originate-calendar.desktop" "./" "mimeapps.list" "chrome-pjkljhegncpnkpknbcohdijeoejaedia-Default.desktop" "chrome-apdfllckaahabafndbhieahigkjlhalf-Default.desktop")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/" (22444 54338 973662 832000) "persistence/" "dto/" "util/" "../" "./" "controllers/" "global/" "views/" "seed/" "services/" "model/")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/test/support/" (22427 39066 385840 193000) "ControllerSpec.scala" "EvolutionTransformingReader.scala" "../" "DBFunctionalSpec.scala" "./" "AuthSupport.scala" "FunctionalSpec.scala" "IntegrationSpec.scala" "WSHelpers.scala" "MockHelpers.scala" "BaseSpec.scala" "IntegrationSpecContexts.scala" "CrudDaoBaseSpec.scala")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/test/scala/capnp/sampleimpl/" (22461 64975 165938 614000) "Food.scala" "../" "School.scala" "./" "Person.scala")
 
- ("/home/jon/Code/Vendor/scala/src/library/scala/concurrent/" (22427 38995 48835 384000) "BatchingExecutor.scala" "ManagedBlocker.scala" "../" "BlockContext.scala" "ExecutionContext.scala" "duration/" "./" "Channel.scala" "SyncVar.scala" "SyncChannel.scala" "Future.scala" "FutureTaskRunner.scala" "Promise.scala" "ThreadPoolRunner.scala" "Lock.scala" "Awaitable.scala" "TaskRunner.scala" "JavaConversions.scala" "impl/" "DelayedLazyVal.scala" "package.scala")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/test/scala/capnp/testdata/" (22461 61084 926287 320000) "Food.scala" "../" "./" "Person.scala")
 
- ("/home/jon/Code/Vendor/scala/src/library/scala/" (22288 630 0 0) "Responder.scala" "Product17.scala" "Short.scala" "Function4.scala" "MatchError.scala" "Product3.scala" "Tuple13.scala" "Product22.scala" "Dynamic.scala" "compat/" "Product5.scala" "Function7.scala" "concurrent/" "NotImplementedError.scala" "Cloneable.scala" "AnyValCompanion.scala" "Tuple22.scala" "Specializable.scala" "Function16.scala" "Tuple19.scala" "Product.scala" "util/" "Product6.scala" "../" "Tuple17.scala" "Float.scala" "Function8.scala" "reflect/" "deprecatedInheritance.scala" "beans/" "annotation/" "Product7.scala" "Function19.scala" "./" "Symbol.scala" "Array.scala" "Function10.scala" "PartialFunction.scala" "io/" "throws.scala" "Function2.scala" "Product15.scala" "Product8.scala" "Function0.scala" "remote.scala" "Function5.scala" "transient.scala" "Function22.scala" "Product4.scala" "Function12.scala" "Char.scala" "Tuple8.scala" "Serializable.scala" "Tuple14.scala" "Function17.scala" "UninitializedError.scala" "languageFeature.scala" "Double.scala" "NotNull.scala" "Function1.scala" "DelayedInit.scala" "Function11.scala" "ref/" "text/" "unchecked.scala" "Tuple4.scala" "Tuple16.scala" "deprecatedName.scala" "Function6.scala" "language.scala" "Function9.scala" "Function14.scala" "Product20.scala" "Enumeration.scala" "Tuple18.scala" "Function21.scala" "Tuple20.scala" "Immutable.scala" "Long.scala" "Tuple21.scala" "Function18.scala" "Tuple1.scala" "Function15.scala" "Predef.scala" "Product10.scala" "Product13.scala" "Proxy.scala" "Product16.scala" "Tuple9.scala" "runtime/" "Product11.scala" "Tuple12.scala" "Product14.scala" "Mutable.scala" "Product2.scala" "Tuple10.scala" "Function.scala" "Byte.scala" "Tuple11.scala" "Tuple15.scala" "SerialVersionUID.scala" "Unit.scala" "Boolean.scala" "Equals.scala" "Product9.scala" "deprecatedOverriding.scala" "Tuple6.scala" "Tuple3.scala" "UninitializedFieldError.scala" "sys/" "inline.scala" "Tuple5.scala" "math/" "deprecated.scala" "Function3.scala" "Product12.scala" "noinline.scala" "Product21.scala" "Product19.scala" "Tuple7.scala" "native.scala" "AnyVal.scala" "Console.scala" "App.scala" "Option.scala" "Function20.scala" "Product18.scala" "specialized.scala" "volatile.scala" "package.scala" "Product1.scala" "Tuple2.scala" "Int.scala" "StringContext.scala" "Function13.scala" "collection/")
+ ("/home/jon/Code/Originate/6fusion/capnproto-scala/" (22461 59970 59723 551000) "src/" "build.sbt" "../" "./" "script/" ".git/" "target/" ".ensime_cache/" ".fix-imports.yml" "project/" ".ensime" ".sbtopts" "capnp/" ".dir-locals.el")
 
- ("/home/jon/Code/Vendor/scala/src/library/" (22427 38995 44835 324000) "../" "./" "scala/" "rootdoc.txt")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/test/" (22461 59736 449939 144000) "java/" "../" "./" "scala/")
 
- ("/home/jon/Code/Vendor/scala/src/" (22427 38995 16834 909000) "compiler/" "build/" "../" "partest-javaagent/" "eclipse/" "reflect/" "scaladoc/" "partest-extras/" "./" "interactive/" "actors/" "forkjoin/" "library/" "library-aux/" "intellij/" "manual/" "repl/" "repl-jline/" "scalap/" "ensime/")
+ ("/home/jon/Code/Originate/6fusion/capnproto-scala/capnp/" (22433 6658 885070 628000) "java.capnp" "../" "./" "schema.capnp" "test.capnp" "capnpc-java")
 
- ("/home/jon/Code/Vendor/scala/" (22427 38994 876832 830000) "src/" "tools/" "build.xml" "build.number" "Gemfile" "build.sbt" "../" "push-binary-libs.sh" "lib/" ".mailmap" "./" ".gitattributes" "test/" ".git/" "doc/" "META-INF/" "bincompat-backward.whitelist.conf" "pull-binary-libs.sh" ".gitignore" "compare-build-dirs-ignore-patterns" ".travis.yml" "bincompat-forward.whitelist.conf" "gitconfig.SAMPLE" "dbuild-meta.json" "spec/" "CONTRIBUTING.md" "scripts/" "compare-build-dirs.sh" "README.md" "build-ant-macros.xml" "project/" "docs/" "versions.properties" ".dir-locals.el")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/./" (22461 47720 214366 637000) "build.sbt" "../" "conf/" "./" "test/" "target/" "app/" ".gitignore" "public/" "project/" "LICENSE")
 
- ("/home/jon/Code/" (22429 22434 83182 953000) "Misc/" "Vendor/" "../" "Langs/" "ClojureBridge/" "./" "Originate/" "Game/" "OpenSource/" "Notes/" "repos.json" "Sterf/" "Wombats/" ".DS_Store" "Eudyptula/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/test/factories/" (22461 53752 959176 197000) "../" "ModelFactories.scala" "./" "Factory.scala")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/util/" (22427 50326 261949 410000) "../" "OptionHelpers.scala" "JsonEnum.scala" "./" "FutureR.scala" "Result.scala" "Tap.scala" "Logging.scala" "Crypto.scala")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/" (22427 39066 381840 139000) "../" "./" "test/" "main/")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/" (22427 39066 497841 690000) "persistence/" "dto/" "util/" "../" "./" "controllers/" "global/" "views/" "services/" "model/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/main/" (22427 39066 381840 139000) "java/" "../" "./" "scala/")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/test/" (22413 7367 0 0) "persistence/" "dto/" "util/" "../" "./" "factories/" "global/" "integration/" "support/" "resources/" "seed/" "services/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/main/scala/" (22435 33214 459682 382000) "exceptions/" "util/" "../" "./" "Section.scala" "models/" "capnp/")
 
- ("/home/jon/.sbt/boot/" (22430 21029 940248 79000) "../" "update.log" "./" "sbt.boot.lock" "scala-2.10.6/" "scala-2.10.3/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/util/" (22461 51751 49583 823000) "../" "OptionHelpers.scala" "JsonEnum.scala" "./" "FutureR.scala" "Result.scala" "JsonTransformer.scala" "Tap.scala" "Logging.scala" "Crypto.scala" "URIBuilder.scala")
 
- ("/home/jon/.sbt/0.13/" (22427 40003 45385 242000) "plugins/" "../" "dependency/" "./" "staging/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/test/" (22461 51751 49583 823000) "persistence/" "dto/" "util/" "../" "./" "controllers/" "factories/" "global/" "integration/" "support/" "resources/" "services/")
 
- ("/home/jon/.sbt/" (22427 39984 145287 781000) "../" "./" "0.13/" "boot/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/test/integration/" (22461 47722 534378 562000) "../" "CORSHeadersISpec.scala" "./" "SwaggerDocsISpec.scala" "AuthenticationISpec.scala")
 
- ("/home/jon/Code/Originate/" (22427 39008 829037 761000) "tododrop/" "OA/" "../" "./" "BCG/" "guide_private/" "RMS/" "devacurl/" "TwentyPercent/" "foodstand/" "FPClass/" "6fusion/")
-
- ("/home/jon/.local/share/" (22433 64571 233514 855000) "icons/" "tracker/" "xorg/" "icc/" "gvfs-metadata/" "gnome-settings-daemon/" "../" "gnome-software/" "nautilus/" "man/" "./" "telepathy/" "applications/" "gegl-0.3/" "keyrings/" "gnome-shell/" "sounds/" "webkitgtk/" "evolution/" "desktop-directories/" "session_migration-gnome" "zeitgeist/" ".converted-launchers" "fonts/" "recently-used.xbel" "folks/" "gsettings-data-convert" "data/" "zoom/" "glmark2/")
-
- ("/usr/share/icons/Numix-Circle/16x16/panel/" (22427 31461 453565 396000) "everpad-mono.svg" "syspeek-30.svg" "deluge-panel.svg" "copy-update.svg" "caffeine-cup-full.svg" "insync-syncing-4.svg" "autokey-status.svg" "y-ppa-indicator.svg" "insync-normal.svg" "copy-insync.svg" "copy-error.svg" "variety-indicator-dark.svg" "copy-paused.svg" "blueman-active.svg" "syspeek-0.svg" "copy-sync5.svg" "./" "redshift-status-off.svg" "copy-sync8.svg" "../" "insync-partial-error.svg" "bluetooth-active.svg" "redshift-status-on.svg" "disper-panel.svg" "fluxgui-panel.svg" "syspeek-70.svg" "zim-panel.svg" "bluetooth-paired.svg" "bluetooth-disabled.svg" "copy-sync2.svg" "copy-sync4.svg" "kazam-paused.svg" "indicator-sound-switcher-panel.svg" "insync-share.svg" "insync-offline.svg" "transmission-tray-icon.svg" "copy-sync1.svg" "viber-normal.svg" "syspeek-10.svg" "insync-error.svg" "tomboy-panel.svg" "insync-syncing-1.svg" "syspeek-100.svg" "copy-sync3.svg" "syspeek-80.svg" "viber-notification.svg" "syspeek-60.svg" "syspeek-40.svg" "blueman-disabled.svg" "insync-pause.svg" "kazam-countdown.svg" "syspeek-90.svg" "intel-panel.svg" "insync-syncing-3.svg" "diodon-panel.svg" "autokey-error.svg" "simplescreenrecorder-recording.svg" "caffeine-cup-empty.svg" "insync-synced.svg" "kazam-recording.svg" "nvidia-panel.svg" "remmina-panel.svg" "autokey-status-dark.svg" "variety-indicator.svg" "syspeek-50.svg" "insync-syncing-2.svg" "shutter-panel.svg" "blueman-tray.svg" "kazam-stopped.svg" "syspeek-20.svg" "indicator-privacy-panel.svg" "copy-sync7.svg" "copy-sync6.svg" "simplescreenrecorder-paused.svg")
-
- ("/usr/share/icons/Numix-Circle/16x16/" (22427 31462 33566 283000) "./" "../" "panel/")
-
- ("/usr/share/icons/Numix-Circle/" (22427 31462 0 0) "48x48/" "icon-theme.cache" "./" "../" "22x22/" "scalable/" "index.theme" "16x16/" "24x24/")
-
- ("/usr/share/icons/" (22427 31461 633565 672000) "Adwaita/" "locolor/" "Numix/" "./" "../" "gnome/" "Numix-Circle/" "default/" "hicolor/" "HighContrast/" "Numix-Light/" "Numix-Circle-Light/")
-
- ("/usr/share/" (22430 28686 792762 287000) "sbt-launcher-packaging/" "app-install/" "application-registry/" "brasero/" "locale-langpack/" "perl/" "cryptui/" "telepathy/" "system-config-printer/" "poppler/" "fonts/" "xml/" "gnome-mines/" "grilo-plugins/" "mimelnk/" "yelp/" "java/" "deja-dup/" "libsensors4/" "gnupg2/" "emacs24/" "mime/" "common-licenses/" "hwdata/" "pulseaudio/" "gnome-session/" "maven-repo/" "zsh/" "libthai/" "sgml/" "evince/" "gnome-online-accounts/" "nm-applet/" "guile/" "language-selector/" "applications/" "gnome-documents/" "yelp-xsl/" "backgrounds/" "plymouth/" "X11/" "ubuntu-drivers-common/" "gettext-0.19.7/" "file/" "hyphen/" "help/" "pam-configs/" "indicator-application/" "netpbm/" "ImageMagick-6/" "ppd/" "locales/" "gnome-2.0/" "gnome-vpn-properties/" "ppp/" "geoclue-providers/" "mobile-broadband-provider-info/" "libquvi-scripts/" "xdiagnose/" "resolvconf/" "mousetweaks/" "locale/" "dconf/" "dns/" "ibus-table/" "help-langpack/" "thumbnailers/" "secureboot/" "transmission/" "gtk-engines/" "emacs/" "gutenprint/" "nautilus-share/" "software-properties/" "sgml-base/" "unattended-upgrades/" "aclocal/" "tabset/" "purple/" "debhelper/" "gnome/" "calendar/" "wayland-sessions/" "gstreamer-1.0/" "alsa-base/" "rhythmbox/" "libparse-debianchangelog-perl/" "sysv-rc/" "gnome-color-manager/" "go/" "popularity-contest/" "kde4/" "totem/" "gnome-tweak-tool/" "libtimezonemap/" "hal/" "libgnomekbd/" "alsa/" "update-notifier/" "libgphoto2/" "groff/" "ubuntu-release-upgrader/" "python3/" "librevenge/" "gcc-5/" "dictionaries-common/" "language-support/" "liblouis/" "apport/" "glib-2.0/" "app-info/" "itstool/" "distro-info/" "gettext/" "pnm2ppa/" "sounds/" "mozilla/" "gtksourceview-3.0/" "libaudio2/" "djvu/" "pam/" "ibus-pinyin/" "pyzy/" "libgweather/" "apt-file/" "aisleriot/" "evolution/" "libc-bin/" "iptables/" "im-config/" "language-tools/" "gnome-settings-daemon-3.0/" "a11y-profile-manager/" "qt5/" "colord/" "tcltk/" "nvidia/" "fontconfig/" "gupnp-av/" "evolution-data-server/" "liblangtag/" "org.gnome.Weather/" "dpkg/" "ca-certificates-java/" "unity/" "polkit-1/" "doc/" "package-data-downloads/" "gir-1.0/" "libnm-gtk/" "pkg-config-dpkghook" "man/" "gnome-panel/" "gnome-background-properties/" "console-setup/" "adduser/" "os-prober/" "ghostscript/" "base-files/" "lintian/" "gnome-shell/" "dnsmasq-base/" "cogl/" "nano/" "intltool-debian/" "file-roller/" "gnome-software/" "hplip/" "desktop-directories/" "consoletrans/" "m17n/" "insserv/" "info/" "gedit/" "menu/" "vino/" "speech-dispatcher/" "unity-settings-daemon/" "dh-python/" "debianutils/" "nvidia-367/" "farstream/" "ca-certificates/" "base-passwd/" "doc-base/" "vte/" "qtchooser/" "usb_modeswitch/" "idl/" "foo2zjs/" "liblouisutdml/" "readline/" "initramfs-tools/" "lightdm/" "grub/" "zenity/" "unity-greeter/" "adium/" "gtk-doc/" "gnome-sudoku/" "perl5/" "pygtk/" "hunspell/" "hardening-includes/" "gupnp-dlna-2.0/" "gconf/" "foo2qpdl/" "gdm/" "gnome-user-share/" "sushi/" "brltty/" "ibus/" "vulkan/" "myspell/" "pixmaps/" "mime-info/" "mythes/" "avahi/" "screen-resolution-extra/" "systemd/" "libreoffice/" "gnome-mahjongg/" "cups/" "ssl-cert/" "gitweb/" "snmp/" "zeitgeist/" "linux-sound-base/" "apps/" "gnome-maps/" "aspell/" "eog/" "GeoIP/" "update-manager/" "i18n/" "yelp-tools/" "GConf/" "python/" "acpi-support/" "dbus-1/" "terminfo/" "libwacom/" "xgreeters/" "xml-core/" "build-essential/" "tracker/" "libnma/" "debconf/" "keyrings/" "indicators/" "pkgconfig/" "git-core/" "wayland/" "ubufox/" "indicator-power/" "gnome-video-effects/" "upstart/" "zoneinfo/" "gnome-control-center/" "openal/" "misc/" "libexttextcat/" "themes/" "consolefonts/" "accounts/" "xul-ext/" "session-migration/" "enchant/" "terminator/" "gnome-settings-daemon/" "gdb/" "accountsservice/" "dict/" "gvfs/" "ufw/" "unity-control-center/" "command-not-found/" "go-1.6/" "binfmts/" "orca/" "xsessions/" "seahorse/" "rsyslog/" "man-db/" "bash-completion/" "midi/" "webkitgtk-3.0/" "apturl/" "gst-plugins-base/" "appdata/" "empathy/" "gnome-bluetooth/" "gnome-music/" "python-apt/" "usb-creator/" "pyshared/" "vim/" "intel-gpu-tools/" "gnupg/" "nvidia-prime/" "simple-scan/" "pkg-config-crosswrapper" "bug/" "color/" "gcr-3/" "p11-kit/" "icons/" "caribou/" "media-player-info/" "../" "./")
-
- ("/usr/" (22430 3941 660689 662000) "./" "include/" "../" "share/" "sbin/" "lib/" "lib32/" "games/" "local/" "src/" "bin/")
-
- ("/home/jon/.local/share/icons/hicolor/128x128/apps/" (22427 29874 90818 450000) "chrome-pjkljhegncpnkpknbcohdijeoejaedia-Default.png" "../" "./" "chrome-apdfllckaahabafndbhieahigkjlhalf-Default.png" "chrome-aohghmighlieiainnegkcijnfilokake-Default.png" "chrome-knipolnnllmklapflnccelgolnpehhpl-Default.png" "chrome-blpcfgokakmgnkcojhhkbfbldkacnbeo-Default.png")
-
- ("/home/jon/.local/share/icons/hicolor/128x128/" (22427 29693 613450 711000) "../" "./" "apps/")
-
- ("/home/jon/.local/share/icons/hicolor/" (22427 29874 90818 450000) "16x16/" "../" "./" "48x48/" "128x128/")
-
- ("/home/jon/.local/share/icons/" (22427 29693 613450 711000) "hicolor/" "../" "./")
-
- ("/home/jon/.local/" (22428 45377 31654 153000) "../" "./" "bin/" "share/")
-
- ("/home/jon/Code/Originate/6fusion/capnproto-scala/src/main/scala/schema/" (22433 6959 169603 438000) "Enumerant.scala" "CodeGeneratorRequest.scala" "Field.scala" "../" "./" "Brand.scala" "Node.scala" "Superclass.scala" "Method.scala" "ElementSize.scala" "Annotation.scala" "Type.scala" "Id.scala" "Value.scala")
-
- ("/home/jon/Code/Originate/6fusion/capnproto-scala/capnp/" (22432 48083 691248 974000) "java.capnp" "../" "./" "schema.capnp" "test.capnp" "capnpc-java")
-
- ("/home/jon/Code/Originate/6fusion/capnproto-scala/src/main/resources/" (22432 44781 713080 492000) "testmessage.capnp.bin" "../" "./")
-
- ("/home/jon/Code/Vendor/capnproto/c++/src/capnp/" (22432 44562 734385 472000) "canonicalize-test.c++" "message.h" "serialize-packed-test.c++" "rpc-twoparty-test.c++" "rpc-twoparty.c++" "schema.capnp.c++" "rpc-prelude.h" "endian-test.c++" "ez-rpc.h" "compiler/" "compat/" "pretty-print.h" "dynamic.h" "list.c++" "membrane.c++" "persistent.capnp.h" "test-util.c++" "schema-test.c++" "blob.c++" "rpc-test.c++" "layout.c++" "capnpc.ekam-rule" "../" "persistent.capnp" "rpc.h" "serialize-packed.c++" "schema-loader.c++" "test-util.h" "rpc-twoparty.h" "serialize-packed.h" "schema.c++" "blob-test.c++" "./" "capability.c++" "schema.capnp.h" "membrane.h" "serialize-text.c++" "schema-parser.c++" "rpc-twoparty.capnp.c++" "serialize-async.c++" "dynamic-capability.c++" "arena.c++" "layout.h" "stringify.c++" "schema.capnp" "schema-parser.h" "serialize-text.h" "any.h" "testdata/" "endian-reverse-test.c++" "test-import.capnp" "fuzz-test.c++" "rpc-twoparty.capnp.h" "message-test.c++" "CMakeLists.txt" "any.c++" "serialize-text-test.c++" "common.h" "membrane-test.c++" "arena.h" "rpc.c++" "list.h" "rpc-twoparty.capnp" "ez-rpc-test.c++" "pointer-helpers.h" "layout-test.c++" "rpc.capnp" "serialize.h" "serialize-test.c++" "blob.h" "stringify-test.c++" "schema-loader-test.c++" "endian.h" "endian-fallback-test.c++" "schema.h" "capability-test.c++" "schema-loader.h" "encoding-test.c++" "persistent.capnp.c++" "test.capnp" "bootstrap-test.ekam-rule" "test-import2.capnp" "c++.capnp.c++" "common-test.c++" "dynamic.c++" "message.c++" "schema-parser-test.c++" "dynamic-test.c++" "orphan.h" "capability.h" "rpc.capnp.c++" "c++.capnp" "serialize-async-test.c++" "rpc.capnp.h" "serialize.c++" "schema-lite.h" "orphan-test.c++" "serialize-async.h" "generated-header-support.h" "c++.capnp.h" "ez-rpc.c++" "any-test.c++")
-
- ("/home/jon/Code/Vendor/capnproto/c++/" (22432 44562 702385 675000) "src/" "regenerate-bootstraps.sh" "Makefile.ekam" "../" "README.txt" "./" "capnp.pc.in" "capnp-json.pc.in" "Makefile.am" "kj.pc.in" "LICENSE.txt" "CMakeLists.txt" "samples/" "setup-autotools.sh" "capnp-rpc.pc.in" "setup-ekam.sh" "m4/" "configure.ac" "cmake/" "ekam-provider/" "kj-async.pc.in")
-
- ("/home/jon/Code/Vendor/capnproto/" (22432 44562 746385 395000) "../" "style-guide.md" "release.sh" "CONTRIBUTORS" "mega-test.cfg" "./" "mega-test-quick.cfg" "security-advisories/" ".git/" "doc/" "c++/" ".gitignore" "super-test.sh" "mega-test.py" "highlighting/" "README.md" "LICENSE" "RELEASE-PROCESS.md")
-
- ("/home/jon/Code/Vendor/" (22432 44560 370400 521000) "flatbuffers-1.3.0/" "ghc/" "linear/" "clojure/" "spark/" "../" "glm/" "spray-json/" "async-http-client/" "sbt-cross/" "./" "temple/" "akka/" "sarama/" "GLUtil/" "stm/" "slick/" "scala/" "OpenGL/" "capnproto/" "s3/" "hmatrix/" "capnproto-java/" "glmark2/" "OpenGLRaw/" "scrooge/")
-
- ("/home/jon/.Heaven/" (22430 13391 203655 902000) "../" "./" "heaven_4.0.cfg" "log.html")
-
- ("/home/jon/Code/Originate/6fusion/capnproto-scala/script/" (22431 55586 362504 726000) "../" "gentest.sh" "./" "pipedata.sh")
-
- ("/home/jon/Code/Originate/6fusion/" (22431 35344 917639 757000) "dcos.notes" "notes.org" "aws.org" "dcos-vagrant/" "../" "./" "capnproto-scala/" "target/" "dcos/" "6fusion-online/" "dcos-cli/" "data/" "flatbuffers-java-1.2.0-SNAPSHOT.jar" "kickoff.org" "project/" "mesosphere.org" "repos/" "spikes/")
-
- ("/home/jon/Code/Originate/6fusion/capnproto-scala/src/main/java/" (22431 29213 562256 304000) "Schema.java" "../" "./")
-
- ("/home/jon/Code/Vendor/capnproto-java/runtime/src/main/java/org/capnproto/" (22430 31430 445169 889000) "MessageBuilder.java" "FromPointerReaderRefDefault.java" "FromPointerReader.java" "EnumList.java" "ListList.java" "PointerFactory.java" "BufferedOutputStreamWrapper.java" "SerializePacked.java" "ElementSize.java" "ReaderOptions.java" "BufferedOutputStream.java" "../" "WireHelpers.java" "SegmentBuilder.java" "PackedInputStream.java" "./" "ListPointer.java" "DataList.java" "BufferedInputStream.java" "ArrayOutputStream.java" "ListFactory.java" "Serialize.java" "ListReader.java" "BufferedInputStreamWrapper.java" "StructList.java" "FromPointerBuilder.java" "StructSize.java" "ArrayInputStream.java" "Constants.java" "Void.java" "Arena.java" "FromPointerBuilderBlobDefault.java" "package-info.java" "StructFactory.java" "PackedOutputStream.java" "StructPointer.java" "StructReader.java" "ListBuilder.java" "Text.java" "FromPointerBuilderRefDefault.java" "SetPointerBuilder.java" "StructBuilder.java" "PrimitiveList.java" "AnyPointer.java" "SegmentReader.java" "FromPointerReaderBlobDefault.java" "BuilderArena.java" "MessageReader.java" "ReaderArena.java" "GeneratedClassSupport.java" "DecodeException.java" "TextList.java" "FarPointer.java" "Data.java" "WirePointer.java")
-
- ("/home/jon/Code/Vendor/capnproto-java/runtime/src/main/java/org/" (22430 30216 515727 405000) "../" "./" "capnproto/")
-
- ("/home/jon/Code/Vendor/capnproto-java/runtime/src/main/java/" (22430 30216 515727 405000) "../" "./" "org/")
-
- ("/home/jon/Code/Vendor/capnproto-java/runtime/src/main/" (22430 30216 515727 405000) "java/" "../" "./")
-
- ("/home/jon/Code/Vendor/capnproto-java/runtime/src/" (22430 30216 523727 343000) "../" "./" "test/" "main/")
-
- ("/home/jon/Code/Vendor/capnproto-java/runtime/" (22430 30216 515727 405000) "src/" "../" "./")
-
- ("/home/jon/Code/Vendor/capnproto-java/" (22430 30216 523727 343000) "examples/" "compiler/" "Makefile" "../" "CONTRIBUTORS" "./" "benchmark/" "version.sbt" ".git/" ".gitignore" ".travis.yml" "runtime/" "do_benchmarks.bash" "README.md" "project/" "LICENSE" "RELEASE-PROCESS.md")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/test/scala/" (22417 3675 0 0) "util/" "../" "./" "SixfusionSpec.scala" "models/" "capnp/")
 
  ("/home/jon/Code/Originate/6fusion/capnproto-scala/src/main/" (22430 24996 869460 449000) "java/" "../" "./" "scala/" "resources/")
 
- ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-common/src/main/scala/capnp/" (22427 39066 381840 139000) "../" "./" "CapnProto.scala")
-
- ("/home/jon/Code/Originate/6fusion/capnproto-scala/project/" (22430 23136 932863 421000) "../" "./" "target/")
-
- ("/home/jon/glmark/" (22430 13747 15907 418000) "NvidiaResults.html" "../" "intel-results.txt" "./" "IntelResults.html" "nvidia-results2.txt" "nvidia-results.txt")
-
- ("/home/jon/Code/Originate/6fusion/6fusion-online/capnp/" (22430 21833 24047 118000) "../" "lib/" "./" "data.capnp" "bin/")
-
  ("/home/jon/Code/Originate/6fusion/capnproto-scala/src/" (22430 21368 219063 281000) "../" "./" "main/")
 
- ("/home/jon/.emacs.d/opt/" (22430 20515 181439 993000) "capnp-mode.el" "../" "antlr-mode.el" "./" "glsl-mode.el" "capnp-mode.elc")
+ ("/home/jon/Code/Originate/6fusion/repos/on-prem-api/test/" (22387 63296 0 0) "performance/" "helpers/" "../" "./" "controllers/" "integration/" "test_helper.rb" "models/" "fixtures/")
 
- ("/home/jon/Code/Originate/BCG/Vendor/amazon-kinesis-client/src/main/java/com/amazonaws/services/kinesis/multilang/" (22055 38855 0 0) "MultiLangRecordProcessorFactory.java" "../" "MessageWriter.java" "./" "DrainChildSTDERRTask.java" "LineReaderTask.java" "package-info.java" "GetNextMessageTask.java" "MultiLangDaemonConfig.java" "DrainChildSTDOUTTask.java" "messages/" "MultiLangProtocol.java" "MessageReader.java" "MultiLangRecordProcessor.java" "MultiLangDaemon.java")
+ ("/home/jon/Code/Originate/6fusion/repos/on-prem-api/test/performance/" (22459 5392 595856 982000) "../" "./" "script_timer.jmx" "jmeter_daily" "post_test.rb" "post-uc6-readings.jmx" "bulk_provision.rb" ".gitignore" "rest_post_test.rb" "hourly_reading_times.csv" "post_op-API_readings.jmx")
 
- ("/home/jon/Downloads/" (22427 32861 866120 997000) "FantasqueSansMono-BoldItalic.ttf" "Webfonts/" "../" "./" "OFL.txt" "OTF/" "fantasque-sans-mono.zip" "Sources/" "slack-desktop-2.1.0-amd64.deb" "FantasqueSansMono-Italic.ttf" "README.md" "FantasqueSansMono-Bold.ttf" "FantasqueSansMono-Regular.ttf")
+ ("/home/jon/Code/Originate/6fusion/repos/on-prem-api/app/controllers/api/v1/" (22459 5392 571857 104000) "../" "infrastructures_controller.rb" "disks_controller.rb" "./" "machines_controller.rb" "samples_controller.rb" "nics_controller.rb" "utilization_controller.rb" "api_controller.rb" "consumption_patterns_controller.rb" "organizations_controller.rb" "costs_controller.rb" "readings_controller.rb")
 
- ("/lib64/" (22296 28795 0 0) "ld-linux-x86-64.so.2" "./" "../")
+ ("/home/jon/Code/Originate/6fusion/repos/on-prem-api/app/controllers/api/" (22427 39049 713614 621000) "../" "./" "v1/")
 
- ("/usr/include/GLFW/" (22428 44450 438681 776000) "./" "../" "glfw3native.h" "glfw3.h")
+ ("/home/jon/Code/Originate/6fusion/repos/on-prem-api/app/controllers/" (22459 5392 571857 104000) "../" "api_docs_controller.rb" "health_controller.rb" "./" "api/" "application_controller.rb" "concerns/")
 
- ("/home/jon/Code/Vendor/GLUtil/src/Graphics/GLUtil/" (22427 38996 104851 38000) "Camera3D.hs" "VertexArrayObjects.hs" "Textures.hs" "ShaderProgram.hs" "Linear.hs" "../" "TypeMapping.hs" "./" "Viewport.hs" "GLError.hs" "Drawing.hs" "Camera2D.hs" "BufferObjects.hs" "Shaders.hs" "JuicyTextures.hs")
+ ("/home/jon/Code/Originate/6fusion/repos/on-prem-api/" (22459 5392 591857 2000) "images/" "Gemfile" "../" "lib/" "./" "Dockerfile.utilization-tracker" "test/" ".git/" "kubernetes/" ".ruby-gemset" "cloud-config.yml" "app/" ".gitignore" "Rakefile" "public/" "Dockerfile" "db/" "bin/" "supervisord.utilization-tracker.conf" ".ruby-version" "log/" "config/" "docs/" "Gemfile.lock" "config.ru")
 
- ("/home/jon/Code/Originate/BCG/prototype/email-sender/" (22427 39034 801408 198000) "../" "./" "Main.hs" "EmailSender/")
+ ("/home/jon/Code/Originate/6fusion/repos/on-prem-api/app/models/concerns/" (22459 5392 571857 104000) ".keep" "couch_aliases.rb" "cacheable_properties.rb" "../" "./" "better_errors.rb" "custom_keys.rb")
 
- ("/home/jon/Code/Originate/BCG/prototype/" (22427 39034 721407 77000) "import-offer-data/" "Aws/" "stack.yaml" "somatix_event_api/" "Events/" "DynamoDB/" ".import-transactions" "email-event-receiver/" "Utils.hs" "import-transactions.properties" "Kinesis/" "../" "conf/" "somatix_web_assets/" "SOMATIX.cabal" "import-with-kcl/" "./" "Mailgun/" "test/" "messages.proto" ".git/" "SendGrid/" "Setup.hs" "protobuf/" "target/" "somatix_api/" ".gitignore" ".stack-work/" "Model/" ".apollo-reports" "apollo-reports/" "Workflow/" "transaction-csv-to-kinesis/" "Apollo/" "javalib/" "scripts/" ".email-event-receiver" "cms/" "somatix_api_assets/" "import-transactions/" "Servant/" "kclmld" "email-sender/" "README.md" "circle.yml" "transaction-csv-importer/" "cabal.sandbox.config" ".cabal-sandbox/" "LICENSE" "cms_assets/" "somatix_web/" ".dir-locals.el")
+ ("/home/jon/Code/Originate/6fusion/repos/on-prem-api/app/models/" (22459 5392 571857 104000) "organization.rb" "api_model.rb" "../" "./" "utilization.rb" "infrastructure.rb" "cost.rb" "machine.rb" "nic.rb" "disk.rb" "sample.rb" "concerns/" "reading.rb")
 
- ("/home/jon/Code/Originate/BCG/prototype/Kinesis/" (22427 39034 737407 302000) "../" "./" "Conversion.hs" "API.hs" "Types.hs" "KCL/")
+ ("/home/jon/Code/Originate/6fusion/repos/on-prem-api/app/" (22427 39049 713614 621000) "helpers/" "../" "./" "controllers/" "assets/" "views/" "models/")
 
- ("/home/jon/Code/Originate/BCG/prototype/Workflow/" (22131 14993 0 0) "Utils.hs" "Dash/" "../" "./" "Model.hs" "Test/" "BonusStars/" "Discount/" "MOP/" "Quest/" "Types.hs" "Workflow.hs")
+ ("/home/jon/Code/Originate/6fusion/repos/" (22455 29132 593141 620000) "rbvmomi/" "doorkeeper/" "hydra/" "sentient_user/" "ovfparse/" "cost-calculator/" "devise/" "../" "awesome_print/" "mailboxer/" "fog/" "./" "net-ping/" "vmware-collector/" "consumption-patterns/" "console/" "backstage/" "aws-sdk-ruby/" "activerecord-import/" "meter-dashboard/" "collector-framework/" "adaptor-vmware/" "api-tools/" "uc6_client_api/" "capacity-calculator/" "adaptor-template/" "wac-calculator/" "on-prem-api/" "padrino-rpm/")
 
- ("/home/jon/Code/Originate/BCG/prototype/email-sender/EmailSender/" (22427 39034 801408 198000) "../" "Worker.hs" "./" "API.hs" "KinesisWorker.hs")
+ ("/home/jon/Code/Vendor/scala/src/library/scala/collection/immutable/" (22427 38995 60835 562000) "StringLike.scala" "StreamViewLike.scala" "Iterable.scala" "DefaultMap.scala" "Vector.scala" "../" "Stream.scala" "MapLike.scala" "SortedMap.scala" "SortedSet.scala" "./" "Stack.scala" "PagedSeq.scala" "LinearSeq.scala" "IndexedSeq.scala" "Queue.scala" "ListMap.scala" "BitSet.scala" "Seq.scala" "StringOps.scala" "WrappedString.scala" "NumericRange.scala" "MapProxy.scala" "TrieIterator.scala" "SetProxy.scala" "RedBlackTree.scala" "Range.scala" "ListSet.scala" "TreeSet.scala" "TreeMap.scala" "Traversable.scala" "StreamView.scala" "Set.scala" "IntMap.scala" "List.scala" "Map.scala" "HashSet.scala" "LongMap.scala" "HashMap.scala")
 
- ("/home/jon/Documents/" (22426 34763 585351 782000) "../" "./")
+ ("/home/jon/Code/" (22429 22434 83182 953000) "Misc/" "Vendor/" "../" "Langs/" "ClojureBridge/" "./" "Originate/" "Game/" "OpenSource/" "Notes/" "repos.json" "Sterf/" "Wombats/" ".DS_Store" "Eudyptula/")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/seed/" (22444 54338 981662 865000) "../" "./" "Seed.scala")
+
+ ("/home/jon/Code/Originate/" (22427 39008 829037 761000) "tododrop/" "OA/" "../" "./" "BCG/" "guide_private/" "RMS/" "devacurl/" "TwentyPercent/" "foodstand/" "FPClass/" "6fusion/")
+
+ ("/home/jon/Code/Originate/BCG/somatix/" (22453 47205 415351 521000) "somatix-frontend-api/" "somatix-lambda-common/" "somatix-shared-daos/" "somatix-lambda-firehose/" "build.sbt" "somatix-customer-info/" "../" "somatix-lambda-redshift-flush/" "somatix-mailgun-webhooks/" ".editorconfig" "lib/" "somatix-api-lookup/" "./" "somatix-customer-update/" ".gitattributes" ".git/" "api-docs/" "target/" "#role.json#" "somatix-common/" "logs/" ".gitignore" "somatix-unsub-import/" "somatix-lambda-import-trigger/" "somatix-mailer/" ".ensime_cache/" "somatix-data-import/" "somatix-reports/" "requirements.txt" "somatix-aws/" "somatix-domain-models/" "scripts/" "somatix-masker/" "somatix-streams/" "README.md" "somatix-shared-clients/" "somatix-persistence/" "circle.yml" ".fix-imports.yml" "project/" ".ensime" "scalastyle-config.xml" ".sbtopts" "docs/" ".dir-locals.el")
 
  ("/home/jon/Code/Originate/BCG/somatix/project/" (22427 39029 145328 724000) "ElasticBeanstalk.scala" "../" "./" "Common.scala" "target/" "plugins.sbt" "build.properties" "project/" ".ensime" "Dependencies.scala")
 
- ("/home/jon/Code/Originate/BCG/somatix/somatix-streams/src/main/scala/" (22275 54148 0 0) "dto/" "exceptions/" "../" "kinesis/" "./" "StreamsRegistry.scala" "base/")
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/.ensime_cache/dep-src/source-jars/org/scalatest/" (22460 40249 119577 146000) "StreamlinedXmlEquality.scala" "tools/" "BeforeAndAfterEachTestData.scala" "enablers/" "Status.scala" "DocSpecLike.scala" "TestRerunner.scala" "concurrent/" "DiagrammedAssertionsMacro.scala" "exceptions/" "events/" "DocSpec.scala" "Documenter.scala" "SequentialNestedSuiteExecution.scala" "ConfigMap.scala" "DoNotDiscover.java" "Engine.scala" "TestData.scala" "StreamlinedXml.scala" "DiagrammedAssertions.scala" "../" "mock/" "AppendedClues.scala" "PropSpecLike.scala" "Informer.scala" "StopOnFailureReporter.scala" "./" "DeferredAbortedSuite.scala" "Inside.scala" "LoneElement.scala" "selenium/" "tags/" "verb/" "StepwiseNestedSuiteExecution.scala" "BeforeAndAfterEach.scala" "DiagrammedExpr.scala" "BeforeAndAfterAll.scala" "BeforeAndAfterAllConfigMap.scala" "Informing.scala" "Documenting.scala" "OptionValues.scala" "FunSpecLike.scala" "FunSpec.scala" "FailureMessages.scala" "tagobjects/" "time/" "words/" "Outcome.scala" "Inspectors.scala" "FunSuiteLike.scala" "PrivateMethodTester.scala" "Stopper.scala" "SeveredStackTraces.scala" "CancelAfterFailure.scala" "WrapWith.java" "ParallelTestExecution.scala" "BeforeAndAfter.scala" "prop/" "PropSpec.scala" "ConfigMapWrapperSuite.scala" "CompileMacro.scala" "DiagrammedExprMacro.scala" "Matchers.scala" "Sequential.scala" "matchers/" "FlatSpecLike.scala" "CatchReporter.scala" "RandomTestOrder.scala" "testng/" "ConcurrentInformer.scala" "StopOnFailure.scala" "FunSuite.scala" "MatchersHelper.scala" "DispatchReporter.scala" "fixture/" "path/" "StreamlinedXmlNormMethods.scala" "TestRegistration.scala" "Stepwise.scala" "package.scala" "Doc.scala")
 
- ("/home/jon/Code/Originate/BCG/somatix/somatix-common/src/main/scala/" (22320 55604 0 0) "dto/" "exceptions/" "Paths.scala" "util/" "Environment.scala" "../" "Clock.scala" "monitoring/" "./" "Constants.scala" "CommonRegistry.scala" "Section.scala" "auth/" "AppConfig.scala" "base/" "cache/" "data/")
+ ("/home/jon/Code/Vendor/cassandra-unit/cassandra-unit/src/main/java/org/cassandraunit/dataset/" (22453 51262 81945 520000) "json/" "xml/" "CQLDataSet.java" "MultiSourceDataSet.java" "../" "./" "ParseException.java" "cql/" "DataSet.java" "ClassPathDataSet.java" "commons/" "yaml/" "DataSetFileExtensionEnum.java" "FileDataSet.java")
 
- ("/home/jon/Code/Originate/BCG/somatix/somatix-common/src/main/scala/util/" (22320 55604 0 0) "Ops.scala" "RateLimitedAdapter.scala" "FutureBatcher.scala" "Dates.scala" "../" "JsonFormats.scala" "./" "HmacSha256.scala" "RateLimiter.scala" "PgpHelper.scala" "StreamName.scala" "HttpLogger.scala" "#Conversions.scala#" "Monitor.scala" "Tap.scala" "SerializableEnumeration.scala" "Dispatcher.scala" "IdGenerator.scala" "PasswordHash.scala" "Retry.scala" "AtomicRef.scala" "Conversions.scala")
+ ("/home/jon/Code/Vendor/cassandra-unit/cassandra-unit/src/main/java/org/cassandraunit/dataset/cql/" (22453 51262 81945 520000) "../" "./" "SimpleCQLLexer.java" "AbstractCQLDataSet.java" "ClassPathCQLDataSet.java" "FileCQLDataSet.java")
+
+ ("/home/jon/Code/Vendor/cassandra-unit/cassandra-unit/src/main/java/org/cassandraunit/" (22453 51262 81945 520000) "CassandraUnit.java" "cli/" "CQLDataLoader.java" "utils/" "LoadingOption.java" "dataset/" "AbstractCassandraUnit4TestCase.java" "../" "BaseCassandraUnit.java" "type/" "./" "serializer/" "CassandraCQLUnit.java" "DataLoader.java" "AbstractCassandraUnit4CQLTestCase.java" "exception/" "model/")
+
+ ("/home/jon/Code/Vendor/cassandra-unit/cassandra-unit/src/main/java/org/cassandraunit/utils/" (22453 51262 81945 520000) "../" "./" "TypeExtractor.java" "ComparatorTypeHelper.java" "EmbeddedCassandraServerHelper.java" "Base64.java")
+
+ ("/home/jon/Code/Originate/6fusion/repos/wac-calculator/" (22453 55386 93885 86000) "../" "./" ".git/" "cloud-config.yml" "wac_test.go" ".gitignore" "Dockerfile" "main.go")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/6fusion-api-server/app/controllers/composition/" (22427 39066 497841 690000) "../" "./" "AuthWithToken.scala")
+
+ ("/home/jon/Code/Originate/6fusion/6fusion-online/meter-schemas/" (22460 22075 715347 226000) "../" "./" "infrastructure.json" "disk.json" "organizaton.json" "machine.json" "nic.json" "sample.json")
+
+ ("/home/jon/Code/Originate/6fusion/repos/meter-dashboard/images/ubuntu/" (22459 25227 643488 241000) "meterctl" "../" "./" "Vagrantfile" "meterctl.sh.erb" "install")
 )
 
 ;; ----- ido-unc-hosts-cache -----

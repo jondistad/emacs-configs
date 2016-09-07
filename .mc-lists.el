@@ -3,6 +3,7 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        backward-sexp
         c-electric-colon
         c-electric-delete-forward
         c-electric-paren
@@ -22,12 +23,14 @@
         paredit-forward-kill-word
         paredit-splice-sexp
         yaml-electric-backspace
+        yaml-electric-dash-and-dot
         ))
 
 (setq mc/cmds-to-run-once
       '(
         ensime-mouse-motion
         ido-switch-buffer
+        ignore
         indent-for-tab-command
         orgtbl-self-insert-command
         ))
