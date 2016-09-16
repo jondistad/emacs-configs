@@ -12,6 +12,7 @@
         coffee-dedent-line-backspace
         company-ignore
         dabbrev-expand
+        electric-newline-and-maybe-indent
         forward-sexp
         haskell-indentation-delete-backward-char
         kill-region
@@ -28,6 +29,7 @@
 
 (setq mc/cmds-to-run-once
       '(
+        end-of-buffer
         ensime-mouse-motion
         ido-switch-buffer
         ignore
