@@ -116,6 +116,8 @@
 ;; (add-hook 'scala-mode-hook #'yas-minor-mode)
 (add-hook 'scala-mode-hook (lambda ()
                              (setq-local electric-indent-chars '(?\n ?\}))))
+(setq ensime-startup-snapshot-notification nil)
+
 ;; (define-key company-active-map [tab] nil)
 
 (eval-after-load 'paredit
@@ -231,7 +233,8 @@
 
 (require 'find-file-in-project)
 (setq ffip-patterns (delete-dups
-                     (append (list "*.scala" "*.coffee" "*.c" "*.cpp" "*.cc" "*.h" "*.hh" "*.hpp")
+                     (append (list "*.scala" "*.coffee" "*.c" "*.cpp" "*.cc" "*.h" "*.hh" "*.hpp"
+                                   "*.java" "*.py" "*.rb" "*.clj" "*.hs" "*.conf" "*.properties" "*.xml")
                              ffip-patterns)))
 (setq ffip-limit 5000)
 (setq ffip-prefer-ido-mode t)
