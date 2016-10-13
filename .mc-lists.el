@@ -13,6 +13,7 @@
         company-ignore
         dabbrev-expand
         electric-newline-and-maybe-indent
+        ensime-company-complete-or-indent
         forward-sexp
         haskell-indentation-delete-backward-char
         kill-region
@@ -31,6 +32,7 @@
       '(
         end-of-buffer
         ensime-mouse-motion
+        ido-find-file
         ido-switch-buffer
         ignore
         indent-for-tab-command
