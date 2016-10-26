@@ -15,7 +15,8 @@
  '(magit-use-overlays nil)
  '(safe-local-variable-values
    (quote
-    ((ffip-additional-patterns "*.conf")
+    ((ffip-additional-patterns "*.cql")
+     (ffip-additional-patterns "*.conf")
      (ffip-additional-patterns "*.conf" "*.java" "*.xml" "*.sbt")
      (ffip-additional-patterns "*.java" "*.xml")
      (ffip-limit . 13000)

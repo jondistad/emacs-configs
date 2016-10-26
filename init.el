@@ -233,8 +233,7 @@
 
 (require 'find-file-in-project)
 (setq ffip-patterns (delete-dups
-                     (append (list "*.scala" "*.coffee" "*.c" "*.cpp" "*.cc" "*.h" "*.hh" "*.hpp"
-                                   "*.java" "*.py" "*.rb" "*.clj" "*.hs" "*.conf" "*.properties" "*.xml")
+                     (append (list "*.scala" "*.coffee" "*.c" "*.cpp" "*.cc" "*.h" "*.hh" "*.hpp" "*.java" "*.hs")
                              ffip-patterns)))
 (setq ffip-limit 5000)
 (setq ffip-prefer-ido-mode t)
