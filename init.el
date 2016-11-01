@@ -117,7 +117,6 @@
 (add-hook 'scala-mode-hook (lambda ()
                              (setq-local electric-indent-chars '(?\n ?\}))))
 (setq ensime-startup-snapshot-notification nil)
-
 ;; (define-key company-active-map [tab] nil)
 
 (eval-after-load 'paredit
@@ -161,7 +160,7 @@
                                               (interactive)
                                               (if (eobp)
                                                   (funcall 'cider-repl-return)
-                                                (flet ((cider-repl--input-complete-p (&rest args) nil))
+                                                (cl-flet ((cider-repl--input-complete-p (&rest args) nil))
                                                   (funcall 'cider-repl-return)))))))
 
 (setq-default cider-repl-history-file "~/.cider-repl-history")
