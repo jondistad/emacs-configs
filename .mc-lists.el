@@ -12,6 +12,7 @@
         coffee-dedent-line-backspace
         company-ignore
         dabbrev-expand
+        delete-indentation
         electric-newline-and-maybe-indent
         ensime-company-complete-or-indent
         forward-sexp
