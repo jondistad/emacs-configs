@@ -24,7 +24,10 @@
   (melpa-packages-enable)
   (package-list-packages))
 
-;(add-hook 'after-init-hook 'global-company-mode)
+(add-hook 'after-init-hook 'global-company-mode)
+
+(load "~/.emacs.d/lisp/PG/generic/proof-site")
+(add-hook 'coq-mode-hook #'company-coq-mode)
 
 (setq require-final-newline 'visit-save)
 

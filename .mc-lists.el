@@ -10,7 +10,9 @@
         c-electric-semi&comma
         c-electric-star
         coffee-dedent-line-backspace
+        company-coq-maybe-exit-snippet
         company-ignore
+        coq-terminator-insert
         dabbrev-expand
         delete-indentation
         electric-newline-and-maybe-indent
@@ -38,4 +40,5 @@
         ignore
         indent-for-tab-command
         orgtbl-self-insert-command
+        pg-protected-undo
         ))
