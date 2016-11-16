@@ -26,7 +26,10 @@
 
 (add-hook 'after-init-hook 'global-company-mode)
 
-(load "~/.emacs.d/lisp/PG/generic/proof-site")
+(defun init-coq ()
+  (interactive)
+  (load "~/.emacs.d/lisp/PG/generic/proof-site"))
+;; (init-coq)
 (add-hook 'coq-mode-hook #'company-coq-mode)
 
 (setq require-final-newline 'visit-save)
