@@ -22,6 +22,8 @@
         kill-region
         kill-sexp
         org-delete-char
+        org-end-of-line
+        org-force-self-insert
         orgtbl-hijacker-command-102
         paredit-backward-kill-word
         paredit-forward-delete
@@ -39,6 +41,7 @@
         ido-switch-buffer
         ignore
         indent-for-tab-command
+        org-self-insert-command
         orgtbl-self-insert-command
         pg-protected-undo
         ))
