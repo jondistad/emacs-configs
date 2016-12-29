@@ -236,29 +236,29 @@
 (eval-after-load 'css-mode
   '(setq css-indent-offset 2))
 
-(require 'find-file-in-project)
-(setq ffip-patterns (delete-dups
-                     (append (list "*.scala" "*.coffee" "*.c" "*.cpp" "*.cc" "*.h" "*.hh" "*.hpp" "*.java" "*.hs")
-                             ffip-patterns)))
-(setq ffip-limit 5000)
-(setq ffip-prefer-ido-mode t)
+;; (require 'find-file-in-project)
+;; (setq ffip-patterns (delete-dups
+;;                      (append (list "*.scala" "*.coffee" "*.c" "*.cpp" "*.cc" "*.h" "*.hh" "*.hpp" "*.java" "*.hs")
+;;                              ffip-patterns)))
+;; (setq ffip-limit 5000)
+;; (setq ffip-prefer-ido-mode t)
 
-(defun find-file-in-project-with-options ()
-  (interactive)
-  (let ((ffip-find-options (if (boundp 'ffip-exclude-dirs)
-                               (format "\\( %s \\)"
-                                       (mapconcat (lambda (dir)
-                                                    (format "-not -regex \".*/%s/.*\""
-                                                            (replace-regexp-in-string "\\." "\\\\." dir)))
-                                                  ffip-exclude-dirs
-                                                  " -and "))
-                             ffip-find-options))
-        (ffip-patterns (if (boundp 'ffip-additional-patterns)
-                           (append ffip-additional-patterns ffip-patterns)
-                         ffip-patterns)))
-    (find-file-in-project)))
+;; (defun find-file-in-project-with-options ()
+;;   (interactive)
+;;   (let ((ffip-find-options (if (boundp 'ffip-exclude-dirs)
+;;                                (format "\\( %s \\)"
+;;                                        (mapconcat (lambda (dir)
+;;                                                     (format "-not -regex \".*/%s/.*\""
+;;                                                             (replace-regexp-in-string "\\." "\\\\." dir)))
+;;                                                   ffip-exclude-dirs
+;;                                                   " -and "))
+;;                              ffip-find-options))
+;;         (ffip-patterns (if (boundp 'ffip-additional-patterns)
+;;                            (append ffip-additional-patterns ffip-patterns)
+;;                          ffip-patterns)))
+;;     (find-file-in-project)))
 
-(global-set-key (kbd "C-x M-f") 'find-file-in-project-with-options)
+(global-set-key (kbd "C-x M-f") 'find-file-in-repository)
 (global-set-key (kbd "C-x M-g") 'rgrep)
 (global-set-key (kbd "C-M-g") 'magit-status)
 (global-set-key (kbd "M-k") 'kill-sexp)
