@@ -44,4 +44,5 @@
         org-self-insert-command
         orgtbl-self-insert-command
         pg-protected-undo
+        undefined
         ))

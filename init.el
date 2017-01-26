@@ -259,7 +259,7 @@
 ;;     (find-file-in-project)))
 
 (global-set-key (kbd "C-x M-f") 'find-file-in-repository)
-(global-set-key (kbd "C-x M-g") 'rgrep)
+(global-set-key (kbd "C-x M-g") 'ag-regexp)
 (global-set-key (kbd "C-M-g") 'magit-status)
 (global-set-key (kbd "M-k") 'kill-sexp)
 ;; (global-set-key (kbd "M-/") 'hippie-expand)

@@ -11,7 +11,7 @@
  '(go-fontify-function-calls t)
  '(grep-find-ignored-directories
    (quote
-    ("SCCS" "RCS" "CVS" "MCVS" ".svn" ".git" ".hg" ".bzr" "_MTN" "_darcs" "{arch}" "node_modules")))
+    ("SCCS" "RCS" "CVS" "MCVS" ".svn" ".git" ".hg" ".bzr" "_MTN" "_darcs" "{arch}" "node_modules" "target" ".ensime_cache")))
  '(magit-use-overlays nil)
  '(safe-local-variable-values
    (quote
