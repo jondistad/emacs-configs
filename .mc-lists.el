@@ -4,6 +4,7 @@
 (setq mc/cmds-to-run-for-all
       '(
         backward-sexp
+        beginning-of-buffer
         c-electric-colon
         c-electric-delete-forward
         c-electric-paren
@@ -18,6 +19,7 @@
         electric-newline-and-maybe-indent
         ensime-company-complete-or-indent
         forward-sexp
+        go-mode-insert-and-indent
         haskell-indentation-delete-backward-char
         kill-region
         kill-sexp
