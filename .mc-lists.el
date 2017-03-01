@@ -15,6 +15,7 @@
         company-ignore
         coq-terminator-insert
         dabbrev-expand
+        delete-horizontal-space
         delete-indentation
         electric-newline-and-maybe-indent
         ensime-company-complete-or-indent
@@ -23,9 +24,11 @@
         haskell-indentation-delete-backward-char
         kill-region
         kill-sexp
+        org-beginning-of-line
         org-delete-char
         org-end-of-line
         org-force-self-insert
+        org-kill-line
         orgtbl-hijacker-command-102
         paredit-backward-kill-word
         paredit-forward-delete
