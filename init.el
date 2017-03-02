@@ -151,7 +151,10 @@
                                                  (put (car x) 'scheme-indent-function (cadr x)))
                                                (if (boundp 'scheme-local-indents)
                                                    scheme-local-indents
-                                                 nil))))
+                                                 nil))
+                                       ;; (if (and (boundp 'show-fill-column) show-fill-column)
+                                       ;;     (fci-mode +1))
+                                       ))
 
 (eval-after-load 'clojure-mode
   '(progn

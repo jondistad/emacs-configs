@@ -15,7 +15,8 @@
  '(magit-use-overlays nil)
  '(safe-local-variable-values
    (quote
-    ((sh-indentation . 2)
+    ((show-fill-column . t)
+     (sh-indentation . 2)
      (sh-basic-offset . 2)
      (electric-indent-chars 10 125)
      (ffip-additional-patterns "*.cql")
