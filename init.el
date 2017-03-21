@@ -110,7 +110,8 @@
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
-(set-face-attribute 'default nil :font "Fantasque Sans Mono-13")
+;; (set-face-attribute 'default nil :font "Fantasque Sans Mono-13")
+(set-default-font "Fantasque Sans Mono-13")
 ;(color-theme-molokai)
 (global-auto-revert-mode)
 
@@ -276,3 +277,5 @@
 (global-set-key (kbd "C-x C-<down>") 'windmove-down)
 (global-set-key (kbd "C-x C-<right>") 'windmove-right)
 (global-set-key (kbd "C-x C-<left>") 'windmove-left)
+
+(server-start)
