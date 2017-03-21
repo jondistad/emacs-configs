@@ -41,6 +41,7 @@
 (setq mc/cmds-to-run-once
       '(
         end-of-buffer
+        ensime-backward-note
         ensime-mouse-motion
         ido-find-file
         ido-switch-buffer
