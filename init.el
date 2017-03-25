@@ -24,7 +24,7 @@
   (melpa-packages-enable)
   (package-list-packages))
 
-(add-hook 'after-init-hook 'global-company-mode)
+;; (add-hook 'after-init-hook 'global-company-mode)
 
 (defun init-coq ()
   (interactive)

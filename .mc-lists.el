@@ -34,6 +34,8 @@
         paredit-forward-delete
         paredit-forward-kill-word
         paredit-splice-sexp
+        wgrep-change-to-wgrep-mode
+        wgrep-finish-edit
         yaml-electric-backspace
         yaml-electric-dash-and-dot
         ))
