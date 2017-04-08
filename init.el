@@ -3,9 +3,12 @@
 (load custom-file)
 
 (require 'package)
-; (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
-(setq package-archives '(;("marmalade" . "http://marmalade-repo.org/packages/")
-                         ("melpa-stable" . "http://melpa-stable.milkbox.net/packages/")))
+(add-to-list 'package-archives
+             '("melpa-stable" . "http://melpa-stable.milkbox.net/packages/")
+             ;; '("marmalade" . "http://marmalade-repo.org/packages/")
+             )
+;; (setq package-archives '(;("marmalade" . "http://marmalade-repo.org/packages/")
+;;                          ))
 
 (package-initialize)
 
