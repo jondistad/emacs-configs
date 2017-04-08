@@ -1,19 +1,16 @@
 ;;; clojure-mode-extra-font-locking-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-
+(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil nil ("clojure-mode-extra-font-locking-pkg.el"
-;;;;;;  "clojure-mode-extra-font-locking.el") (21480 50389 148358
-;;;;;;  0))
+;;;### (autoloads nil nil ("clojure-mode-extra-font-locking.el")
+;;;;;;  (22760 64273 422549 560000))
 
 ;;;***
 
-(provide 'clojure-mode-extra-font-locking-autoloads)
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
-;; coding: utf-8
 ;; End:
 ;;; clojure-mode-extra-font-locking-autoloads.el ends here
