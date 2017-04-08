@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "company-math" "company-math.el" (22571 46341
-;;;;;;  837519 312000))
+;;;### (autoloads nil "company-math" "company-math.el" (22760 64561
+;;;;;;  859808 830000))
 ;;; Generated autoloads from company-math.el
 
 (autoload 'company-latex-commands "company-math" "\
@@ -20,9 +20,12 @@ Company backend for LaTeX mathematical symbols.
 (autoload 'company-math-symbols-unicode "company-math" "\
 Company backend for insertion of Unicode mathematical symbols.
 See the unicode-math page [1] for a list of fonts that have a
-good support for mathematical symbols.
+good support for mathematical symbols. Unicode provides only a
+limited range of sub(super)scripts; see the wikipedia page [2]
+for details.
 
  [1] http://ftp.snt.utwente.nl/pub/software/tex/help/Catalogue/entries/unicode-math.html
+ [2] https://en.wikipedia.org/wiki/Unicode_subscripts_and_superscripts
 
 \(fn COMMAND &optional ARG &rest IGNORED)" t nil)
 

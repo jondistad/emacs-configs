@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil nil ("math-symbol-lists.el") (22571 46339 973216
-;;;;;;  821000))
+;;;### (autoloads nil nil ("math-symbol-lists-pkg.el" "math-symbol-lists.el"
+;;;;;;  "msl-build.el") (22760 64561 637151 63000))
 
 ;;;***
 
