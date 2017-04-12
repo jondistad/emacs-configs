@@ -115,6 +115,9 @@
 (scroll-bar-mode -1)
 ;; (set-face-attribute 'default nil :font "Fantasque Sans Mono-13")
 (set-default-font "Fantasque Sans Mono-13")
+(defun fix-font ()
+  (interactive)
+  (set-default-font "Fantasque Sans Mono-13"))
 ;(color-theme-molokai)
 (global-auto-revert-mode)
 
@@ -165,16 +168,15 @@
      (add-hook 'clojure-mode-hook (lambda ()
                                     (paredit-mode +1)))))
 
-(eval-after-load 'cider-repl
-  '(progn
-     (add-hook 'cider-repl-mode-hook (lambda () (paredit-mode +1)))
-     (add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
-     (define-key cider-repl-mode-map (kbd "RET") (lambda ()
-                                              (interactive)
-                                              (if (eobp)
-                                                  (funcall 'cider-repl-return)
-                                                (cl-flet ((cider-repl--input-complete-p (&rest args) nil))
-                                                  (funcall 'cider-repl-return)))))))
+;; (eval-after-load 'cider-repl
+;;   '(progn
+;;      (add-hook 'cider-repl-mode-hook (lambda () (paredit-mode +1)))
+;;      (define-key cider-repl-mode-map (kbd "RET") (lambda ()
+;;                                               (interactive)
+;;                                               (if (eobp)
+;;                                                   (funcall 'cider-repl-return)
+;;                                                 (cl-flet ((cider-repl--input-complete-p (&rest args) nil))
+;;                                                   (funcall 'cider-repl-return)))))))
 
 (setq-default cider-repl-history-file "~/.cider-repl-history")
 
