@@ -31,7 +31,9 @@
 
 (defun init-coq ()
   (interactive)
-  (load "~/.emacs.d/lisp/PG/generic/proof-site"))
+  (load "~/.emacs.d/lisp/PG/generic/proof-site")
+  (require 'makam)
+  (setq makam-keymap '()))
 ;; (init-coq)
 (add-hook 'coq-mode-hook #'company-coq-mode)
 
