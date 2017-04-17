@@ -255,4 +255,6 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:inherit nil :stipple nil :background "#000000" :foreground "#F8F8F2" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 130 :width normal :foundry "apple" :family "Monaco"))))
  '(font-lock-builtin-face ((t (:foreground "#FD971F" :weight bold))))
+ '(idris-semantic-function-face ((t (:foreground "forest green"))))
+ '(idris-semantic-type-face ((t (:foreground "deep sky blue"))))
  '(italic ((t (:slant normal)))))

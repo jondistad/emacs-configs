@@ -173,6 +173,7 @@
 ;; (eval-after-load 'cider-repl
 ;;   '(progn
 ;;      (add-hook 'cider-repl-mode-hook (lambda () (paredit-mode +1)))
+;;      (add-hook 'cider-mode-hook 'cider-turn-on-eldoc-mode)
 ;;      (define-key cider-repl-mode-map (kbd "RET") (lambda ()
 ;;                                               (interactive)
 ;;                                               (if (eobp)
