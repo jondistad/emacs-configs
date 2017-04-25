@@ -22,6 +22,8 @@
         forward-sexp
         go-mode-insert-and-indent
         haskell-indentation-delete-backward-char
+        idris-delete-forward-char
+        kill-rectangle
         kill-region
         kill-sexp
         org-beginning-of-line

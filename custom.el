@@ -15,7 +15,10 @@
  '(magit-use-overlays nil)
  '(safe-local-variable-values
    (quote
-    ((show-fill-column . t)
+    ((buffer-file-coding-system . utf-8-unix)
+     (ffip-limit . 10000)
+     (ffip-additional-patterns "*.hs" "*.lhs")
+     (show-fill-column . t)
      (sh-indentation . 2)
      (sh-basic-offset . 2)
      (electric-indent-chars 10 125)
