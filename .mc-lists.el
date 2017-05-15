@@ -7,9 +7,11 @@
         beginning-of-buffer
         c-electric-colon
         c-electric-delete-forward
+        c-electric-lt-gt
         c-electric-paren
         c-electric-semi&comma
         c-electric-star
+        c-indent-line-or-region
         coffee-dedent-line-backspace
         company-coq-maybe-exit-snippet
         company-ignore

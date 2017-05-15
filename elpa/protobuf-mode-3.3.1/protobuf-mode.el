@@ -3,7 +3,7 @@
 ;; Author: Alexandre Vassalotti <alexandre@peadrop.com>
 ;; Created: 23-Apr-2009
 ;; Version: 0.3
-;; Package-Version: 3.2.1
+;; Package-Version: 3.3.1
 ;; Keywords: google protobuf languages
 
 ;; Redistribution and use in source and binary forms, with or without
