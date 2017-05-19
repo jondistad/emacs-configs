@@ -84,16 +84,18 @@
 
 (let ((path '("/home/jon/.local/bin"
               "/home/jon/.cabal/bin"
+              "/home/jon/.nix-profile/bin"
               "/usr/local/bin"
               "/usr/local/sbin"
-              "/opt/ghc/7.10.2/bin"
               "/usr/bin"
               "/bin"
               "/usr/sbin"
               "/sbin")))
   (setq exec-path (delete-dups (copy-sequence (append path exec-path))))
   (setenv "PATH" (mapconcat 'identity path '":")))
-(setenv "JAVA_HOME" "/usr/lib/jvm/java-8-openjdk-amd64")
+(setenv "NIX_PATH" "nixpkgs=/home/jon/.nix-defexpr/channels/nixpkgs")
+(setenv "NIX_SSL_CERT_FILE" "/etc/ssl/certs/ca-certificates.crt")
+;; (setenv "JAVA_HOME" "/usr/lib/jvm/java-8-openjdk-amd64")
 ;(setenv "SCHEMEHEAPDIRS" "/Users/jon/local/lib/csv%v/%m")
 ;(setenv "NODE_PATH" "/Users/jon/local/opt/node/lib/node_modules")
 ;(setenv "LD_LIBRARY_PATH" "/usr/local/Cellar/llvm/3.5.0/lib") ; Necessary to dynamically load clang/llvm in guile
