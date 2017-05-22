@@ -13,6 +13,7 @@
    (quote
     ("SCCS" "RCS" "CVS" "MCVS" ".svn" ".git" ".hg" ".bzr" "_MTN" "_darcs" "{arch}" "node_modules" "target" ".ensime_cache")))
  '(magit-use-overlays nil)
+ '(rust-format-on-save t)
  '(safe-local-variable-values
    (quote
     ((buffer-file-coding-system . utf-8-unix)
