@@ -67,9 +67,7 @@
 
 (global-set-key (kbd "C-c C-w") (lambda ()
                                   (interactive)
-                                  (whitespace-cleanup)
-                                  (if (eq 'go-mode major-mode)
-                                      (gofmt))))
+                                  (whitespace-cleanup)))
 
 (global-set-key (kbd "s-u") 'revert-buffer)
 (global-set-key (kbd "C-x a r") 'align-regexp)
@@ -146,6 +144,9 @@
      (define-key paredit-mode-map (kbd "{") 'paredit-open-curly)
      (define-key paredit-mode-map (kbd "}") 'paredit-close-curly)))
 
+(eval-after-load 'go-mode
+  '(progn
+     (define-key go-mode-map (kbd "C-c C-w") 'gofmt)))
 
 (setq c-default-style "linux"
       c-basic-offset 4)
