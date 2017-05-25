@@ -37,7 +37,7 @@
 ;; (init-coq)
 (add-hook 'coq-mode-hook #'company-coq-mode)
 
-(setq require-final-newline 'visit-save)
+;; (setq require-final-newline 'visit-save)
 
 (setq geiser-guile-load-init-file-p t)
 
@@ -84,6 +84,7 @@
 
 (let ((path '("/home/jon/.local/bin"
               "/home/jon/.cabal/bin"
+              "/home/jon/.cargo/bin"
               "/home/jon/.nix-profile/bin"
               "/usr/local/bin"
               "/usr/local/sbin"
