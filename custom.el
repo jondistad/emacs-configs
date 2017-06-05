@@ -7,7 +7,8 @@
  '(coffee-args-repl (quote ("-i" "--nodejs" "--harmony")))
  '(custom-safe-themes
    (quote
-    ("60f04e478dedc16397353fb9f33f0d895ea3dab4f581307fbf0aa2f07e658a40" "43f70787edac4d896ec8e14579e52501665e61d5dc02de3c237f82fd5d8e0a6a" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
+    ("f78de13274781fbb6b01afd43327a4535438ebaeec91d93ebdbba1e3fba34d3c" "60f04e478dedc16397353fb9f33f0d895ea3dab4f581307fbf0aa2f07e658a40" "43f70787edac4d896ec8e14579e52501665e61d5dc02de3c237f82fd5d8e0a6a" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
+ '(ensime-startup-notification nil)
  '(go-fontify-function-calls t)
  '(grep-find-ignored-directories
    (quote
@@ -264,6 +265,6 @@
  '(font-lock-builtin-face ((t (:foreground "#FD971F" :weight bold))))
  '(idris-semantic-function-face ((t (:foreground "forest green"))))
  '(idris-semantic-type-face ((t (:foreground "deep sky blue"))))
- '(isearch ((t (:inherit region :background "light steel blue"))))
+ '(isearch ((t (:inherit region :background "light steel blue" :foreground "black"))))
  '(italic ((t (:slant normal))))
- '(show-paren-match ((t (:background "#272822" :foreground "gold1" :inverse-video t :weight normal)))))
+ '(show-paren-match ((t (:background "#272822" :foreground "goldenrod" :inverse-video t :weight normal)))))

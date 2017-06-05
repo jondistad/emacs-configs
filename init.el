@@ -135,6 +135,8 @@
 (setq ensime-startup-snapshot-notification nil)
 ;; (define-key company-active-map [tab] nil)
 
+(add-hook 'shell-mode-hook (progn 'ansi-color-for-comint-mode-on))
+
 (eval-after-load 'paredit
   '(progn
      (define-key paredit-mode-map (kbd "C-<backspace>") 'paredit-backward-kill-word)
