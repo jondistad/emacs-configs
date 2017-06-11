@@ -13,6 +13,7 @@
         c-electric-star
         c-indent-line-or-region
         coffee-dedent-line-backspace
+        comment-dwim
         company-coq-maybe-exit-snippet
         company-ignore
         coq-terminator-insert
