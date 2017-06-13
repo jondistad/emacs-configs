@@ -264,6 +264,6 @@
  '(font-lock-builtin-face ((t (:foreground "#FD971F" :weight bold))))
  '(idris-semantic-function-face ((t (:foreground "forest green"))))
  '(idris-semantic-type-face ((t (:foreground "deep sky blue"))))
- '(isearch ((t (:inherit region :background "light steel blue"))))
+ '(isearch ((t (:background "light steel blue" :foreground "black"))))
  '(italic ((t (:slant normal))))
  '(show-paren-match ((t (:background "#272822" :foreground "gold1" :inverse-video t :weight normal)))))
