@@ -5,6 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(coffee-args-compile (quote ("-c" "--nodejs" "--harmony")))
  '(coffee-args-repl (quote ("-i" "--nodejs" "--harmony")))
+ '(comint-process-echoes t)
  '(custom-safe-themes
    (quote
     ("60f04e478dedc16397353fb9f33f0d895ea3dab4f581307fbf0aa2f07e658a40" "43f70787edac4d896ec8e14579e52501665e61d5dc02de3c237f82fd5d8e0a6a" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
