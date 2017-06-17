@@ -1,10 +1,10 @@
 ;;; rust-mode-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
+(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "rust-mode" "rust-mode.el" (22815 1402 563619
-;;;;;;  866000))
+;;;### (autoloads nil "rust-mode" "rust-mode.el" (22853 18773 942042
+;;;;;;  29000))
 ;;; Generated autoloads from rust-mode.el
 
 (autoload 'rust-mode "rust-mode" "\
