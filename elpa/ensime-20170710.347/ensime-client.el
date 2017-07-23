@@ -72,14 +72,8 @@ This is automatically synchronized from Lisp.")
 (ensime-def-connection-var ensime-pid nil
   "The process id of the Lisp process.")
 
-(ensime-def-connection-var ensime-protocol-version nil
-  "The protocol version used on the connection.")
-
 (ensime-def-connection-var ensime-server-implementation-version nil
   "The implementation type of the Lisp process.")
-
-(ensime-def-connection-var ensime-server-implementation-name nil
-  "The short name for the Lisp implementation.")
 
 (ensime-def-connection-var ensime-connection-name nil
   "The short name for connection.")
@@ -95,9 +89,6 @@ This is automatically synchronized from Lisp.")
 
 (ensime-def-connection-var ensime-java-compiler-notes nil
   "Warnings, Errors, and other notes produced by the analyzer.")
-
-(ensime-def-connection-var ensime-awaiting-full-typecheck nil
-  "Should we show the errors and warnings report on next full-typecheck event?")
 
 (ensime-def-connection-var ensime-num-errors 0
   "Current number of errors in project.")
@@ -297,9 +288,7 @@ This doesn't mean it will connect right after Ensime is loaded."
   "Make a connection out of PROCESS."
   (let ((ensime-dispatching-connection process))
 
-    (setf (ensime-protocol-version process) nil
-          (ensime-pid process) nil
-          (ensime-server-implementation-name process) nil
+    (setf (ensime-pid process) nil
           (ensime-connection-name process) nil
           (ensime-analyzer-ready process) nil)
 
@@ -339,13 +328,15 @@ This doesn't mean it will connect right after Ensime is loaded."
 
   (destructuring-bind (&key pid implementation version &allow-other-keys) info
     (setf (ensime-pid) pid)
-    (setf (ensime-protocol-version) version)
     (destructuring-bind (&key name) implementation
-      (setf (ensime-server-implementation-name) name
-	    (ensime-connection-name)
-	    (ensime-generate-connection-name name))))
-  (message "Connected to ENSIME speaking protocol %s, please wait while the project is loaded."
-	   (ensime-protocol-version))
+      (if (version< version "1.9.4")
+          (error
+           "ENSIME protocol %s is too old, update the build tool plugin / server" version)
+        (message "ENSIME protocol %s" version))
+
+      (setf (ensime-connection-name)
+            (ensime-generate-connection-name name))))
+
   (ensime-event-sig :connected info))
 
 ;;;;; Connection listing
@@ -477,9 +468,7 @@ This doesn't mean it will connect right after Ensime is loaded."
  by the Ensime Server."
   (let* ((msg (concat (ensime-prin1-to-string sexp) "\n"))
          (coding-system (cdr (process-coding-system proc)))
-         (protocol (ensime-protocol-version))
-         (length-encoding (when (and protocol (version<= "0.8.17" protocol)) coding-system))
-         (string (concat (ensime-net-encode-length msg length-encoding) msg)))
+         (string (concat (ensime-net-encode-length msg coding-system) msg)))
     (when ensime--debug-messages (message "--> %s" sexp))
     (ensime-log-event sexp)
     (process-send-string proc string)))
@@ -663,11 +652,6 @@ copies. All other objects are used unchanged. List must not contain cycles."
 
 
                           ((:full-typecheck-finished)
-                           (when (ensime-awaiting-full-typecheck (ensime-connection))
-                             (message "Typecheck finished.")
-                             (setf (ensime-awaiting-full-typecheck
-                                    (ensime-connection)) nil)
-                             (ensime-show-all-errors-and-warnings))
                            (ensime-event-sig :full-typecheck-finished t))
 
                           ((:compiler-ready)
@@ -758,7 +742,7 @@ copies. All other objects are used unchanged. List must not contain cycles."
 (defvar ensime-words-of-encouragement
   `("Let the hacking commence!"
     "Hacks and glory await!"
-    "Hack and be merry!"
+    "Happy hacking!"
     "May the source be with you, always."
     "Death to null!"
     "Find closure!"
@@ -766,9 +750,13 @@ copies. All other objects are used unchanged. List must not contain cycles."
     "Let's flatMap this thing and go home!"
     "A monad is just a monoid in the category of endofunctors."
     "rm -rf *SingletonFactoryBean"
+    "When 900 stack frames *you* reach, look as good *you* will not, hmm?"
     "Join us now and share the software, you'll be free."
     "implicitly[T], my dear Watson"
     "May the _ be with you."
+    "That's no Mun! --- Obi-Wan Kernobi"
+    "Failure is, quite frequently, the only option --- Kerbpollo 13"
+    "Research is what I'm doing when I don't know what I'm doing --- Werhner Von Kerman"
     "When I left you I was but the feature/learner. Now I am the master branch."
     "I am altering the public mutable field, pray I do not alter it any further."
     "I hope so for your sake. The scala compiler is not as forgiving as I am."
@@ -944,8 +932,9 @@ copies. All other objects are used unchanged. List must not contain cycles."
 (defun ensime-rpc-remove-file (file-name)
   (ensime-eval `(swank:remove-file ,file-name)))
 
-(defun ensime-rpc-unload-all ()
-  (ensime-eval `(swank:unload-all)))
+(defun ensime-rpc-restart-scala-compiler ()
+  (ensime-eval-async
+   `(swank:restart-scala-compiler nil keep)))
 
 (defun ensime-rpc-async-typecheck-file (file-name continue)
   (ensime-eval-async `(swank:typecheck-file (:file ,file-name)) continue))
@@ -956,9 +945,6 @@ copies. All other objects are used unchanged. List must not contain cycles."
 (defun ensime-rpc-async-typecheck-buffer (continue)
   (ensime-eval-async `(swank:typecheck-file
 		       ,(ensime-src-info-for-current-buffer)) continue))
-
-(defun ensime-rpc-async-typecheck-all (continue)
-  (ensime-eval-async `(swank:typecheck-all) continue))
 
 (defun ensime-rpc-expand-selection (file-name start end)
   (ensime-internalize-offset-fields
@@ -1024,28 +1010,6 @@ copies. All other objects are used unchanged. List must not contain cycles."
 (defun ensime-rpc-get-type-at-point ()
   (ensime-eval
    `(swank:type-at-point ,(buffer-file-name-with-indirect) ,(ensime-computed-point))))
-
-(defun ensime-rpc-inspect-type-at-point ()
-  (ensime-eval
-   `(swank:inspect-type-at-point ,buffer-file-name ,(ensime-computed-point))))
-
-(defun ensime-rpc-inspect-type-at-range (&optional range)
-  (ensime-eval
-   `(swank:inspect-type-at-point ,(buffer-file-name-with-indirect)
-                                 ,(or range (ensime-computed-range)))))
-
-(defun ensime-rpc-inspect-type-by-id (id)
-  (if (and (integerp id) (> id -1))
-      (ensime-eval
-       `(swank:inspect-type-by-id ,id))))
-
-(defun ensime-rpc-inspect-type-by-name (name)
-  (ensime-eval
-   `(swank:inspect-type-by-name ,name)))
-
-(defun ensime-rpc-inspect-package-by-path (path)
-  (ensime-eval
-   `(swank:inspect-package-by-path ,path)))
 
 (defun ensime-rpc-peek-undo ()
   (ensime-eval

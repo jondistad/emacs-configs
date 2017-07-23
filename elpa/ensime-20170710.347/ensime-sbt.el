@@ -59,11 +59,13 @@
   (interactive)
   (sbt:command "test:compile"))
 
-(defun ensime-sbt-do-compile-only ()
-  "Save the current buffer and compile it using `sbt-ensime's `ensimeCompileOnly' Task."
-  (interactive)
+(defun ensime-sbt-do-compile-only (arg)
+  "Compile this buffer using `sbt-ensime's `ensimeCompileOnly', ARG will add `-Xprint:typer'."
+  (interactive "P")
   (save-buffer)
-  (ensime-sbt-run-command-in-subproject "ensimeCompileOnly" (buffer-file-name-with-indirect)))
+  (let ((command
+         (if arg "ensimeCompileOnly -Xprint:typer" "ensimeCompileOnly")))
+    (ensime-sbt-run-command-in-subproject command (buffer-file-name-with-indirect))))
 
 (defun ensime-sbt-do-scalariform-only ()
   "Format the current file using Scalariform."

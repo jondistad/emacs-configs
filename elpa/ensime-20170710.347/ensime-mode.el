@@ -33,7 +33,6 @@
 (require 'ensime-company)
 (require 'ensime-eldoc)
 (require 'ensime-goto-testfile)
-(require 'ensime-inspector)
 (require 'ensime-model)
 (require 'ensime-notes)
 (require 'ensime-popup)
@@ -60,11 +59,6 @@
   (let ((map (make-sparse-keymap)))
     (let ((prefix-map (make-sparse-keymap)))
 
-      (define-key prefix-map (kbd "C-v i") 'ensime-inspect-type-at-point)
-      (define-key prefix-map (kbd "C-v 5 i")
-	'ensime-inspect-type-at-point-other-frame)
-      (define-key prefix-map (kbd "C-v p") 'ensime-inspect-package-at-point)
-      (define-key prefix-map (kbd "C-v o") 'ensime-inspect-project-package)
       (define-key prefix-map (kbd "C-v r") 'ensime-show-uses-of-symbol-at-point)
       (define-key prefix-map (kbd "C-v s") 'ensime-sbt-switch)
       (define-key prefix-map (kbd "C-v z") 'ensime-inf-switch)
@@ -83,10 +77,8 @@
       (define-key prefix-map (kbd "C-v l") 'ensime-inf-load-file)
 
       (define-key prefix-map (kbd "C-c c") 'ensime-typecheck-current-buffer)
-      (define-key prefix-map (kbd "C-c a") 'ensime-typecheck-all)
       (define-key prefix-map (kbd "C-c r") 'ensime-reload-open-files)
-      (define-key prefix-map (kbd "C-c e") 'ensime-show-all-errors-and-warnings)
-
+      
       (define-key prefix-map (kbd "C-t t") 'ensime-goto-test)
       (define-key prefix-map (kbd "C-t i") 'ensime-goto-impl)
 
@@ -195,17 +187,11 @@
 
     ("Source"
      ["Find all references" ensime-show-uses-of-symbol-at-point]
-     ["Inspect type" ensime-inspect-type-at-point]
-     ["Inspect type in another frame" ensime-inspect-type-at-point-other-frame]
-     ["Inspect enclosing package" ensime-inspect-package-at-point]
-     ["Inspect project package" ensime-inspect-project-package]
      ["Undo source change" ensime-undo-peek])
 
     ("Typecheck"
      ["Typecheck file" ensime-typecheck-current-buffer]
-     ["Typecheck project" ensime-typecheck-all]
-     ["Reload typechecker" ensime-reload-open-files]
-     ["Show all errors and warnings" ensime-show-all-errors-and-warnings])
+     ["Reload typechecker" ensime-reload-open-files])
 
     ("Refactor"
      ["Add type annotation" (ensime-refactor-add-type-annotation)]
@@ -378,15 +364,6 @@
   (mouse-set-point event)
   (ensime-edit-definition))
 
-(defun ensime-control-mouse-3-single-click (event)
-  "Command handler for double clicks of mouse button 1.
-   If the user clicks on a package declaration or import,
-   inspect that package. Otherwise, try to inspect the type
-   of the thing at point."
-  (interactive "e")
-  (ensime-inspect-type-at-point))
-
-
 (defun ensime-mouse-motion (event)
   "Command handler for mouse movement events in `ensime-mode-map'."
   (interactive "e")
@@ -394,6 +371,31 @@
   (when (car (mouse-pixel-position))
     (setq tooltip-last-mouse-motion-event (copy-sequence event))
     (tooltip-start-delayed-tip)))
+
+;;;;;; imenu
+
+(defun ensime-imenu-index-function ()
+  "Function to be used for `imenu-create-index-function'."
+  (-flatten
+   (-map
+    (lambda (x) (ensime-flatten-structure-view x))
+    (plist-get (ensime-rpc-structure-view) :view))))
+
+(defun ensime-flatten-structure-view (member-plist &optional result parent)
+  (ensime-plist-bind
+   (name keyword members position) member-plist
+   (-when-let* ((offset (plist-get position :offset))
+                (new-parent (if parent (format "%s.%s" parent name) name))
+                (imenu-item (cons
+                             (format "%s:%s" keyword (if parent new-parent name))
+                             (ensime-internalize-offset offset))))
+     (if members
+         (-concat
+          (cons imenu-item result)
+          (-map
+           (lambda (x) (ensime-flatten-structure-view x result new-parent))
+           members))
+       (cons imenu-item result)))))
 
 (defun ensime--setup-imenu ()
   "Setup imenu function and make imenu rescan index with every call."

@@ -45,9 +45,6 @@
 (defun ensime-package-p (info)
   (equal 'package (plist-get info :info-type)))
 
-(defun ensime-type-inspection-p (info)
-  (equal 'typeInspect (plist-get info :info-type)))
-
 (defun ensime-type-name (type)
   ;; legacy method
   (replace-regexp-in-string "\\[.*" ""
