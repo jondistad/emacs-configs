@@ -81,8 +81,8 @@
  version-control t)
 
 (let ((path '("/home/jon/.local/bin"
-              "/home/jon/.cabal/bin"
               "/home/jon/.cargo/bin"
+              "/home/jon/.nix-shim/bin"
               "/home/jon/.nix-profile/bin"
               "/usr/local/bin"
               "/usr/local/sbin"
