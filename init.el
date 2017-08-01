@@ -217,7 +217,7 @@
                     scheme-mode
                     scala-mode
                     ruby-mode
-                    js-mode
+                    js2-mode
                     python-mode))
 
 (mapc (lambda (s) (put s 'scheme-indent-function 'defun))
@@ -245,14 +245,32 @@
             (define-key org-mode-map (kbd "M-n") 'org-move-subtree-down)
             (flyspell-mode)))
 
-(add-hook 'js-mode-hook
-          (lambda () (setq js-indent-level 2)))
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+;; (add-hook 'js-mode-hook
+;;           (lambda () (setq js-indent-level 2)))
+
 (eval-after-load 'nginx-mode
   '(setq nginx-indent-level 2))
 (eval-after-load 'coffee-mode
   '(setq coffee-tab-width 2))
 (eval-after-load 'css-mode
   '(setq css-indent-offset 2))
+
+(defun setup-tide-mode ()
+  (interactive)
+  (tide-setup)
+  (flycheck-mode +1)
+  (setq flycheck-check-syntax-automatically '(save mode-enabled))
+  (eldoc-mode +1)
+  (tide-hl-identifier-mode +1)
+  ;; company is an optional dependency. You have to
+  ;; install it separately via package-install
+  ;; `M-x package-install [ret] company`
+  (company-mode +1))
+
+(setq company-tooltip-align-annotations t)
+(add-hook 'before-save-hook 'tide-format-before-save)
+(add-hook 'typescript-mode-hook #'setup-tide-mode)
 
 ;; (require 'find-file-in-project)
 ;; (setq ffip-patterns (delete-dups

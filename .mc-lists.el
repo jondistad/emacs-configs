@@ -39,6 +39,7 @@
         paredit-forward-delete
         paredit-forward-kill-word
         paredit-splice-sexp
+        typescript-insert-and-indent
         wgrep-change-to-wgrep-mode
         wgrep-finish-edit
         yaml-electric-backspace
