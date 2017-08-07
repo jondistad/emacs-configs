@@ -121,10 +121,10 @@
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 ;; (set-face-attribute 'default nil :font "Fantasque Sans Mono-13")
-(set-default-font "Fantasque Sans Mono-13")
+(set-default-font "Fantasque Sans Mono-16")
 (defun fix-font ()
   (interactive)
-  (set-default-font "Fantasque Sans Mono-13"))
+  (set-default-font "Fantasque Sans Mono-16"))
 ;(color-theme-molokai)
 (global-auto-revert-mode)
 
