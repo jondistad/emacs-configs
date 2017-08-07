@@ -2,6 +2,7 @@
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file)
 
+(require 'cl)
 (require 'package)
 (add-to-list 'package-archives
              '("melpa-stable" . "http://melpa-stable.milkbox.net/packages/")
