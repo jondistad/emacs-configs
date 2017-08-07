@@ -38,6 +38,8 @@
         paredit-backward-kill-word
         paredit-forward-delete
         paredit-forward-kill-word
+        paredit-forward-slurp-sexp
+        paredit-open-round
         paredit-splice-sexp
         typescript-insert-and-indent
         wgrep-change-to-wgrep-mode

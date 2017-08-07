@@ -80,18 +80,21 @@
  kept-old-versions 2
  version-control t)
 
-(let ((path '("/home/jon/.local/bin"
-              "/home/jon/.cargo/bin"
-              "/home/jon/.nix-shim/bin"
-              "/home/jon/.nix-profile/bin"
-              "/usr/local/bin"
-              "/usr/local/sbin"
-              "/usr/bin"
-              "/bin"
-              "/usr/sbin"
-              "/sbin")))
-  (setq exec-path (delete-dups (copy-sequence (append path exec-path))))
-  (setenv "PATH" (mapconcat 'identity path '":")))
+(let ((home (getenv "HOME")))
+  (flet ((in-home (path) (concat home "/" path)))
+    (let ((path (list (in-home ".local/bin")
+                      (in-home ".cargo/bin")
+                      (in-home ".nix-shim/bin")
+                      (in-home ".nix-profile/bin")
+                      (in-home ".config/yarn/global/node_modules/.bin")
+                      "/usr/local/bin"
+                      "/usr/local/sbin"
+                      "/usr/bin"
+                      "/bin"
+                      "/usr/sbin"
+                      "/sbin")))
+      (setq exec-path (delete-dups (copy-sequence (append path exec-path))))
+      (setenv "PATH" (mapconcat 'identity path '":")))))
 (setenv "NIX_PATH" "nixpkgs=/home/jon/.nix-defexpr/channels/nixpkgs")
 (setenv "NIX_SSL_CERT_FILE" "/etc/ssl/certs/ca-certificates.crt")
 ;; (setenv "JAVA_HOME" "/usr/lib/jvm/java-8-openjdk-amd64")
