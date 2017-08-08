@@ -82,12 +82,11 @@
  version-control t)
 
 (let ((home (getenv "HOME")))
-  (flet ((in-home (path) (concat home "/" path)))
+  (cl-flet ((in-home (path) (concat home "/" path)))
     (let ((path (list (in-home ".local/bin")
                       (in-home ".cargo/bin")
                       (in-home ".nix-shim/bin")
                       (in-home ".nix-profile/bin")
-                      (in-home ".config/yarn/global/node_modules/.bin")
                       "/usr/local/bin"
                       "/usr/local/sbin"
                       "/usr/bin"
