@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "protobuf-mode" "protobuf-mode.el" (22911 16275
-;;;;;;  875001 449000))
+;;;### (autoloads nil "protobuf-mode" "protobuf-mode.el" (22941 53388
+;;;;;;  0 0))
 ;;; Generated autoloads from protobuf-mode.el
  (add-to-list 'auto-mode-alist '("\\.proto\\'" . protobuf-mode))
 

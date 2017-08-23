@@ -21,7 +21,7 @@
 ;; -------------------------------------------------------------------------------------------
 
 ;; URL: http://github.com/ananthakumaran/typescript.el
-;; Package-Version: 0.2
+;; Package-Version: 20170813.1541
 ;; Version: 0.1
 ;; Keywords: typescript languages
 ;; Package-Requires: ()
@@ -282,7 +282,7 @@ Match group 1 is the name of the macro.")
      "constructor" "continue" "declare" "default" "delete" "do" "else"
      "enum" "export" "extends" "extern" "false" "finally" "for"
      "function" "from" "get" "goto" "if" "implements" "import" "in" "instanceof"
-     "interface" "keyof" "let" "module" "namespace" "new" "null" "number" "of"
+     "interface" "keyof" "let" "module" "namespace" "new" "null" "number" "object" "of"
      "private" "protected" "public" "readonly" "return" "set" "static" "string"
      "super" "switch"  "this" "throw" "true"
      "try" "type" "typeof" "var" "void"
@@ -1760,6 +1760,116 @@ nil."
          (list (cons 'c typescript-comment-lineup-func))))
     (c-get-syntactic-indentation (list (cons symbol anchor)))))
 
+(defun typescript--backward-over-generic-parameter-list ()
+  "Search backward for the start of a generic's parameter list and move to it.
+
+This is a utility function for
+`typescript--backward-to-parameter-list'.
+
+This function must be called with the point placed on the final >
+of the generic's parameter list.  It will scan backwards to find
+the start.  If successful, it will move the point to the start of
+the list.  If not, it does not move the point.
+
+Returns nil on failure, or the position to which the point was
+moved on success."
+  (when (eq (char-after) ?>)
+    (let ((depth 1))
+      (loop named search-loop
+            while (> depth 0)
+            do (progn
+                 (unless (re-search-backward "[<>]" nil t)
+                   (cl-return-from search-loop nil))
+                 (cond
+                  ((looking-at ">")
+                   (unless (eq (char-before) ?=)
+                     (setq depth (1+ depth))))
+                  ((looking-at "<") (setq depth (1- depth)))))
+            finally return (point)))))
+
+(defun typescript--backward-to-parameter-list ()
+  "Search backward for the end of a parameter list and move to it.
+
+This is a utility function for `typescript--proper-indentation'.
+
+This function must be called with the point placed before an
+opening curly brace.  It will try to skip over the type
+annotation that would mark the return value of a function and
+move to the end of the parameter list.  If it is unsuccessful, it
+does not move the point. \"Unsuccessful\" here also means that
+the position at which we started did not in fact mark the
+beginning of a function. The curly brace belonged to some other
+syntactic construct than a function.
+
+Returns nil on failure, or the position to which the point was
+moved on success."
+  (let ((location
+         (or
+          ;; This handles the case of a function with return type annotation.
+          (save-excursion
+            (loop named search-loop
+                  do (progn
+                       (cond
+                        ;; Looking at the arrow of an arrow function:
+                        ;; move back over the arrow.
+                        ((looking-back "=>" (- (point) 2))
+                         (backward-char 2))
+                        ;; Looking at the end of the parameters list
+                        ;; of a generic: move back over the list.
+                        ((eq (char-before) ?>)
+                         (backward-char)
+                         (typescript--backward-over-generic-parameter-list))
+                        ;; Looking at a union: skip over the character.
+                        ((eq (char-before) ?|)
+                         (backward-char))
+                        ;; General case: we just move back over the current sexp.
+                        (t
+                         (condition-case nil
+                             (backward-sexp)
+                           (scan-error nil))))
+                       (typescript--backward-syntactic-ws)
+                       (let ((before (char-before)))
+                         ;; Check whether we are at "):".
+                         (when (and (eq before ?\:)
+                                    (progn
+                                      (backward-char)
+                                      (skip-syntax-backward " ")
+                                      (eq (char-before) ?\))))
+                           ;; Success! This the end of the parameter list.
+                           (cl-return-from search-loop (point)))
+                         ;; All the following cases are constructs that are allowed to
+                         ;; appear between the opening brace of a function and the
+                         ;; end of a parameter list.
+                         (unless
+                             (or
+                              ;; End of a generic.
+                              (eq before ?>)
+                              ;; Union of types
+                              (eq before ?|)
+                              ;; Dotted names
+                              (eq before ?.)
+                              ;; Typeguard (eg. foo is SomeClass)
+                              (looking-back "is" (- (point) 2))
+                              ;; This is also dealing with dotted names. This may come
+                              ;; into play if a jump back moves over an entire dotted
+                              ;; name at once.
+                              ;;
+                              ;; The earlier test for dotted names comes into play if the
+                              ;; logic moves over one part of a dotted name at a time (which
+                              ;; is what `backward-sexp` normally does).
+                              (looking-back typescript--dotted-name-re nil)
+                             )
+                           ;; We did not encounter a valid construct, so
+                           ;; the search is unsuccessful.
+                           (cl-return-from search-loop nil))))))
+          ;; This handles the case of a function without return type annotation.
+          (progn
+            (typescript--backward-syntactic-ws)
+            (when (eq (char-before) ?\))
+              (point))))))
+    (when location
+      (goto-char location))))
+
 (defun typescript--proper-indentation (parse-status)
   "Return the proper indentation for the current line."
   (save-excursion
@@ -1778,7 +1888,9 @@ nil."
              (if (looking-at "[({[]\\s-*\\(/[/*]\\|$\\)")
                  (progn
                    (skip-syntax-backward " ")
-		   (when (eq (char-before) ?\)) (backward-list))
+                   (when (or (typescript--backward-to-parameter-list)
+                             (eq (char-before) ?\)))
+                     (backward-list))
                    (back-to-indentation)
                    (cond (same-indent-p
                           (current-column))
@@ -1805,7 +1917,7 @@ nil."
             (save-excursion (syntax-ppss (point-at-bol))))
            (offset (- (current-column) (current-indentation))))
       (indent-line-to (typescript--proper-indentation parse-status))
-      (when (> offset 0) (forward-char offset)))))
+      (when (> offset 0) (move-to-column (+ offset (current-indentation)))))))
 
 ;;; Filling
 
@@ -2028,21 +2140,41 @@ the broken-down class name of the item to insert."
    "error [[:alnum:]]+: [^\r\n]+$")
   "Regexp to match errors generated by tsc.")
 
+;;
 ;; Should handle output like:
 ;; src/modules/authenticator.ts[1, 83]: ' should be "
-;; src/modules/authenticator.ts[2, 26]: ' should be "
-(defconst typescript-tslint-warning-regexp
+;; (quotemarks) src/modules/authenticator.ts[2, 26]: ' should be "
+;; ERROR: (quotemarks) src/modules/authenticator.ts[2, 26]: ' should be "
+;; WARNING: src/modules/authenticator.ts[2, 26]: ' should be "
+;;
+;; "(quotemarks)" it the rule name. It is produced when using the
+;; "verbose" formatter. The "verbose" formatter is identical to the
+;; default ("prose") formatter, except for the additional rule name.
+;;
+;; "ERROR:" and "WARNING:" are the severity. This was added in tslint
+;; 5.0. Prior versions have no notion of severity and simply omit this
+;; part.
+;;
+(defconst typescript-tslint-report-regexp
   (concat
    "^[[:blank:]]*"
-   "\\([^(\r\n)]+\\)" ;; filename
+   ;; severity ("type" in Emacs' parlance)
+   "\\(?:\\(?:ERROR\\|\\(WARNING\\)\\):[[:blank:]]+\\)?"
+   ;; rule name
+   "\\((.*)[[:blank:]]+\\)?"
+   ;; filename
+   "\\([^(\r\n)]+\\)"
    "\\["
-   "\\([[:digit:]]+\\)" ; line
+   ;; line
+   "\\([[:digit:]]+\\)"
    ", "
-   "\\([[:digit:]]+\\)" ; column
+   ;; column
+   "\\([[:digit:]]+\\)"
    "\\]: "
-   ".*$"    ;; type of warnings
+   ;; message
+   ".*$"
    )
-  "Regexp to match warnings generated by tslint.")
+  "Regexp to match reports generated by tslint.")
 
 (dolist
     (regexp
@@ -2051,8 +2183,8 @@ the broken-down class name of the item to insert."
         1 2 3 2)
 
        (typescript-tslint
-        ,typescript-tslint-warning-regexp
-        1 2 3 1)))
+        ,typescript-tslint-report-regexp
+        3 4 5 (1))))
   (add-to-list 'compilation-error-regexp-alist-alist regexp)
   (add-to-list 'compilation-error-regexp-alist (car regexp)))
 

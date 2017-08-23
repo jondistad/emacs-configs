@@ -1,10 +1,10 @@
 ;;; company-math-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
+(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "company-math" "company-math.el" (22760 64561
-;;;;;;  859808 830000))
+;;;### (autoloads nil "company-math" "company-math.el" (22941 53388
+;;;;;;  0 0))
 ;;; Generated autoloads from company-math.el
 
 (autoload 'company-latex-commands "company-math" "\

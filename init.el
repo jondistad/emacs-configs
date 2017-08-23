@@ -251,6 +251,7 @@
             (flyspell-mode)))
 
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+(add-to-list 'auto-mode-alist '("\\.nycrc\\'" . js-mode))
 ;; (add-hook 'js-mode-hook
 ;;           (lambda () (setq js-indent-level 2)))
 
