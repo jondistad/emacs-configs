@@ -10,14 +10,17 @@
    (quote
     ("60f04e478dedc16397353fb9f33f0d895ea3dab4f581307fbf0aa2f07e658a40" "43f70787edac4d896ec8e14579e52501665e61d5dc02de3c237f82fd5d8e0a6a" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
  '(ensime-startup-notification nil)
+ '(flycheck-typescript-tslint-executable nil)
  '(go-fontify-function-calls t)
  '(grep-find-ignored-directories
    (quote
     ("SCCS" "RCS" "CVS" "MCVS" ".svn" ".git" ".hg" ".bzr" "_MTN" "_darcs" "{arch}" "node_modules" "target" ".ensime_cache")))
+ '(js-indent-level 2)
  '(magit-use-overlays nil)
+ '(org-odd-levels-only t)
  '(package-selected-packages
    (quote
-    (js2-mode tide ensime flow-minor-mode monokai-theme ponylang-mode yaml-mode wgrep-ag tuareg toml-mode solarized-theme scheme-complete racer protobuf-mode paredit noflet nodejs-repl nginx-mode neotree multiple-cursors markdown-mode magit llvm-mode less-css-mode irony idris-mode haml-mode go-errcheck go-eldoc go-autocomplete gherkin-mode ghc geiser flx-ido find-file-in-repository find-file-in-project fill-column-indicator feature-mode espuds dockerfile-mode cql-mode company-coq commander coffee-mode clojurescript-mode clojure-project-mode clojure-mode-extra-font-locking cider chicken-scheme caml ansi ag)))
+    (unicode-fonts js2-mode tide ensime flow-minor-mode monokai-theme ponylang-mode yaml-mode wgrep-ag tuareg toml-mode solarized-theme scheme-complete racer protobuf-mode paredit noflet nodejs-repl nginx-mode neotree multiple-cursors markdown-mode magit llvm-mode less-css-mode irony idris-mode haml-mode go-errcheck go-eldoc go-autocomplete gherkin-mode ghc geiser flx-ido find-file-in-repository find-file-in-project fill-column-indicator feature-mode espuds dockerfile-mode cql-mode company-coq commander coffee-mode clojurescript-mode clojure-project-mode clojure-mode-extra-font-locking cider chicken-scheme caml ansi ag)))
  '(rust-format-on-save t)
  '(safe-local-variable-values
    (quote
@@ -269,4 +272,8 @@
  '(idris-semantic-type-face ((t (:foreground "deep sky blue"))))
  '(isearch ((t (:background "light steel blue" :foreground "black"))))
  '(italic ((t (:slant normal))))
+ '(org-level-1 ((t (:inherit default :foreground "#FD971F" :height 1))))
+ '(org-level-2 ((t (:inherit default :foreground "#A6E22E" :height 1.0))))
+ '(org-level-3 ((t (:inherit default :foreground "#66D9EF" :height 1.0))))
+ '(org-level-4 ((t (:inherit default :foreground "#E6DB74" :height 1.0))))
  '(show-paren-match ((t (:background "#272822" :foreground "gold1" :inverse-video t :weight normal)))))

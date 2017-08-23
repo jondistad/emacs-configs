@@ -12,6 +12,7 @@
 ;;                          ))
 
 (package-initialize)
+;; (unicode-fonts-setup)
 
 (defun melpa-packages-enable ()
   (interactive)
@@ -128,8 +129,8 @@
 ;(color-theme-molokai)
 (global-auto-revert-mode)
 
-(when (eq system-type 'darwin)
-  (setq ispell-program-name "/usr/local/bin/aspell"))
+;; (when (eq system-type 'darwin)
+;;   (setq ispell-program-name "/usr/local/bin/ispell"))
 
 (require 'ensime)
 ;; (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)

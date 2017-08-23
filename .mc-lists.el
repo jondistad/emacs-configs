@@ -34,13 +34,16 @@
         org-end-of-line
         org-force-self-insert
         org-kill-line
+        org-self-insert-command
         orgtbl-hijacker-command-102
+        orgtbl-self-insert-command
         paredit-backward-kill-word
         paredit-forward-delete
         paredit-forward-kill-word
         paredit-forward-slurp-sexp
         paredit-open-round
         paredit-splice-sexp
+        transpose-words
         typescript-insert-and-indent
         wgrep-change-to-wgrep-mode
         wgrep-finish-edit
@@ -57,8 +60,6 @@
         ido-switch-buffer
         ignore
         indent-for-tab-command
-        org-self-insert-command
-        orgtbl-self-insert-command
         pg-protected-undo
         undefined
         ))
