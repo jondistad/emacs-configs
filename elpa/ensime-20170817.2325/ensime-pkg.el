@@ -1,4 +1,4 @@
-(define-package "ensime" "20170729.1014" "ENhanced Scala Interaction Mode for Emacs"
+(define-package "ensime" "20170817.2325" "ENhanced Scala Interaction Mode for Emacs"
   '((scala-mode "0.23")
     (sbt-mode "0.2")
     (yasnippet "0.10.0")

@@ -657,7 +657,7 @@ Decide what line to insert QUALIFIED-NAME."
          (popup-menu* entries :point (point)))))
     (`ivy
      (if (featurep 'ivy)
-         (ensime-ivy-select-entry entries title)
+         (ivy-read title entries)
        (progn
          (message "Ivy is not installed, falling back to popup interface.")
          (popup-menu* entries :point (point)))))))
@@ -837,14 +837,14 @@ Use build tools tasks appropriately"
             (insert "### Ancestors\n")
             (ensime-write-hierarchy-entries-to-buffer ancestors)
             (insert "\n\n### Inheritors\n")
-            (ensime-write-hierarchy-entries-to-buffer inheritors)))
-      (message "Nothing to show.")))
-  (goto-char 0)
-  (grep-mode))
+            (ensime-write-hierarchy-entries-to-buffer inheritors))
+          (goto-char 0)
+          (grep-mode))
+      (message "Nothing to show."))))
 
 (defun ensime-write-hierarchy-entries-to-buffer (hierarchy-entries)
   (dolist (hierarchy-entry hierarchy-entries)
-    (let ((source-position (plist-get hierarchy-entry :source-position)))
+    (let ((source-position (ensime-type-source-position hierarchy-entry)))
       (insert (ensime-format-source-position source-position))
       (insert ": ")
       (insert (ensime-type-fqn hierarchy-entry))
@@ -871,11 +871,12 @@ falls back to the classic version."
                                (message "Please ensure helm is installed and loaded.")))
                             (`ivy
                              (if (featurep 'ivy)
-                                 (message "Ivy not yet supported")
+                                 (ensime-ivy-select-source-position uses "Uses: ")
                                (message "Please ensure ivy is installed and loaded."))))))
                      (when selection
-                       (find-file (ensime-pos-file selection))
-                       (ensime-goto-line (ensime-pos-line selection)))))))
+                       (let ((source-position (ensime-source-hint-position selection)))
+                         (find-file (ensime-pos-file source-position))
+                         (ensime-goto-line (ensime-pos-line source-position))))))))
       (message "Nothing to show."))))
 
 (defun ensime-classic-show-uses-of-symbol-at-point (uses)
@@ -883,20 +884,28 @@ falls back to the classic version."
   (switch-to-buffer (get-buffer-create ensime-uses-buffer-name))
   (setq buffer-read-only nil)
   (erase-buffer)
-  (dolist (source-position uses)
-      (insert (ensime-format-source-position source-position))
-      (insert ":\n"))
+  (dolist (source-hint uses)
+    (let ((preview (plist-get source-hint :preview)))
+      (insert (ensime-format-source-position (ensime-source-hint-position source-hint)))
+      (insert ": ")
+      (when preview
+        (insert preview)))
+    (insert "\n"))
   (goto-char 0)
   (grep-mode))
 
 
 (defun ensime-format-source-position (source-position)
-  "Format source position source-position"
-    (let* ((file-name (ensime-pos-file source-position))
-           (maybe-line (ensime-pos-line source-position)))
-      (let ((line (if maybe-line (number-to-string (if (= 0 maybe-line) 1 maybe-line)) "?")))
-       (concat file-name
-       (propertize (concat ":" line) 'face 'font-lock-comment-face)))))
+  "Format source position SOURCE-POSITION."
+  (let* ((file-name (ensime-pos-file source-position))
+         (maybe-line (ensime-pos-line source-position))
+         (root-dir (ensime-configured-project-root))
+         (shortened-file-name (if root-dir
+                                  (replace-regexp-in-string (concat "^" (regexp-quote (expand-file-name root-dir)) "[/]?") "" file-name)
+                                file-name)))
+    (let ((line (if maybe-line (number-to-string (if (= 0 maybe-line) 1 maybe-line)) "?")))
+      (concat shortened-file-name
+              (propertize (concat ":" line) 'face 'font-lock-comment-face)))))
 
 
 

@@ -135,6 +135,7 @@
 ;; (add-hook 'scala-mode-hook #'yas-minor-mode)
 (add-hook 'scala-mode-hook (lambda ()
                              (setq-local electric-indent-chars '(?\n ?\}))))
+(setq ensime-startup-notification nil)
 (setq ensime-startup-snapshot-notification nil)
 ;; (define-key company-active-map [tab] nil)
 

@@ -3,7 +3,7 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "ensime" "ensime.el" (22911 15925 778802 771000))
+;;;### (autoloads nil "ensime" "ensime.el" (22954 52230 61650 998000))
 ;;; Generated autoloads from ensime.el
 
 (autoload 'ensime "ensime" "\
@@ -19,7 +19,7 @@ Read config file for settings. Then connect to an existing ENSIME server.
 ;;;***
 
 ;;;### (autoloads nil "ensime-auto-complete" "ensime-auto-complete.el"
-;;;;;;  (22911 15925 782802 769000))
+;;;;;;  (22954 52230 65651 60000))
 ;;; Generated autoloads from ensime-auto-complete.el
 
 (autoload 'ensime-ac-enable "ensime-auto-complete" "\
@@ -29,8 +29,8 @@ Read config file for settings. Then connect to an existing ENSIME server.
 
 ;;;***
 
-;;;### (autoloads nil "ensime-company" "ensime-company.el" (22911
-;;;;;;  15925 694802 807000))
+;;;### (autoloads nil "ensime-company" "ensime-company.el" (22954
+;;;;;;  52230 37650 619000))
 ;;; Generated autoloads from ensime-company.el
 
 (autoload 'ensime-company-enable "ensime-company" "\
@@ -40,14 +40,9 @@ Read config file for settings. Then connect to an existing ENSIME server.
 
 ;;;***
 
-;;;### (autoloads nil "ensime-ivy" "ensime-ivy.el" (22911 15925 658802
-;;;;;;  824000))
+;;;### (autoloads nil "ensime-ivy" "ensime-ivy.el" (22954 52230 29650
+;;;;;;  493000))
 ;;; Generated autoloads from ensime-ivy.el
-
-(autoload 'ensime-ivy-select-entry "ensime-ivy" "\
-Select an entry from ENTRIES, prompted by PROMPT.
-
-\(fn ENTRIES PROMPT)" nil nil)
 
 (autoload 'ensime-search-ivy "ensime-ivy" "\
 Search ensime with ivy.
@@ -56,8 +51,8 @@ Search ensime with ivy.
 
 ;;;***
 
-;;;### (autoloads nil "ensime-mode" "ensime-mode.el" (22911 15925
-;;;;;;  726802 794000))
+;;;### (autoloads nil "ensime-mode" "ensime-mode.el" (22954 52230
+;;;;;;  49650 809000))
 ;;; Generated autoloads from ensime-mode.el
 
 (autoload 'ensime-mode "ensime-mode" "\
@@ -78,8 +73,8 @@ ENSIME: The ENhanced Scala Interaction Mode for Emacs (minor-mode).
 ;;;;;;  "ensime-notes.el" "ensime-overlay.el" "ensime-pkg.el" "ensime-popup.el"
 ;;;;;;  "ensime-refactor.el" "ensime-sbt.el" "ensime-search.el" "ensime-semantic-highlight.el"
 ;;;;;;  "ensime-stacktrace.el" "ensime-startup.el" "ensime-ui.el"
-;;;;;;  "ensime-undo.el" "ensime-util.el" "ensime-vars.el") (22911
-;;;;;;  15925 794802 764000))
+;;;;;;  "ensime-undo.el" "ensime-util.el" "ensime-vars.el") (22954
+;;;;;;  52230 69651 124000))
 
 ;;;***
 
