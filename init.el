@@ -62,6 +62,8 @@
 (autoload 'capnp-mode "capnp-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.capnp\\'" . capnp-mode))
 
+(add-to-list 'auto-mode-alist '("\\.class\\'" . jdecomp-mode))
+
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
@@ -313,5 +315,7 @@
 (global-set-key (kbd "C-x C-<down>") 'windmove-down)
 (global-set-key (kbd "C-x C-<right>") 'windmove-right)
 (global-set-key (kbd "C-x C-<left>") 'windmove-left)
+
+(setq jdecomp-decompiler-paths '((cfr . "~/.emacs.d/jar/cfr_0_122.jar")))
 
 (server-start)

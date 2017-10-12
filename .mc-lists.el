@@ -41,6 +41,7 @@
         paredit-forward-slurp-sexp
         paredit-open-round
         paredit-splice-sexp
+        transpose-words
         typescript-insert-and-indent
         wgrep-change-to-wgrep-mode
         wgrep-finish-edit
