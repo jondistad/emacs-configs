@@ -87,6 +87,7 @@
   (cl-flet ((in-home (path) (concat home "/" path)))
     (let ((path (list (in-home ".local/bin")
                       (in-home ".cargo/bin")
+                      (in-home ".go/bin")
                       (in-home ".nix-shim/bin")
                       (in-home ".nix-profile/bin")
                       "/usr/local/bin"
@@ -155,6 +156,7 @@
 (eval-after-load 'go-mode
   '(progn
      (define-key go-mode-map (kbd "C-c C-w") 'gofmt)))
+(add-hook 'before-save-hook #'gofmt-before-save)
 
 (setq c-default-style "linux"
       c-basic-offset 4)

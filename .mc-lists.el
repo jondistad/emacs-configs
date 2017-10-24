@@ -36,9 +36,12 @@
         org-kill-line
         orgtbl-hijacker-command-102
         paredit-backward-kill-word
+        paredit-doublequote
         paredit-forward-delete
         paredit-forward-kill-word
         paredit-forward-slurp-sexp
+        paredit-kill
+        paredit-newline
         paredit-open-round
         paredit-splice-sexp
         transpose-words
