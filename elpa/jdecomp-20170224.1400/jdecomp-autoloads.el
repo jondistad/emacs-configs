@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "jdecomp" "jdecomp.el" (22974 38188 419004
-;;;;;;  57000))
+;;;### (autoloads nil "jdecomp" "jdecomp.el" (22973 33772 792567
+;;;;;;  361000))
 ;;; Generated autoloads from jdecomp.el
 
 (autoload 'jdecomp-preview-mode "jdecomp" "\

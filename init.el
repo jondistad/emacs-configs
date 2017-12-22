@@ -181,9 +181,11 @@
 
 (eval-after-load 'clojure-mode
   '(progn
-     (add-hook 'clojure-mode-hook (lambda ()
-                                    (paredit-mode +1)))))
-
+     (add-hook 'clojure-mode-hook 'paredit-mode)
+     (add-hook 'clojure-mode-hook 'cider-mode)))
+(eval-after-load 'cider-mode
+  '(progn
+     (add-hook 'cider-interaction-mode-hook 'cider-turn-on-eldoc-mode)))
 ;; (eval-after-load 'cider-repl
 ;;   '(progn
 ;;      (add-hook 'cider-repl-mode-hook (lambda () (paredit-mode +1)))

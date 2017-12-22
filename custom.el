@@ -16,7 +16,7 @@
  '(magit-use-overlays nil)
  '(package-selected-packages
    (quote
-    (jdecomp monokai-theme ponylang-mode yaml-mode wgrep-ag tuareg toml-mode solarized-theme scheme-complete racer protobuf-mode paredit noflet nodejs-repl nginx-mode neotree multiple-cursors markdown-mode magit llvm-mode less-css-mode irony idris-mode haml-mode go-errcheck go-eldoc go-autocomplete gherkin-mode ghc geiser flx-ido find-file-in-repository find-file-in-project fill-column-indicator feature-mode espuds dockerfile-mode cql-mode company-coq commander coffee-mode clojurescript-mode clojure-project-mode cider chicken-scheme caml ansi ag)))
+    (ensime flow-minor-mode js2-mode auto-complete clojure-mode company flycheck go-mode haskell-mode rust-mode sbt-mode scala-mode tide jdecomp monokai-theme ponylang-mode yaml-mode wgrep-ag tuareg toml-mode solarized-theme scheme-complete racer protobuf-mode paredit noflet nodejs-repl nginx-mode neotree multiple-cursors markdown-mode magit llvm-mode less-css-mode irony idris-mode haml-mode go-errcheck go-eldoc go-autocomplete gherkin-mode ghc geiser flx-ido find-file-in-repository find-file-in-project fill-column-indicator feature-mode espuds dockerfile-mode cql-mode company-coq commander coffee-mode clojurescript-mode clojure-project-mode clojure-mode-extra-font-locking cider chicken-scheme caml ansi ag)))
  '(rust-format-on-save t)
  '(safe-local-variable-values
    (quote
