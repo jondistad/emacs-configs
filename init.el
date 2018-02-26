@@ -211,8 +211,6 @@
 (eval-after-load 'haskell-mode
   (add-hook 'haskell-mode-hook (lambda () (turn-on-haskell-indentation))))
 
-
-
 (defun indent-on-return (modes)
   (if modes
       (let* ((mode (car modes))
