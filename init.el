@@ -210,8 +210,12 @@
 
 (add-hook 'coffee-mode-hook (lambda () (subword-mode +1)))
 
-(eval-after-load 'haskell-mode
-  (add-hook 'haskell-mode-hook (lambda () (turn-on-haskell-indentation))))
+(add-hook 'haskell-mode-hook (lambda ()
+                               (flycheck-mode)
+                               (flycheck-select-checker 'haskell-stack-liquid)))
+(add-hook 'haskell-mode-hook (lambda ()
+                               (liquid-types-mode)))
+(add-hook 'haskell-mode-hook (lambda () (turn-on-haskell-indentation)))
 
 (defun indent-on-return (modes)
   (if modes
