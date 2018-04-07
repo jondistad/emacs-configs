@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "liquid-types" "liquid-types.el" (23188 38273
-;;;;;;  596296 6000))
+;;;### (autoloads nil "liquid-types" "liquid-types.el" (23188 14380
+;;;;;;  654916 604000))
 ;;; Generated autoloads from liquid-types.el
 
 (autoload 'liquid-types-update "liquid-types" "\

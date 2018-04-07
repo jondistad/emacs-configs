@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "button-lock" "button-lock.el" (23188 38273
-;;;;;;  316293 47000))
+;;;### (autoloads nil "button-lock" "button-lock.el" (23188 14380
+;;;;;;  186916 814000))
 ;;; Generated autoloads from button-lock.el
 
 (let ((loads (get 'button-lock 'custom-loads))) (if (member '"button-lock" loads) nil (put 'button-lock 'custom-loads (cons '"button-lock" loads))))

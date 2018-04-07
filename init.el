@@ -86,22 +86,20 @@
 (cl-flet ((dir (d path) (concat d "/" path)))
   (let* ((home (getenv "HOME"))
          (goroot "/usr/lib/go-1.9")
-         (gopath (dir home ".go"))
-         (path (append (list (dir home ".local/bin"))
-                       (file-expand-wildcards (dir home ".local/opt/*/bin"))
-                       (list (dir home ".cargo/bin")
-                             (dir goroot "bin")
-                             (dir gopath "bin")
-                             (dir home ".nix-shim/bin")
-                             (dir home ".nix-profile/bin")
-                             "/usr/local/bin"
-                             "/usr/local/sbin"
-                             "/usr/bin"
-                             "/bin"
-                             "/usr/sbin"
-                             "/sbin"))))
-    (setq exec-path (delete-dups (copy-sequence (append path exec-path))))
-    (setenv "PATH" (mapconcat 'identity path '":"))))
+         (gopath (dir home ".go")))
+    (let ((path (append (list (dir home ".local/bin"))
+                        (file-expand-wildcards (dir home ".local/opt/*/bin"))
+                        (list (dir home ".cargo/bin")
+                              (dir goroot "bin")
+                              (dir gopath "bin")
+                              "/usr/local/bin"
+                              "/usr/local/sbin"
+                              "/usr/bin"
+                              "/bin"
+                              "/usr/sbin"
+                              "/sbin"))))
+      (setq exec-path (delete-dups (copy-sequence (append path exec-path))))
+      (setenv "PATH" (mapconcat 'identity path '":")))))
 (setenv "NIX_PATH" "nixpkgs=/home/jon/.nix-defexpr/channels/nixpkgs")
 (setenv "NIX_SSL_CERT_FILE" "/etc/ssl/certs/ca-certificates.crt")
 ;; (setenv "JAVA_HOME" "/usr/lib/jvm/java-8-openjdk-amd64")
@@ -216,8 +214,8 @@
                                (flycheck-mode)
                                (flycheck-select-checker 'haskell-stack-liquid)))
 (add-hook 'haskell-mode-hook (lambda ()
-                               (turn-on-haskell-indentation)
                                (liquid-types-mode)))
+(add-hook 'haskell-mode-hook (lambda () (turn-on-haskell-indentation)))
 
 (defun indent-on-return (modes)
   (if modes
