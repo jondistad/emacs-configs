@@ -286,6 +286,23 @@
 (add-hook 'before-save-hook 'tide-format-before-save)
 (add-hook 'typescript-mode-hook #'setup-tide-mode)
 
+(defun slashify (name)
+  (interactive
+   (list (if (consp current-prefix-arg)
+             (read-string "Slashify: ")
+           (thing-at-point 'word))))
+  (save-excursion
+    (move-beginning-of-line nil)
+    (open-line 1)
+    (let* ((pre "// ")
+           (post (make-string (- 80 1 (string-width pre) (string-width name)) ?/)))
+      (insert (concat pre name " " post)))))
+
+(add-hook 'ponylang-mode-hook
+          (lambda ()
+            (define-key ponylang-mode-map (kbd "C-c /") 'slashify)
+            (define-key ponylang-mode-map (kbd "C-c C-/") 'slashify)))
+
 ;; (require 'find-file-in-project)
 ;; (setq ffip-patterns (delete-dups
 ;;                      (append (list "*.scala" "*.coffee" "*.c" "*.cpp" "*.cc" "*.h" "*.hh" "*.hpp" "*.java" "*.hs")
