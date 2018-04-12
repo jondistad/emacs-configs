@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "ponylang-mode" "ponylang-mode.el" (22845 47736
-;;;;;;  432163 162000))
+;;;### (autoloads nil "ponylang-mode" "ponylang-mode.el" (23240 44677
+;;;;;;  373816 419000))
 ;;; Generated autoloads from ponylang-mode.el
 
 (add-to-list 'auto-mode-alist '("\\.pony\\'" . ponylang-mode))
