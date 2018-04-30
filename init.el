@@ -38,7 +38,7 @@
 ;; (init-coq)
 (add-hook 'coq-mode-hook #'company-coq-mode)
 
-;; (setq require-final-newline 'visit-save)
+;; (setq requiref-final-newline 'visit-save)
 
 (setq geiser-guile-load-init-file-p t)
 
@@ -86,12 +86,14 @@
 (cl-flet ((dir (d path) (concat d "/" path)))
   (let* ((home (getenv "HOME"))
          (goroot "/usr/lib/go-1.9")
-         (gopath (dir home ".go")))
+         (gopath (dir home ".go"))
+         (yarnpath (dir home ".yarn")))
     (let ((path (append (list (dir home ".local/bin"))
                         (file-expand-wildcards (dir home ".local/opt/*/bin"))
                         (list (dir home ".cargo/bin")
                               (dir goroot "bin")
                               (dir gopath "bin")
+                              (dir yarnpath "bin")
                               "/usr/local/bin"
                               "/usr/local/sbin"
                               "/usr/bin"
@@ -259,9 +261,19 @@
             (define-key org-mode-map (kbd "M-n") 'org-move-subtree-down)
             (flyspell-mode)))
 
-(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
-;; (add-hook 'js-mode-hook
-;;           (lambda () (setq js-indent-level 2)))
+(add-to-list 'auto-mode-alist '("\\.js\\'" . jsx-mode))
+(add-to-list 'auto-mode-alist '("\\.jsx\\'" . jsx-mode))
+(require 'flycheck-flow)
+(add-hook 'jsx-mode-hook
+          (lambda ()
+            (setq jsx-indent-level 2)
+            ;; (flycheck-mode)
+            ))
+
+(with-eval-after-load 'flycheck
+  (flycheck-add-mode 'javascript-flow 'flow-minor-mode)
+  (flycheck-add-mode 'javascript-eslint 'flow-minor-mode)
+  (flycheck-add-next-checker 'javascript-flow 'javascript-eslint))
 
 (eval-after-load 'nginx-mode
   '(setq nginx-indent-level 2))
