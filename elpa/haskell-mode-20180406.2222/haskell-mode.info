@@ -1,4 +1,4 @@
-This is haskell-mode.info, produced by makeinfo version 5.2 from
+This is haskell-mode.info, produced by makeinfo version 6.1 from
 haskell-mode.texi.
 
 This manual is for Haskell mode, version 16.1-git
@@ -59,7 +59,7 @@ File: haskell-mode.info,  Node: Introduction,  Next: Installation,  Prev: Top,  
 1 Introduction
 **************
 
-"Haskell Mode" is a major mode providing a convenient environment for
+“Haskell Mode” is a major mode providing a convenient environment for
 editing Haskell (http://www.haskell.org) programs.
 
    Some of its major features are:
@@ -279,7 +279,7 @@ File: haskell-mode.info,  Node: Syntax highlighting,  Next: Completion support, 
 4 Syntax highlighting
 *********************
 
-‘haskell-mode’ supports "syntax highlighting" via Emacs’ Font Lock minor
+‘haskell-mode’ supports “syntax highlighting” via Emacs’ Font Lock minor
 mode which should be enabled by default in current Emacsen.  *Note
 (emacs)Font Lock::, for more information on how to control
 ‘font-lock-mode’.
@@ -500,7 +500,7 @@ written by humans use indentation for block structuring.
 7.1 Rectangle Commands
 ======================
 
-GNU Emacs provides so-called "rectangle commands" which operate on
+GNU Emacs provides so-called “rectangle commands” which operate on
 rectangular areas of text, which are particularly useful for languages
 with a layout rule such as Haskell.  *Note (emacs)Rectangles::, to learn
 more about rectangle commands.
@@ -708,7 +708,7 @@ File: haskell-mode.info,  Node: Compilation,  Next: Interactive Haskell,  Prev: 
 12 Compilation
 **************
 
-Haskell mode comes equipped with a specialized "Compilation mode"
+Haskell mode comes equipped with a specialized “Compilation mode”
 tailored to GHC’s compiler messages with optional support for Cabal
 projects.  *Note (emacs)Compilation Mode::, for more information about
 the basic commands provided by the Compilation mode which are available
@@ -829,10 +829,13 @@ File: haskell-mode.info,  Node: Interactive Haskell,  Next: Editing Cabal files,
 13 Interactive Haskell
 **********************
 
-An alternative mode providing a REPL (read–eval–print loop) via GHCi
-sessions is called ‘haskell-interactive-mode’, which effectively
-replaces ‘inferior-haskell-mode’, but comes with a different set of
-features:
+REPL (read–eval–print loop) is provided both via Comint
+(‘inferior-haskell-mode’) and an adhoc way called
+‘haskell-interactive-mode’.  The Comint based ‘inferior-haskell-mode’ is
+just the REPL, it comes with the standard key bindings(like ‘ielm’ or
+‘eshell’).
+
+   ‘haskell-interactive-mode’ comes with a different set of features:
 
    • Separate sessions per Cabal project ‘haskell-session.el’.
    • A new inferior Haskell process handling code ‘haskell-process.el’.
@@ -1024,7 +1027,7 @@ save:
 ----------------------
 
 Now, every time you run ‘save-buffer’ (‘C-x C-s’), there is a hook that
-will run and generate Emacs *Note (emacs)Tags::.  for the whole project
+will run and generate Emacs *Note (emacs)Tags:: for the whole project
 directory.  The resulting file will be called ‘TAGS’.
 
    WARNING: You should be careful that your project root isn’t your home
@@ -2238,7 +2241,7 @@ otherwise = 0 where i = sum x j = g x (div i 3) 0 0 [] k = zeroes x 0 ’
 
    then when you collapse it becomes something like this:
 
-   ‘ f█x… ’
+   ‘ f█x... ’
 
    It works in terms of (indentation) blocks.
 
@@ -2256,7 +2259,7 @@ otherwise = 0 where i = sum x j = g x (div i 3) 0 0 [] █ k = zeroes x 0
    this, will result in something like:
 
    ‘ f x | rem i 3 == 0 = if i == 0 && (k /= 0) then (c k) else (h j) |
-otherwise = 0 where i = sum █… ’
+otherwise = 0 where i = sum █... ’
 
    The other functionality ‘M-x haskell-hide-toggle-all’ also works only
 for indentation and it collapses all toplevel functions.
@@ -2281,7 +2284,7 @@ for indentation and it collapses all toplevel functions.
 
      dp money a | money < 0 || null a = [1..1000]
      dp 0 a = []
-     dp money a @ (coin:coins)…
+     dp money a @ (coin:coins)...
 
 
 File: haskell-mode.info,  Node: Getting Help and Reporting Bugs,  Next: Concept index,  Prev: Collapsing Haskell code,  Up: Top
@@ -2318,17 +2321,17 @@ Concept index
  [index ]
 * Menu:
 
-* benchmarking:                          Interactive Haskell. (line 469)
+* benchmarking:                          Interactive Haskell. (line 472)
 * CUA mode:                              Indentation.         (line  49)
 * customizing:                           Installation.        (line  55)
-* customizing <1>:                       Interactive Haskell. (line  50)
-* ‘haskell-mode’:                        Editing Haskell Code.
+* customizing <1>:                       Interactive Haskell. (line  53)
+* haskell-mode:                          Editing Haskell Code.
                                                               (line   6)
 * indentation:                           Indentation.         (line   6)
 * layout rule:                           Indentation.         (line   6)
 * off-side rule:                         Indentation.         (line   6)
 * rectangle:                             Indentation.         (line  49)
-* testing:                               Interactive Haskell. (line 467)
+* testing:                               Interactive Haskell. (line 470)
 * Unicode:                               Unicode support.     (line   6)
 
 
@@ -2347,7 +2350,7 @@ Function index
                                                               (line   6)
 * haskell-mode:                          Editing Haskell Code.
                                                               (line   6)
-* haskell-session-change-target:         Interactive Haskell. (line 460)
+* haskell-session-change-target:         Interactive Haskell. (line 463)
 
 
 File: haskell-mode.info,  Node: Variable index,  Prev: Function index,  Up: Top
@@ -2368,20 +2371,20 @@ Variable index
 * haskell-decl-scan-mode-hook:           Declaration scanning.
                                                               (line   6)
 * haskell-definition-face:               Syntax highlighting. (line  31)
-* haskell-interactive-mode-hook:         Interactive Haskell. (line 460)
+* haskell-interactive-mode-hook:         Interactive Haskell. (line 463)
 * haskell-keyword-face:                  Syntax highlighting. (line  28)
 * haskell-literate-comment-face:         Syntax highlighting. (line  35)
 * haskell-mode-hook:                     Installation.        (line  60)
 * haskell-operator-face:                 Syntax highlighting. (line  33)
 * haskell-pragma-face:                   Syntax highlighting. (line  34)
-* haskell-process-args-cabal-new-repl:   Interactive Haskell. (line  73)
-* haskell-process-args-cabal-repl:       Interactive Haskell. (line  73)
-* haskell-process-args-ghci:             Interactive Haskell. (line  73)
-* haskell-process-args-stack-ghci:       Interactive Haskell. (line  72)
-* haskell-process-path-cabal:            Interactive Haskell. (line  73)
-* haskell-process-path-ghci:             Interactive Haskell. (line  73)
-* haskell-process-path-stack:            Interactive Haskell. (line  73)
-* haskell-process-type:                  Interactive Haskell. (line  73)
+* haskell-process-args-cabal-new-repl:   Interactive Haskell. (line  76)
+* haskell-process-args-cabal-repl:       Interactive Haskell. (line  76)
+* haskell-process-args-ghci:             Interactive Haskell. (line  76)
+* haskell-process-args-stack-ghci:       Interactive Haskell. (line  75)
+* haskell-process-path-cabal:            Interactive Haskell. (line  76)
+* haskell-process-path-ghci:             Interactive Haskell. (line  76)
+* haskell-process-path-stack:            Interactive Haskell. (line  76)
+* haskell-process-type:                  Interactive Haskell. (line  76)
 * haskell-quasi-quote-face:              Syntax highlighting. (line  36)
 * haskell-type-face:                     Syntax highlighting. (line  29)
 
@@ -2390,29 +2393,29 @@ Variable index
 Tag Table:
 Node: Top683
 Node: Introduction2588
-Node: Installation4169
-Node: Editing Haskell Code6792
-Node: Syntax highlighting10552
-Node: Completion support12808
-Node: Unicode support14852
-Node: Indentation19524
-Node: External indentation22996
-Node: Autoformating23724
-Node: Module templates24352
-Node: Declaration scanning24782
-Node: Compilation28070
-Node: Interactive Haskell31971
-Node: Editing Cabal files62765
-Node: Browsing Haddocks63512
-Node: Spell checking strings and comments66337
-Node: Aligning code67443
-Node: Rectangular commands69188
-Node: REPL70708
-Node: Collapsing Haskell code75486
-Node: Getting Help and Reporting Bugs78094
-Node: Concept index79138
-Node: Function index80181
-Node: Variable index80903
+Node: Installation4173
+Node: Editing Haskell Code6796
+Node: Syntax highlighting10556
+Node: Completion support12816
+Node: Unicode support14860
+Node: Indentation19532
+Node: External indentation23008
+Node: Autoformating23736
+Node: Module templates24364
+Node: Declaration scanning24794
+Node: Compilation28082
+Node: Interactive Haskell31987
+Node: Editing Cabal files62914
+Node: Browsing Haddocks63661
+Node: Spell checking strings and comments66486
+Node: Aligning code67592
+Node: Rectangular commands69337
+Node: REPL70857
+Node: Collapsing Haskell code75635
+Node: Getting Help and Reporting Bugs78243
+Node: Concept index79287
+Node: Function index80326
+Node: Variable index81048
 
 End Tag Table
 
