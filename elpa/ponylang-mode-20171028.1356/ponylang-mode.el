@@ -106,7 +106,7 @@
   "Pony capability markers.")
 
 (defconst ponylang-keywords
-  '("actor" "addressof" "as"
+  '("actor" "addressof" "and" "as"
     "be" "break"
     "class" "compiler_intrinsic" "consume" "continue"
     "do"
@@ -116,7 +116,7 @@
     "lambda" "let"
     "match"
     "new" "not"
-    "object"
+    "object" "or"
     "primitive"
     "recover" "repeat" "return"
     "struct"

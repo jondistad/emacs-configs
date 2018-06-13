@@ -306,7 +306,7 @@
   (save-excursion
     (move-beginning-of-line nil)
     (open-line 1)
-    (let* ((pre "// ")
+    (let* ((pre "/// ")
            (post (make-string (- 80 1 (string-width pre) (string-width name)) ?/)))
       (insert (concat pre name " " post)))))
 
