@@ -61,6 +61,7 @@
         ido-switch-buffer
         ignore
         indent-for-tab-command
+        mouse-set-region
         org-self-insert-command
         orgtbl-self-insert-command
         pg-protected-undo
