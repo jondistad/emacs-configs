@@ -104,6 +104,7 @@
       (setenv "PATH" (mapconcat 'identity path '":")))))
 (setenv "NIX_PATH" "nixpkgs=/home/jon/.nix-defexpr/channels/nixpkgs")
 (setenv "NIX_SSL_CERT_FILE" "/etc/ssl/certs/ca-certificates.crt")
+(setenv "NODE_NO_READLINE" "1")
 ;; (setenv "JAVA_HOME" "/usr/lib/jvm/java-8-openjdk-amd64")
 ;(setenv "SCHEMEHEAPDIRS" "/Users/jon/local/lib/csv%v/%m")
 ;(setenv "NODE_PATH" "/Users/jon/local/opt/node/lib/node_modules")
