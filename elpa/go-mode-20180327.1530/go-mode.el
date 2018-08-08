@@ -8,7 +8,7 @@
 
 ;; Author: The go-mode Authors
 ;; Version: 1.5.0
-;; Package-Version: 20170308.1512
+;; Package-Version: 20180327.1530
 ;; Keywords: languages go
 ;; URL: https://github.com/dominikh/go-mode.el
 ;;
@@ -1030,7 +1030,8 @@ with goflymake \(see URL `https://github.com/dougm/goflymake'), gocode
         ;; Appending lines decrements the offset (possibly making it
         ;; negative), deleting lines increments it. This order
         ;; simplifies the forward-line invocations.
-        (line-offset 0))
+        (line-offset 0)
+        (column (current-column)))
     (save-excursion
       (with-current-buffer patch-buffer
         (goto-char (point-min))
@@ -1057,13 +1058,17 @@ with goflymake \(see URL `https://github.com/dougm/goflymake'), gocode
                 (cl-incf line-offset len)
                 (go--delete-whole-line len)))
              (t
-              (error "Invalid rcs patch or internal error in go--apply-rcs-patch")))))))))
+              (error "Invalid rcs patch or internal error in go--apply-rcs-patch")))))))
+    (move-to-column column)))
 
 (defun gofmt--is-goimports-p ()
   (string-equal (file-name-base gofmt-command) "goimports"))
 
 (defun gofmt ()
-  "Format the current buffer according to the gofmt tool."
+  "Format the current buffer according to the formatting tool.
+
+The tool used can be set via ‘gofmt-command` (default: gofmt) and additional
+arguments can be set as a list via ‘gofmt-args`."
   (interactive)
   (let ((tmpfile (make-temp-file "gofmt" nil ".go"))
         (patchbuf (get-buffer-create "*Gofmt patch*"))
@@ -1479,7 +1484,8 @@ description at POINT."
                                "-f"
                                (file-truename (buffer-file-name (go--coverage-origin-buffer)))
                                "-o"
-                               (number-to-string (position-bytes point)))
+                               ;; Emacs point and byte positions are 1-indexed.
+                               (number-to-string (1- (position-bytes point))))
           (with-current-buffer outbuf
             (split-string (buffer-substring-no-properties (point-min) (point-max)) "\n"))
         (kill-buffer outbuf)))))

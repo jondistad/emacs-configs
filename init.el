@@ -85,7 +85,7 @@
 
 (cl-flet ((dir (d path) (concat d "/" path)))
   (let* ((home (getenv "HOME"))
-         (goroot "/usr/lib/go-1.9")
+         (goroot "/usr/lib/go-1.10")
          (gopath (dir home ".go"))
          (yarnpath (dir home ".yarn")))
     (let ((path (append (list (dir home ".local/bin"))
@@ -105,6 +105,8 @@
 (setenv "NIX_PATH" "nixpkgs=/home/jon/.nix-defexpr/channels/nixpkgs")
 (setenv "NIX_SSL_CERT_FILE" "/etc/ssl/certs/ca-certificates.crt")
 (setenv "NODE_NO_READLINE" "1")
+(setenv "GOROOT" "/usr/lib/go-1.10")
+(setenv "GOPATH" "/home/jon/.go")
 ;; (setenv "JAVA_HOME" "/usr/lib/jvm/java-8-openjdk-amd64")
 ;(setenv "SCHEMEHEAPDIRS" "/Users/jon/local/lib/csv%v/%m")
 ;(setenv "NODE_PATH" "/Users/jon/local/opt/node/lib/node_modules")
@@ -158,9 +160,11 @@
      (define-key paredit-mode-map (kbd "{") 'paredit-open-curly)
      (define-key paredit-mode-map (kbd "}") 'paredit-close-curly)))
 
+(require 'go-guru)
 (eval-after-load 'go-mode
   '(progn
-     (define-key go-mode-map (kbd "C-c C-w") 'gofmt)))
+     (define-key go-mode-map (kbd "C-c C-w") 'gofmt)
+     (define-key go-mode-map (kbd "M-.") 'go-guru-definition)))
 (add-hook 'before-save-hook #'gofmt-before-save)
 
 (setq c-default-style "linux"

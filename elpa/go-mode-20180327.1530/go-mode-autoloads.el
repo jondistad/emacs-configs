@@ -1,9 +1,10 @@
 ;;; go-mode-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
+(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "go-mode" "go-mode.el" (22823 5993 18214 68000))
+;;;### (autoloads nil "go-mode" "go-mode.el" (23403 18806 695001
+;;;;;;  756000))
 ;;; Generated autoloads from go-mode.el
 
 (autoload 'go-mode "go-mode" "\
