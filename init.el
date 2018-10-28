@@ -166,6 +166,8 @@
      (define-key go-mode-map (kbd "C-c C-w") 'gofmt)
      (define-key go-mode-map (kbd "M-.") 'go-guru-definition)))
 (add-hook 'before-save-hook #'gofmt-before-save)
+(add-hook 'go-mode-hook (lambda ()
+                          (setq-local tab-width 4)))
 
 (setq c-default-style "linux"
       c-basic-offset 4)
