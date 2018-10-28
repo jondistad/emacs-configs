@@ -32,11 +32,12 @@
 
 (defun init-coq ()
   (interactive)
-  (load "~/.emacs.d/lisp/PG/generic/proof-site")
-  (require 'makam)
-  (setq makam-keymap '()))
+  (load "~/.emacs.d/lisp/PG/generic/proof-site"))
 ;; (init-coq)
 (add-hook 'coq-mode-hook #'company-coq-mode)
+
+(require 'makam)
+(add-to-list 'auto-mode-alist '("\\.makam\\'" . makam-mode))
 
 ;; (setq requiref-final-newline 'visit-save)
 
