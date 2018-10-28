@@ -1,4 +1,5 @@
 (add-to-list 'load-path "~/.emacs.d/opt/")
+(add-to-list 'load-path "~/.emacs.d/opt/makam-mode")
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file)
 

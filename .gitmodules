@@ -1,3 +1,6 @@
 [submodule "PG"]
 	path = lisp/PG
 	url = https://github.com/ProofGeneral/PG
+[submodule "opt/makam-mode"]
+	path = opt/makam-mode
+	url = git@github.com:jondistad/makam-mode.git
