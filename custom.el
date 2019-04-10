@@ -18,11 +18,36 @@
  '(magit-use-overlays nil)
  '(package-selected-packages
    (quote
-    (alchemist elixir-mode flycheck-mix jsx-mode flycheck-liquidhs liquid-types button-lock flycheck-color-mode-line pos-tip js2-mode auto-complete clojure-mode company go-mode sbt-mode scala-mode tide jdecomp monokai-theme ponylang-mode yaml-mode wgrep-ag tuareg toml-mode solarized-theme scheme-complete racer protobuf-mode paredit noflet nodejs-repl nginx-mode neotree multiple-cursors markdown-mode magit llvm-mode less-css-mode irony haml-mode go-errcheck go-eldoc go-autocomplete gherkin-mode ghc geiser flx-ido find-file-in-repository find-file-in-project fill-column-indicator feature-mode espuds dockerfile-mode cql-mode company-coq commander coffee-mode clojurescript-mode clojure-project-mode clojure-mode-extra-font-locking cider chicken-scheme caml ansi ag)))
+    (racket-mode alchemist elixir-mode flycheck-mix jsx-mode flycheck-liquidhs liquid-types button-lock flycheck-color-mode-line pos-tip js2-mode auto-complete company go-mode sbt-mode scala-mode tide jdecomp monokai-theme ponylang-mode yaml-mode wgrep-ag tuareg toml-mode solarized-theme scheme-complete racer protobuf-mode paredit noflet nodejs-repl nginx-mode neotree multiple-cursors markdown-mode magit llvm-mode less-css-mode irony haml-mode go-errcheck go-eldoc go-autocomplete gherkin-mode ghc geiser flx-ido find-file-in-repository find-file-in-project fill-column-indicator feature-mode espuds dockerfile-mode cql-mode company-coq commander coffee-mode clojurescript-mode clojure-project-mode chicken-scheme caml ansi ag)))
  '(rust-format-on-save t)
  '(safe-local-variable-values
    (quote
     ((clojure-local-indents
+      (result-let 1)
+      (clj-do! 1)
+      (ml-do! 0))
+     (clojure-local-indents
+      (result-let 1)
+      (clj-do! 1))
+     (clojure-local-indents
+      (result-let 1))
+     (clojure-local-indents
+      (indent defun)
+      (returning defun)
+      (run-write defun)
+      (run-scrape defun)
+      (run-typer defun))
+     (clojure-local-indents
+      (match defun)
+      (deftype defun)
+      (switch defun)
+      (select defun)
+      (struct defun)
+      (interface defun)
+      (type-switch defun)
+      (if\# defun)
+      (for\# defun))
+     (clojure-local-indents
       (indent defun))
      (clojure-local-indents
       (match defun))

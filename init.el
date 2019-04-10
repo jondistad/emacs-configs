@@ -14,6 +14,10 @@
 
 (package-initialize)
 
+(load (expand-file-name "~/quicklisp/slime-helper.el"))
+;; Replace "sbcl" with the path to your implementation
+(setq inferior-lisp-program "sbcl")
+
 (defun melpa-packages-enable ()
   (interactive)
   (unless (boundp 'package-archives-backup)
@@ -152,6 +156,8 @@
 ;; (define-key company-active-map [tab] nil)
 
 (add-hook 'shell-mode-hook (progn 'ansi-color-for-comint-mode-on))
+
+(add-hook 'racket-mode-hook (lambda () (paredit-mode +1)))
 
 (eval-after-load 'paredit
   '(progn
@@ -323,6 +329,10 @@
           (lambda ()
             (define-key ponylang-mode-map (kbd "C-c /") 'slashify)
             (define-key ponylang-mode-map (kbd "C-c C-/") 'slashify)))
+
+(add-hook 'Man-mode-hook
+          (lambda ()
+            (linum-mode -1)))
 
 ;; (require 'find-file-in-project)
 ;; (setq ffip-patterns (delete-dups

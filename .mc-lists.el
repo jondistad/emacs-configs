@@ -24,6 +24,7 @@
         ensime-company-complete-or-indent
         forward-sexp
         go-mode-insert-and-indent
+        haskell-indentation-common-electric-command
         haskell-indentation-delete-backward-char
         idris-delete-forward-char
         kill-rectangle
@@ -43,7 +44,9 @@
         paredit-kill
         paredit-newline
         paredit-open-round
+        paredit-raise-sexp
         paredit-splice-sexp
+        paredit-wrap-round
         transpose-words
         typescript-insert-and-indent
         wgrep-change-to-wgrep-mode
