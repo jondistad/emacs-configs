@@ -372,6 +372,14 @@
 (global-set-key (kbd "C-x C-<right>") 'windmove-right)
 (global-set-key (kbd "C-x C-<left>") 'windmove-left)
 
+(defun make-frame-fix-font-command ()
+  (interactive)
+  (let ((frame (make-frame)))
+    (select-frame-set-input-focus frame)
+    (fix-font)))
+
+(global-set-key (kbd "C-x 5 2") 'make-frame-fix-font-command)
+
 (setq jdecomp-decompiler-paths '((cfr . "~/.emacs.d/jar/cfr_0_122.jar")))
 
 (server-start)
