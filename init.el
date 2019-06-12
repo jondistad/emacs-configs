@@ -70,6 +70,9 @@
 
 (add-to-list 'auto-mode-alist '("\\.class\\'" . jdecomp-mode))
 
+;; Jai (Jonathan Blow's language)
+(add-to-list 'auto-mode-alist '("\\.jai\\'" . jai-mode))
+
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
@@ -100,12 +103,12 @@
                               (dir goroot "bin")
                               (dir gopath "bin")
                               (dir yarnpath "bin")
-                              "/usr/local/bin"
                               "/usr/local/sbin"
+                              "/usr/local/bin"
                               "/usr/bin"
-                              "/bin"
-                              "/usr/sbin"
-                              "/sbin"))))
+                              "/usr/bin/site_perl"
+                              "/usr/bin/vendor_perl"
+                              "/usr/bin/core_perl"))))
       (setq exec-path (delete-dups (copy-sequence (append path exec-path))))
       (setenv "PATH" (mapconcat 'identity path '":"))
       (setenv "GOROOT" goroot)
