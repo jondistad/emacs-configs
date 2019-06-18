@@ -4,7 +4,7 @@
 
 ;; Author: Christopher Wellons <wellons@nullprogram.com>
 ;; URL: https://github.com/skeeto/nasm-mode
-;; Package-Version: 1.1.1
+;; Package-Version: 20190410.342
 ;; Version: 1.1.1
 ;; Package-Requires: ((emacs "24.3"))
 
@@ -26,7 +26,15 @@
 ;; http://www.nasm.us/doc/nasmdocb.html
 
 ;; TODO:
-;;  * Line continuation awareness
+;; [ ] Line continuation awareness
+;; [x] Don't run comment command if type ';' inside a string
+;; [ ] Nice multi-; comments, like in asm-mode
+;; [x] Be able to hit tab after typing mnemonic and insert a TAB
+;; [ ] Autocompletion
+;; [ ] Help menu with basic summaries of instructions
+;; [ ] Highlight errors, e.g. size mismatches "mov al, dword [rbx]"
+;; [ ] Work nicely with outline-minor-mode
+;; [ ] Highlighting of multiline macro definition arguments
 
 ;;; Code:
 
@@ -42,6 +50,13 @@
 
 (defcustom nasm-basic-offset (default-value 'tab-width)
   "Indentation level for `nasm-mode'."
+  :type 'integer
+  :group 'nasm-mode)
+
+(defcustom nasm-after-mnemonic-whitespace :tab
+  "In `nasm-mode', determines the whitespace to use after mnemonics.
+This can be :tab, :space, or nil (do nothing)."
+  :type '(choice (const :tab) (const :space) (const nil))
   :group 'nasm-mode)
 
 (defface nasm-registers
@@ -551,18 +566,26 @@
                   "\\s-+\\([a-zA-Z0-9_$#@~.?]+\\)") 2))
   "Expressions for `imenu-generic-expression'.")
 
+(defconst nasm-full-instruction-regexp
+  (eval-when-compile
+    (let ((pfx (nasm--opt nasm-prefix))
+          (ins (nasm--opt nasm-instructions)))
+      (concat "^\\(" pfx "\\s-+\\)?" ins "$")))
+  "Regexp for `nasm-mode' matching a valid full NASM instruction field.
+This includes prefixes or modifiers (eg \"mov\", \"rep mov\", etc match)")
+
 (defconst nasm-font-lock-keywords
   `((,nasm-section-name-regexp (1 'nasm-section-name))
     (,(nasm--opt nasm-registers) . 'nasm-registers)
     (,(nasm--opt nasm-prefix) . 'nasm-prefix)
     (,(nasm--opt nasm-types) . 'nasm-types)
     (,(nasm--opt nasm-instructions) . 'nasm-instructions)
-    (,(nasm--opt nasm-directives) . 'nasm-directives)
     (,(nasm--opt nasm-pp-directives) . 'nasm-preprocessor)
     (,(concat "^\\s-*" nasm-nonlocal-label-rexexp) (1 'nasm-labels))
     (,(concat "^\\s-*" nasm-local-label-regexp) (1 'nasm-local-labels))
-    (,nasm-constant-regexp . 'nasm-constant))
-"Keywords for `nasm-mode'.")
+    (,nasm-constant-regexp . 'nasm-constant)
+    (,(nasm--opt nasm-directives) . 'nasm-directives))
+  "Keywords for `nasm-mode'.")
 
 (defconst nasm-mode-syntax-table
   (with-syntax-table (copy-syntax-table)
@@ -595,19 +618,33 @@
   (nasm-indent-line))
 
 (defun nasm-indent-line ()
-  "Indent current line as NASM assembly code."
+  "Indent current line (or insert a tab) as NASM assembly code.
+This will be called by `indent-for-tab-command' when TAB is
+pressed. We indent the entire line as appropriate whenever POINT
+is not immediately after a mnemonic; otherwise, we insert a tab."
   (interactive)
-  (let ((orig (- (point-max) (point))))
-    (back-to-indentation)
-    (if (or (looking-at (nasm--opt nasm-directives))
-            (looking-at (nasm--opt nasm-pp-directives))
-            (looking-at "\\[")
-            (looking-at ";;+")
-            (looking-at nasm-label-regexp))
-        (indent-line-to 0)
-      (indent-line-to nasm-basic-offset))
-    (when (> (- (point-max) orig) (point))
-      (goto-char (- (point-max) orig)))))
+  (let ((before      ; text before point and after indentation
+         (save-excursion
+           (let ((point (point))
+                 (bti (progn (back-to-indentation) (point))))
+             (buffer-substring-no-properties bti point)))))
+    (if (string-match nasm-full-instruction-regexp before)
+        ;; We are immediately after a mnemonic
+        (cl-case nasm-after-mnemonic-whitespace
+          (:tab   (insert "\t"))
+          (:space (insert-char ?\s nasm-basic-offset)))
+      ;; We're literally anywhere else, indent the whole line
+      (let ((orig (- (point-max) (point))))
+        (back-to-indentation)
+        (if (or (looking-at (nasm--opt nasm-directives))
+                (looking-at (nasm--opt nasm-pp-directives))
+                (looking-at "\\[")
+                (looking-at ";;+")
+                (looking-at nasm-label-regexp))
+            (indent-line-to 0)
+          (indent-line-to nasm-basic-offset))
+        (when (> (- (point-max) orig) (point))
+          (setf (point) (- (point-max) orig)))))))
 
 (defun nasm--current-line ()
   "Return the current line as a string."
@@ -641,6 +678,15 @@
           (end (progn (back-to-indentation) (point))))
       (and (<= start point) (<= point end)))))
 
+(defun nasm-comment-indent ()
+  "Compute desired indentation for comment on the current line."
+  comment-column)
+
+(defun nasm-insert-comment ()
+  "Insert a comment if the current line doesn’t contain one."
+  (let ((comment-insert-comment-function nil))
+    (comment-indent)))
+
 (defun nasm-comment (&optional arg)
   "Begin or edit a comment with context-sensitive placement.
 
@@ -663,8 +709,8 @@ With a prefix arg, kill the comment on the current line with
   (if (not (eql arg 1))
       (comment-kill nil)
     (cond
-     ;; Empty line? Insert.
-     ((nasm--empty-line-p)
+     ;; Empty line, or inside a string? Insert.
+     ((or (nasm--empty-line-p) (nth 3 (syntax-ppss)))
       (insert ";"))
      ;; Inside the indentation? Comment out the line.
      ((nasm--inside-indentation-p)
@@ -686,12 +732,12 @@ With a prefix arg, kill the comment on the current line with
   "Like `join-line', but use a tab when joining with a label."
   (interactive "*P")
   (join-line join-following-p)
-  (if (looking-back nasm-label-regexp)
+  (if (looking-back nasm-label-regexp (line-beginning-position))
       (let ((column (current-column)))
-        (cond ((< column 8)
+        (cond ((< column nasm-basic-offset)
                (delete-char 1)
                (insert-char ?\t))
-              ((and (= column 8) (eql ?: (char-before)))
+              ((and (= column nasm-basic-offset) (eql ?: (char-before)))
                (delete-char 1))))
     (nasm-indent-line)))
 
@@ -701,9 +747,13 @@ With a prefix arg, kill the comment on the current line with
   :group 'nasm-mode
   (make-local-variable 'indent-line-function)
   (make-local-variable 'comment-start)
+  (make-local-variable 'comment-insert-comment-function)
+  (make-local-variable 'comment-indent-function)
   (setf font-lock-defaults '(nasm-font-lock-keywords nil :case-fold)
         indent-line-function #'nasm-indent-line
         comment-start ";"
+        comment-indent-function #'nasm-comment-indent
+        comment-insert-comment-function #'nasm-insert-comment
         imenu-generic-expression nasm-imenu-generic-expression))
 
 (provide 'nasm-mode)
