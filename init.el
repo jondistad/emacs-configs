@@ -49,6 +49,7 @@
 (flx-ido-mode)
 (setq-default indent-tabs-mode nil)
 (global-auto-revert-mode)
+(setq-default require-final-newline 'ask)
 
 ;; Autoloads
 
