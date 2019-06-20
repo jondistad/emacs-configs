@@ -30,6 +30,7 @@
         kill-rectangle
         kill-region
         kill-sexp
+        nasm-colon
         org-beginning-of-line
         org-delete-char
         org-end-of-line
