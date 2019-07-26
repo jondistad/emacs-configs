@@ -57,7 +57,7 @@
 
 ;; Mode Hooks
 
-(add-hook 'emacs-lisp-mode-hook (lambda () (paredit-mode +1)))
+(load "~/.emacs.d/hooks.el")
 
 ;; Additional Keybindings
 

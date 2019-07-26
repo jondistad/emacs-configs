@@ -1,8 +1,8 @@
 ;;; ponylang-mode.el --- Major mode for Pony code
 ;;
 ;; Authors: Sean T Allen <sean@monkeysnatchbanana.com>
-;; Version: 0.0.9
-;; Package-Version: 20171028.1356
+;; Version: 0.0.11
+;; Package-Version: 20180804.1521
 ;; URL: https://github.com/seantallen/ponylang-mode
 ;; Keywords: languages programming
 ;; Package-Requires: ((dash "2.10.0"))
@@ -106,7 +106,7 @@
   "Pony capability markers.")
 
 (defconst ponylang-keywords
-  '("actor" "addressof" "and" "as"
+  '("actor" "addressof" "as"
     "be" "break"
     "class" "compiler_intrinsic" "consume" "continue"
     "do"
@@ -116,7 +116,7 @@
     "lambda" "let"
     "match"
     "new" "not"
-    "object" "or"
+    "object"
     "primitive"
     "recover" "repeat" "return"
     "struct"
@@ -304,8 +304,6 @@ the current context."
 (defalias 'ponylang-parent-mode
   (if (fboundp 'prog-mode) 'prog-mode 'fundamental-mode))
 
-(defconst ponylang-triple-quoted-string-rx (rx "\"\"\""))
-
 (defun ponylang-stringify-triple-quote ()
   "Put `syntax-table' property on triple-quoted strings."
   (let* ((string-end-pos (point))
@@ -327,7 +325,7 @@ the current context."
 
 (defconst ponylang-syntax-propertize-function
   (syntax-propertize-rules
-   (ponylang-triple-quoted-string-rx
+   ("\"\"\"" ; A triple quoted string
     (0 (ignore (ponylang-stringify-triple-quote))))))
 
 
