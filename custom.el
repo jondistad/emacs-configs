@@ -19,6 +19,22 @@
  '(safe-local-variable-values
    (quote
     ((clojure-local-indents
+      (match defun)
+      (deftype defun)
+      (switch defun)
+      (select defun)
+      (struct defun)
+      (interface defun)
+      (type-switch defun)
+      (if\# defun)
+      (for\# defun))
+     (clojure-local-indents
+      (indent defun)
+      (returning defun)
+      (run-write defun)
+      (run-scrape defun)
+      (run-typer defun))
+     (clojure-local-indents
       (result-let 1)
       (clj-do! 1)
       (ml-do! 0)))))

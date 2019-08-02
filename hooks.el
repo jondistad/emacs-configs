@@ -27,3 +27,17 @@
 (eval-after-load 'cider-mode
   '(progn
      (add-hook 'cider-interaction-mode-hook 'cider-turn-on-eldoc-mode)))
+
+;; Go
+(require 'go-guru)
+(eval-after-load 'go-mode
+  '(progn
+     (define-key go-mode-map (kbd "C-c C-w") 'gofmt)
+     (define-key go-mode-map (kbd "M-.") 'go-guru-definition)))
+(add-hook 'before-save-hook #'gofmt-before-save)
+(add-hook 'go-mode-hook (lambda ()
+                          (setq-local tab-width 4)))
+
+;; Java
+(setq jdecomp-decompiler-paths '((cfr . "~/.emacs.d/jar/cfr_0_122.jar")))
+(add-to-list 'auto-mode-alist '("\\.class\\'" . jdecomp-mode))
