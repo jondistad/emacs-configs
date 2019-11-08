@@ -1,3 +1,11 @@
+;; Paredit
+(eval-after-load 'paredit
+  '(progn
+     (define-key paredit-mode-map (kbd "C-<backspace>") 'paredit-backward-kill-word)
+     (define-key paredit-mode-map (kbd "C-w") 'paredit-kill-region)
+     (define-key paredit-mode-map (kbd "M-[") 'paredit-wrap-square)
+     (define-key paredit-mode-map (kbd "M-{") 'paredit-wrap-curly)))
+
 ;; Elisp
 (add-hook 'emacs-lisp-mode-hook (lambda () (paredit-mode +1)))
 

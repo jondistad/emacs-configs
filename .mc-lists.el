@@ -43,6 +43,7 @@
         paredit-forward-kill-word
         paredit-forward-slurp-sexp
         paredit-kill
+        paredit-kill-region
         paredit-newline
         paredit-open-round
         paredit-raise-sexp
