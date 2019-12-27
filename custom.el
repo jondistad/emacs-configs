@@ -14,7 +14,7 @@
  '(magit-use-overlays nil)
  '(package-selected-packages
    (quote
-    (exwm haskell-emacs yaml-mode wgrep-ag tuareg toml-mode tide solarized-theme scheme-complete racket-mode racer purescript-mode protobuf-mode paredit noflet nodejs-repl nginx-mode neotree multiple-cursors monokai-theme markdown-mode magit llvm-mode liquid-types less-css-mode jsx-mode js2-mode jdecomp irony idris-mode haml-mode go-guru go-errcheck go-eldoc go-autocomplete gherkin-mode ghc geiser flycheck-mix flycheck-flow flycheck-elixir flycheck-color-mode-line flx-ido flow-minor-mode find-file-in-repository find-file-in-project fill-column-indicator feature-mode espuds ensime elixir-yasnippets dockerfile-mode cql-mode company-coq commander coffee-mode clojurescript-mode clojure-project-mode cider chicken-scheme caml ansi alchemist ag)))
+    (company-lsp lsp-ui lsp-mode sbt-mode scala-mode use-package exwm haskell-emacs yaml-mode wgrep-ag tuareg toml-mode tide solarized-theme scheme-complete racer purescript-mode protobuf-mode paredit noflet nodejs-repl nginx-mode neotree multiple-cursors monokai-theme markdown-mode magit llvm-mode liquid-types less-css-mode jsx-mode js2-mode jdecomp irony idris-mode haml-mode go-guru go-errcheck go-eldoc go-autocomplete gherkin-mode ghc geiser flycheck-mix flycheck-flow flycheck-elixir flycheck-color-mode-line flx-ido flow-minor-mode find-file-in-repository find-file-in-project fill-column-indicator feature-mode espuds dockerfile-mode cql-mode company-coq commander coffee-mode clojurescript-mode clojure-project-mode cider chicken-scheme caml ansi alchemist ag)))
  '(rust-format-on-save t)
  '(safe-local-variable-values
    (quote
