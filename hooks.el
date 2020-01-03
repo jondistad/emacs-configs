@@ -30,11 +30,16 @@
 
 (eval-after-load 'clojure-mode
   '(progn
-     (add-hook 'clojure-mode-hook 'paredit-mode)
+     (add-hook 'clojure-mode-hook 'enable-paredit-mode)
      (add-hook 'clojure-mode-hook 'cider-mode)))
 (eval-after-load 'cider-mode
   '(progn
      (add-hook 'cider-interaction-mode-hook 'cider-turn-on-eldoc-mode)))
+
+;; Scheme
+
+(add-hook 'geiser-mode-hook 'enable-paredit-mode)
+(add-to-list 'auto-mode-alist '("\\.sls\\'" . scheme-mode))
 
 ;; Go
 (require 'go-guru)
