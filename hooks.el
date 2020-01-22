@@ -4,7 +4,9 @@
      (define-key paredit-mode-map (kbd "C-<backspace>") 'paredit-backward-kill-word)
      (define-key paredit-mode-map (kbd "C-w") 'paredit-kill-region)
      (define-key paredit-mode-map (kbd "M-[") 'paredit-wrap-square)
-     (define-key paredit-mode-map (kbd "M-{") 'paredit-wrap-curly)))
+     (define-key paredit-mode-map (kbd "M-{") 'paredit-wrap-curly)
+     (define-key paredit-mode-map (kbd "{") 'paredit-open-curly)
+     (define-key paredit-mode-map (kbd "}") 'paredit-close-curly)))
 
 ;; Elisp
 (add-hook 'emacs-lisp-mode-hook (lambda () (paredit-mode +1)))

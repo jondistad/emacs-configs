@@ -47,6 +47,7 @@
         paredit-newline
         paredit-open-round
         paredit-raise-sexp
+        paredit-semicolon
         paredit-splice-sexp
         paredit-wrap-round
         transpose-words
@@ -71,5 +72,6 @@
         orgtbl-self-insert-command
         pg-protected-undo
         query-replace
+        switch-to-geiser
         undefined
         ))
