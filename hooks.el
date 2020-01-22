@@ -59,6 +59,10 @@
 
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 
+;; Elixir
+
+(add-to-list 'auto-mode-alist '("\\.eex\\'" . web-mode))
+
 ;; Scala
 
 ;; (unless (package-installed-p 'use-package)
