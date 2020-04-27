@@ -104,4 +104,5 @@
                               "/usr/bin/vendor_perl"
                               "/usr/bin/core_perl"))))
     (setq exec-path (delete-dups (copy-sequence (append path exec-path))))
-    (setenv "PATH" (mapconcat 'identity path '":"))))
+    (setenv "PATH" (mapconcat 'identity path '":"))
+    (setenv "GIT_PAGER" "")))

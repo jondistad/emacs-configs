@@ -4,6 +4,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(comint-process-echoes t)
+ '(css-indent-offset 2)
+ '(fill-column 80)
  '(flycheck-haskell-liquid-executable "stack exec liquid")
  '(geiser-chez-binary "scheme-akku")
  '(geiser-default-implementation (quote chez))
@@ -48,11 +50,13 @@
  '(grep-find-ignored-directories
    (quote
     ("SCCS" "RCS" "CVS" "MCVS" ".svn" ".git" ".hg" ".bzr" "_MTN" "_darcs" "{arch}" "node_modules" "target" ".ensime_cache")))
+ '(js-indent-level 2)
+ '(js2-strict-trailing-comma-warning nil)
  '(magit-branch-arguments nil)
  '(magit-use-overlays nil)
  '(package-selected-packages
    (quote
-    (web-mode elixir-mode geiser company-lsp lsp-ui lsp-mode sbt-mode scala-mode use-package exwm haskell-emacs yaml-mode wgrep-ag tuareg toml-mode tide solarized-theme racer purescript-mode protobuf-mode noflet nodejs-repl nginx-mode neotree multiple-cursors monokai-theme markdown-mode magit llvm-mode liquid-types less-css-mode jsx-mode js2-mode jdecomp irony idris-mode haml-mode go-guru go-errcheck go-eldoc go-autocomplete gherkin-mode ghc flycheck-mix flycheck-flow flycheck-elixir flycheck-color-mode-line flx-ido flow-minor-mode find-file-in-repository find-file-in-project fill-column-indicator feature-mode espuds dockerfile-mode cql-mode company-coq commander coffee-mode clojurescript-mode clojure-project-mode cider caml ansi alchemist ag)))
+    (prettier-js rjsx-mode web-mode geiser company-lsp lsp-ui lsp-mode sbt-mode scala-mode use-package exwm haskell-emacs yaml-mode wgrep-ag tuareg toml-mode tide solarized-theme racer purescript-mode protobuf-mode noflet nodejs-repl nginx-mode neotree multiple-cursors monokai-theme markdown-mode magit llvm-mode liquid-types less-css-mode js2-mode jdecomp irony idris-mode haml-mode go-guru go-errcheck go-eldoc go-autocomplete gherkin-mode ghc flycheck-mix flycheck-flow flycheck-elixir flycheck-color-mode-line flx-ido flow-minor-mode find-file-in-project fill-column-indicator feature-mode espuds cql-mode company-coq commander coffee-mode clojurescript-mode clojure-project-mode cider caml ansi alchemist ag)))
  '(rust-format-on-save t)
  '(safe-local-variable-values
    (quote

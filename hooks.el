@@ -1,3 +1,16 @@
+;; Org-mode
+(setq org-todo-keywords '((sequence "TODO" "INPROGRESS" "COMPLETED" "FAILED")))
+(setq org-todo-keyword-faces '(("INPROGRESS" . "yellow") ("COMPLETED" . "green") ("FAILED" . "red")))
+(setq org-startup-folded 'showeverything)
+(setq org-special-ctrl-a/e t)
+(setq org-hide-leading-stars t)
+
+(add-hook 'org-mode-hook
+          (lambda ()
+            (define-key org-mode-map (kbd "M-p") 'org-move-subtree-up)
+            (define-key org-mode-map (kbd "M-n") 'org-move-subtree-down)
+            (flyspell-mode)))
+
 ;; Paredit
 (eval-after-load 'paredit
   '(progn
@@ -62,6 +75,12 @@
 ;; Elixir
 
 (add-to-list 'auto-mode-alist '("\\.eex\\'" . web-mode))
+
+;; Javascript
+;; (require 'prettier-js)
+;; (add-hook 'js2-mode-hook 'prettier-js-mode)
+;;(add-hook 'web-mode-hook 'prettier-js-mode)
+
 
 ;; Scala
 
