@@ -20,6 +20,7 @@
         dabbrev-expand
         delete-horizontal-space
         delete-indentation
+        down-list
         electric-newline-and-maybe-indent
         ensime-company-complete-or-indent
         forward-sexp
@@ -74,4 +75,5 @@
         query-replace
         switch-to-geiser
         undefined
+        wgrep-toggle-readonly-area
         ))

@@ -1,10 +1,13 @@
 ;;; find-file-in-repository-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
+
+(add-to-list 'load-path (directory-file-name
+                         (or (file-name-directory #$) (car load-path))))
+
 
 ;;;### (autoloads nil "find-file-in-repository" "find-file-in-repository.el"
-;;;;;;  (22629 25215 613021 738000))
+;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from find-file-in-repository.el
 
 (autoload 'find-file-in-repository "find-file-in-repository" "\
@@ -22,11 +25,14 @@ find-file-in-repository will autocomplete all files in the
 
 (put 'ffir-avoid-HOME-repository 'safe-local-variable 'booleanp)
 
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "find-file-in-repository" '("ffir-")))
+
 ;;;***
 
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
+;; coding: utf-8
 ;; End:
 ;;; find-file-in-repository-autoloads.el ends here
