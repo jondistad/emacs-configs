@@ -51,6 +51,7 @@
         paredit-semicolon
         paredit-splice-sexp
         paredit-wrap-round
+        rjsx-delete-creates-full-tag
         transpose-words
         typescript-insert-and-indent
         wgrep-change-to-wgrep-mode
@@ -73,6 +74,7 @@
         orgtbl-self-insert-command
         pg-protected-undo
         query-replace
+        rjsx-electric-gt
         switch-to-geiser
         undefined
         wgrep-toggle-readonly-area

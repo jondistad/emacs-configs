@@ -56,11 +56,18 @@
  '(magit-use-overlays nil)
  '(package-selected-packages
    (quote
-    (prettier-js rjsx-mode web-mode geiser company-lsp lsp-ui lsp-mode sbt-mode scala-mode use-package exwm haskell-emacs yaml-mode wgrep-ag tuareg toml-mode tide solarized-theme racer purescript-mode protobuf-mode noflet nodejs-repl nginx-mode neotree multiple-cursors monokai-theme markdown-mode magit llvm-mode liquid-types less-css-mode js2-mode jdecomp irony idris-mode haml-mode go-guru go-errcheck go-eldoc go-autocomplete gherkin-mode ghc flycheck-mix flycheck-flow flycheck-elixir flycheck-color-mode-line flx-ido flow-minor-mode find-file-in-project fill-column-indicator feature-mode espuds cql-mode company-coq commander coffee-mode clojurescript-mode clojure-project-mode cider caml ansi alchemist ag)))
+    (reason-mode prettier-js rjsx-mode web-mode geiser company-lsp lsp-ui lsp-mode sbt-mode scala-mode use-package exwm haskell-emacs yaml-mode wgrep-ag tuareg toml-mode tide solarized-theme racer purescript-mode protobuf-mode noflet nodejs-repl nginx-mode neotree multiple-cursors monokai-theme markdown-mode magit llvm-mode liquid-types less-css-mode js2-mode jdecomp irony idris-mode haml-mode go-guru go-errcheck go-eldoc go-autocomplete gherkin-mode ghc flycheck-mix flycheck-flow flycheck-elixir flycheck-color-mode-line flx-ido flow-minor-mode find-file-in-project fill-column-indicator feature-mode espuds cql-mode company-coq commander coffee-mode clojurescript-mode clojure-project-mode cider caml ansi alchemist ag)))
  '(rust-format-on-save t)
  '(safe-local-variable-values
    (quote
-    ((scheme-local-indents
+    ((js2-additional-externs "clearInterval" "clearTimeout" "fetch" "process" "sessionStorage" "setInterval" "setTimeout" "URL" "URLSearchParams")
+     (js2-additional-externs "fetch" "process" "sessionStorage" "setTimeout" "setInterval" "URL" "URLSearchParams")
+     (js2-additional-externs "process" "sessionStorage" "setTimeout" "setInterval" "URL" "URLSearchParams")
+     (js2-additional-externs "process" "sessionStorage" "setTimeout" "setInterval" "URLSearchParams")
+     (js2-additional-externs "sessionStorage" "setTimeout" "setInterval" "URLSearchParams")
+     (js2-additional-externs "sessionStorage" "URLSearchParams")
+     (js2-additional-externs sessionStorage URLSearchParams)
+     (scheme-local-indents
       (with-output-language defun)
       (nanopass-case defun))
      (scheme-local-indents
@@ -88,7 +95,12 @@
       (ml-do! 0)))))
  '(tab-width 2)
  '(tooltip-mode nil)
- '(user-mail-address "jon.distad@gmail.com"))
+ '(typescript-indent-level 2)
+ '(user-mail-address "jon.distad@gmail.com")
+ '(web-mode-code-indent-offset 2)
+ '(web-mode-css-indent-offset 2)
+ '(web-mode-markup-indent-offset 2)
+ '(web-mode-tests-directory "~/tests/"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
